@@ -1,0 +1,78 @@
+site_name: "Descifrando la IA"
+site_description: "Guía educativa sobre inteligencia artificial con perspectiva crítica y latinoamericana"
+site_author: "Hijas de Internet"
+# Update this URL after creating the GitHub repo:
+# site_url: https://hijasdeinternet.github.io/descifrando-la-ia/
+
+theme:
+  name: material
+  language: es
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep purple
+      accent: pink
+      toggle:
+        icon: material/brightness-7
+        name: Modo oscuro
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep purple
+      accent: pink
+      toggle:
+        icon: material/brightness-4
+        name: Modo claro
+  font:
+    text: Inter
+    code: Fira Code
+  features:
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - toc.integrate
+  icon:
+    logo: material/access-point-network
+
+nav:
+  - Inicio: index.md
+  - "1. Qué es la IA": 01-que-es-la-ia.md
+  # Uncomment as you create each page:
+  # - "2. Sesgos algorítmicos": 02-sesgos-algoritmicos.md
+  # - "3. Impactos ambientales": 03-impactos-ambientales.md
+  # - "4. Futuro del trabajo": 04-futuro-del-trabajo.md
+  # - "5. Herramientas y uso responsable": 05-herramientas-uso-responsable.md
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - tables
+  - attr_list
+  - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - toc:
+      permalink: true
+
+plugins:
+  - search
+
+extra:
+  social:
+    - icon: fontawesome/brands/instagram
+      link: https://instagram.com/hijasdeinternet
+      name: Hijas de Internet en Instagram
+    - icon: fontawesome/brands/spotify
+      link: https://open.spotify.com/show/hijasdeinternet
+      name: Podcast en Spotify
+
+extra_css:
+  - stylesheets/extra.css
+
+copyright: "&copy; 2026 Hijas de Internet &bull; Descifrando la IA"

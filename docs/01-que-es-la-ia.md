@@ -20,7 +20,8 @@ Una guía introductoria para entender qué es la Inteligencia Artifical, entende
 
 La inteligencia artificial es el desarrollo de sistemas informáticos capaces de realizar tareas asociadas a funciones cognitivas humanas: interpretar el habla, identificar patrones, hacer predicciones y resolver problemas. Se compone de varias tecnologías, como el aprendizaje de máquina (Machine Learning) y el aprendizaje profundo (Deep Learning), que permiten a las computadoras aprender de datos y hacer predicciones o tomar decisiones basadas en ellos [13, 9].
 
-**La IA no es magia. Son matemáticas y estadística aplicada.**
+!!! abstract "Mensaje central"
+    **La IA no es magia. Son matemáticas y estadística aplicada.**
 
 Puntos clave:
 - Es una rama de las ciencias de la computación, no una entidad mágica ni consciente [13]
@@ -47,9 +48,11 @@ Si pensamos en un modelo de IA como una receta, necesitamos varios ingredientes 
 
 ### 1. Datos — La materia prima
 Un modelo necesita miles o millones de ejemplos para aprender. Para entrenar un modelo que reconozca gatos, se necesitan miles de fotos de gatos. Aquí es importante preguntarnos, ¿quién genera estos datos? ¿quién los sistematiza? ¿qué historias se cuentan a partir de ellos? 
-Si quieres saber más sobre la relación de los datos y el impacto en políticas públicas, puedes escuchar el episodio de hijas de Internet donde hablamos con @tacosdedatos sobre la importancia de los datos en la toma de decisiones.  
+!!! tip "Escucha: Datos y políticas públicas"
+    Si quieres saber más sobre la relación de los datos y el impacto en políticas públicas, escucha el episodio de Hijas de Internet con @tacosdedatos sobre la importancia de los datos en la toma de decisiones.
 
-<iframe src="https://creators.spotify.com/pod/profile/hijas-de-internet/embed/episodes/T3-EP-6--Datos-y-polticas-pblicas-e1alhpe/a-a6uv6rb" height="102px" width="400px" frameborder="0" scrolling="no"></iframe>
+    <iframe src="https://creators.spotify.com/pod/profile/hijas-de-internet/embed/episodes/T3-EP-6--Datos-y-polticas-pblicas-e1alhpe/a-a6uv6rb" height="102px" width="400px" frameborder="0" scrolling="no"></iframe>
+
 ### 2. Algoritmo — La receta
 Un algoritmo es un conjunto de reglas matemáticas que le dice al modelo cómo procesar datos y encontrar patrones [13]. Existen distintos tipos de algoritmos de aprendizaje, y la elección depende de la tarea y los datos disponibles [13, 14]:
 
@@ -72,7 +75,8 @@ Un modelo de lenguaje entrenado con texto de Internet puede predecir palabras, p
 
 **RLHF (Reinforcement Learning from Human Feedback):** En lugar de dar respuestas "correctas" únicas, evaluadores humanos comparan pares de respuestas del modelo y eligen cuál es mejor. Con esas comparaciones se entrena un "modelo de recompensa" que aprende a predecir qué respuestas prefieren los humanos. Luego el modelo se optimiza para maximizar esas recompensas [14, 15].
 
-El ejemplo histórico más importante es **InstructGPT** (Ouyang et al., 2022): un modelo de 1.3 mil millones de parámetros entrenado con SFT+RLHF superó al GPT-3 de 175 mil millones de parámetros en evaluaciones humanas [14]. Esto demostró que el tamaño del modelo no es lo único que importa — la *alineación con preferencias humanas* es igualmente crítica.
+!!! example "InstructGPT: el tamaño no lo es todo"
+    El ejemplo histórico más importante es **InstructGPT** (Ouyang et al., 2022): un modelo de 1.3 mil millones de parámetros entrenado con SFT+RLHF superó al GPT-3 de 175 mil millones de parámetros en evaluaciones humanas [14]. Esto demostró que el tamaño del modelo no es lo único que importa — la *alineación con preferencias humanas* es igualmente crítica.
 
 Hoy, todos los modelos comerciales (ChatGPT, Claude, Gemini, Llama) siguen este patrón: entrenamiento base → fine-tuning supervisado → RLHF [14, 15].
 
@@ -124,7 +128,10 @@ El modelo predice cuál es la siguiente palabra más probable, luego la siguient
 ### "Cotorros estocásticos" (Stochastic Parrots)
 Este término fue acuñado por las investigadoras Emily Bender y Timnit Gebru (2021) [7]. La metáfora sugiere que estos modelos son como loros sofisticados que combinan patrones de lenguaje sin comprender su significado.
 
-Esto significa que pueden generar texto convincente pero completamente falso (alucinaciones) y reproducir los sesgos de sus datos de entrenamiento.[7] También es importante reconocer que estos modelos fueron entrenados principalmente con texto de Internet en inglés, de sitios web creados mayoritariamente por hombres, blancos, del Norte Global [7]
+!!! warning "Implicaciones"
+    - Pueden generar texto convincente pero completamente falso (**alucinaciones**)
+    - Reproducen los sesgos de sus datos de entrenamiento [7]
+    - Fueron entrenados principalmente con texto de Internet en inglés, de sitios web creados mayoritariamente por hombres, blancos, del Norte Global [7]
 
 > "Estos modelos son como espejos de la sociedad que los creó."
 
@@ -141,7 +148,8 @@ Los modelos anteriores (redes recurrentes) procesaban texto palabra por palabra,
 ### Tokenización
 Los LLMs nunca "ven" texto directamente. El texto se divide en "tokens" — fragmentos que se convierten en números. Un token equivale a aproximadamente 4 caracteres en inglés. El vocabulario de GPT-4 tiene 100,258 tokens [10].
 
-**Implicación para el español:** Los modelos entrenados principalmente en inglés son menos eficientes con español, necesitan más tokens para representar el mismo contenido, lo que puede significar respuestas más cortas y potencialmente menos precisas [7, 10].
+!!! info "Implicación para el español"
+    Los modelos entrenados principalmente en inglés son menos eficientes con español — necesitan más tokens para representar el mismo contenido, lo que puede significar respuestas más cortas y potencialmente menos precisas [7, 10].
 
 ### Temperatura
 Controla la aleatoriedad de las respuestas. Baja = respuestas predecibles. Alta = respuestas diversas pero potencialmente incoherentes [10]. Es como el "volumen de creatividad."
@@ -162,7 +170,8 @@ La principal diferencia con ChatGPT y otros chatbots es que estas aplicaciones r
 
 **Ejemplo:** En lugar de pedir "escríbeme un análisis de mercado" y recibir una respuesta, un agente podría buscar datos en internet, organizarlos, hacer el análisis, crear visualizaciones y escribir un reporte completo.
 
-**Advertencia:** Los agentes de IA requieren supervisión humana. No son todavía lo suficientemente confiables para tareas críticas sin supervisión. Deben usarse para aumentar la productividad, no para reemplazar el criterio humano. Nunca compartas contraseñas, información bancaria o datos sensibles con estos sistemas.
+!!! danger "Advertencia"
+    Los agentes de IA requieren supervisión humana. No son todavía lo suficientemente confiables para tareas críticas sin supervisión. Deben usarse para aumentar la productividad, no para reemplazar el criterio humano. **Nunca compartas contraseñas, información bancaria o datos sensibles con estos sistemas.**
 
 ## Breve Historia de la IA
 
