@@ -1,0 +1,8 @@
+# Private operational files — do not publish
+SANITIZATION_RULES.md
+
+# macOS
+.DS_Store
+
+# Obsidian
+.obsidian/
