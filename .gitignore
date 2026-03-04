@@ -1,5 +1,6 @@
 # Private operational files — do not publish
 SANITIZATION_RULES.md
+MKDOCS_GUIDE.md
 
 # MkDocs build output
 site/

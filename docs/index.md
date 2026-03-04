@@ -1,12 +1,13 @@
 # Descifrando la IA
 
-**Una guía educativa sobre inteligencia artificial con perspectiva crítica y latinoamericana.**
+**Una guía para entender y cuestionar a la inteligencia artificial**
 
 ---
+**Descifrando la IA** es un proyecto de [Hijas de Internet](https://instagram.com/hijasdeinternet) que busca acercar estos temas de forma accesible, crítica y en español.
 
-La inteligencia artificial ya está en nuestras vidas: en las redes sociales que usamos, en los traductores automáticos, en las recomendaciones de música y video. Pero, ¿entendemos realmente cómo funciona? ¿Quién la diseña? ¿A quién beneficia y a quién puede perjudicar?
+La inteligencia artificial está en muchos ámbitos de nuestras vidas: en las redes sociales que usamos, en los traductores automáticos, en las recomendaciones de música y video. Pero, ¿entendemos realmente cómo funciona? ¿Quién la diseña? ¿A quién beneficia y a quién puede perjudicar?
 
-**Descifrando la IA** es un proyecto de [Hijas de Internet](https://instagram.com/hijasdeinternet) que busca acercar estos temas de forma accesible, crítica y con perspectiva latinoamericana.
+A lo largo de esta wiki, podrás encontrar conceptos básicos sobre inteligencia artificial, así como referencias de distintas fuentes para que puedas consultar y seguir aprendiendo. 
 
 ## Módulos
 
@@ -46,4 +47,4 @@ Este contenido acompaña la serie **Descifrando la IA** del podcast Hijas de Int
 
 ---
 
-*Proyecto desarrollado en 2026 como parte de una iniciativa de alfabetización digital con perspectiva crítica.*
+*Proyecto desarrollado en 2026 como parte del proyecto Descifrando la IA, de hijas de Internet (ultima actualización marzo 2026).*

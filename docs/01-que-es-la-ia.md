@@ -1,253 +1,200 @@
-# Qué es la Inteligencia Artificial
+# Descifrando la Inteligencia Artificial: conceptos básicos
 
-Una guía introductoria para entender qué es la Inteligencia Artifical, entender cómo funcionan los modelos de aprendizaje automático detrás de estas tecnologías, y profundizar sobre los modelos de lenguaje y otros conceptos que es necesario entender cuando hablamos de IA. 
-## Conceptos Clave
+Hoy, usamos tecnologías de Inteligencia Artificial (IA) todos los días. Las redes sociales (TikTok, Instagram, Facebook) usan algoritmos de IA para decidir qué contenido mostrar. Netflix y Spotify aprenden de las series y películas que vemos.[^2] Google Maps predice tráfico con datos de millones de teléfonos.[^3] Los filtros de Snapchat e Instagram usan visión por computadora para identificar los rasgos faciales en tiempo real, lo que les permite aplicar con precisión máscaras y efectos digitales en tu rostro. [^3] 
 
-| Concepto                     | Definición breve                                                                                                      |
-| ---------------------------- | --------------------------------------------------------------------------------------------------------------------- |
-| Inteligencia Artificial (IA) | Sistemas informáticos que realizan tareas cognitivas: interpretar habla, identificar patrones, hacer predicciones     |
-| Machine Learning (ML)        | Algoritmos que aprenden de datos sin ser programados explícitamente                                                   |
-| Deep Learning                | Redes neuronales con múltiples capas. Son "profundos" porque contienen muchas capas, no porque son "más inteligentes" |
-| LLM (Large Language Model)   | Modelos de lenguaje generativos que predicen la siguiente palabra más probable                                        |
-| Transformer                  | Arquitectura de red neuronal con mecanismo de "atención" (Google, 2017)                                               |
-| Inferencia                   | Cuando un modelo ya entrenado aplica lo aprendido a datos nuevos                                                      |
-| Tokenización                 | Proceso de dividir texto en fragmentos numéricos que el modelo puede procesar                                         |
-| IA generativa                | IA que crea contenido nuevo (texto, imagen, audio, video)                                                             |
-| IA discriminativa            | IA que clasifica o distingue entre categorías                                                                         |
-| IA agnética (Agentic AI)     | Sistemas de IA que actúan de forma autónoma para lograr objetivos, ejecutando múltiples acciones en secuencia         |
+En este módulo, podrás entender qué es la Inteligencia Artificial, cómo funcionan las tecnologías detrás de ellas y profundizar sobre los modelos de lenguaje y otros conceptos clave que es necesario entender cuando usamos herramientas de IA. El principal objetivo es entender que la IA no es magia, es un conjunto de tecnologías que funcionan con matemáticas y modelos estadísticos que todas y todos tenemos la capacidad de entender. 
 
-## ¿Qué es la IA?
+![La IA no es magia](images/00_Magia.png)
+## ¿Qué es la Inteligencia Artificial?
 
-La inteligencia artificial es el desarrollo de sistemas informáticos capaces de realizar tareas asociadas a funciones cognitivas humanas: interpretar el habla, identificar patrones, hacer predicciones y resolver problemas. Se compone de varias tecnologías, como el aprendizaje de máquina (Machine Learning) y el aprendizaje profundo (Deep Learning), que permiten a las computadoras aprender de datos y hacer predicciones o tomar decisiones basadas en ellos [13, 9].
+La inteligencia artificial es el desarrollo de sistemas informáticos capaces de realizar tareas asociadas a funciones cognitivas humanas: interpretar el habla, identificar patrones, hacer predicciones y resolver problemas.[^1] Se compone de varias tecnologías, como el aprendizaje de máquina (Machine Learning) y el aprendizaje profundo (Deep Learning), que permiten a las computadoras aprender de datos y hacer predicciones o tomar decisiones basadas en ellos.
 
-!!! abstract "Mensaje central"
-    **La IA no es magia. Son matemáticas y estadística aplicada.**
+![La jerarquía de la Inteligencia Artificial: diagrama de círculos concéntricos mostrando IA, Machine Learning, Deep Learning e IA generativa](images/01_JerarquiaIA.png)
 
-Puntos clave:
-- Es una rama de las ciencias de la computación, no una entidad mágica ni consciente [13]
-- Existe desde 1956 (Conferencia de Dartmouth); lo nuevo es la escala de cómputo y datos [8, 13]
-- ChatGPT es solo un tipo de IA — hay muchos más en uso cotidiano [9, 10]
+## ¿Cómo Funciona el Aprendizaje de Máquina? (Machine Learning)
 
-## IA en la Vida Cotidiana
+El aprendizaje automático es la principal tecnología detrás de lo que conocemos como Inteligencia Artificial. En realidad es una rama de las ciencias de la computación que busca desarrollar algoritmos que aprenden de datos sin programación explícita [^5]. Para que este proceso ocurra, necesitamos combinar varios elementos clave:
+#### 1. Datos (la materia prima)
+Un modelo de aprendizaje automático necesita miles o millones de ejemplos para aprender. [^6] Para entrenar un modelo de aprendizaje supervisado que aprenda a reconocer gatos, se necesitan miles de fotos de gatos. Aquí es importante preguntarnos, ¿quién genera estos datos? ¿quién los sistematiza? ¿qué historias se cuentan a partir de ellos? 
 
-¿Cuántas de estas herramientas usas al día? Probablemente más de las que crees.  La IA no está solo en ChatGPT. Las redes sociales (TikTok, Instagram, Facebook) usan algoritmos de IA para decidir qué contenido mostrar. Netflix y Spotify aprenden de lo que consumimos. Google Maps predice tráfico con datos de millones de teléfonos. La corrección automática del teclado predice palabras basándose en patrones. Los filtros de Snapchat e Instagram usan visión por computadora [9, 10].
-
-| Aplicación                        | Tipo de IA                              | Lo que hace                                                     |
-| --------------------------------- | --------------------------------------- | --------------------------------------------------------------- |
-| TikTok, Instagram, Facebook       | ML + análisis de comportamiento         | Decide qué contenido mostrar y en qué orden                     |
-| Netflix, Spotify                  | Sistemas de recomendación               | Aprende de lo que ves/escuchas para sugerirte contenido         |
-| Google Maps                       | Predicción + optimización               | Datos de millones de teléfonos para predecir tráfico            |
-| ChatGPT, Claude, Gemini           | LLM (modelo de lenguaje de gran tamaño) | Predice la siguiente palabra más probable                       |
-| Corrección automática del teclado | Natural Language Processing             | Predice qué palabra viene después                               |
-| Filtros de Snapchat/Instagram     | Visión por computadora                  | Detecta rostros y aplica efectos en tiempo real                 |
-| Google Translate, DeepL           | Natural Language Processing             | Modelos entrenados con millones de textos en diferentes idiomas |
-
-## Los "Ingredientes" de un Modelo de IA
-
-Si pensamos en un modelo de IA como una receta, necesitamos varios ingredientes clave:
-
-### 1. Datos — La materia prima
-Un modelo necesita miles o millones de ejemplos para aprender. Para entrenar un modelo que reconozca gatos, se necesitan miles de fotos de gatos. Aquí es importante preguntarnos, ¿quién genera estos datos? ¿quién los sistematiza? ¿qué historias se cuentan a partir de ellos? 
-!!! tip "Escucha: Datos y políticas públicas"
-    Si quieres saber más sobre la relación de los datos y el impacto en políticas públicas, escucha el episodio de Hijas de Internet con @tacosdedatos sobre la importancia de los datos en la toma de decisiones.
+???+ tip "Escucha: Datos y políticas públicas"
+    Si quieres saber más sobre la importancia de los datos y su impacto en la toma de decisiones, escucha el episodio de Hijas de Internet con @tacosdedatos sobre la datos y políticas públicas.
 
     <iframe src="https://creators.spotify.com/pod/profile/hijas-de-internet/embed/episodes/T3-EP-6--Datos-y-polticas-pblicas-e1alhpe/a-a6uv6rb" height="102px" width="400px" frameborder="0" scrolling="no"></iframe>
 
-### 2. Algoritmo — La receta
-Un algoritmo es un conjunto de reglas matemáticas que le dice al modelo cómo procesar datos y encontrar patrones [13]. Existen distintos tipos de algoritmos de aprendizaje, y la elección depende de la tarea y los datos disponibles [13, 14]:
+#### 2. Algoritmo (la receta)
+Un algoritmo es un conjunto de reglas matemáticas que le dice al modelo cómo procesar datos y encontrar patrones [^7]. En la programación tradicional, los humanos escribimos instrucciones explícitas (si pasa A, haz B). El aprendizaje automático cambia esto: en lugar de darle las reglas a la computadora, le damos datos y dejamos que los algoritmos descubran los patrones por sí mismos para realizar predicciones o tomar decisiones sin ser programado para cada escenario específico.[^8]
 
-- **Supervisado:** El modelo aprende de datos etiquetados — ejemplos donde ya conocemos la respuesta correcta. Por ejemplo, miles de fotos ya clasificadas como "gato" o "perro". El modelo aprende a asociar las características de la imagen con la etiqueta correcta [13].
-- **No supervisado:** El modelo encuentra patrones sin etiquetas. No le decimos qué buscar; el algoritmo descubre por sí mismo agrupaciones o estructuras en los datos. Por ejemplo, agrupar clientes con comportamientos de compra similares [13].
-- **Por refuerzo:** El modelo aprende por prueba y error, recibiendo recompensas cuando acierta y penalizaciones cuando se equivoca. Así se entrenó AlphaGo para jugar Go, y así se alinean los modelos de lenguaje con preferencias humanas mediante RLHF [13, 14].
-### 3. Tarea — El objetivo
-Lo que queremos que el modelo haga: clasificar, predecir, generar o traducir [13].
+Existen distintos tipos de algoritmos de aprendizaje, y la elección depende de la tarea y los datos disponibles:
 
-### 4. Entrenamiento — Practicar
-Así como una persona aprende con la práctica, un modelo prueba una y otra vez con los datos, ajustándose cuando se equivoca. Es como estudiar para un examen con tarjetas didácticas, pero haciendo millones de repeticiones [13, 10]. Durante el entrenamiento, el modelo ajusta millones de parámetros internos (llamados "pesos") hasta minimizar sus errores. El tipo de entrenamiento depende del algoritmo: en el supervisado, el modelo compara sus predicciones con las respuestas correctas; en el no supervisado, busca patrones y agrupaciones; en el de refuerzo, optimiza una función de recompensa [13].
+- **Supervisado:** El modelo aprende de datos etiquetados de ejemplos donde ya conocemos la respuesta correcta.[^9] Por ejemplo, miles de fotos ya clasificadas como "gato" o "perro". El modelo aprende a asociar las características de la imagen con la etiqueta correcta.
+- **No supervisado:** El modelo encuentra patrones sin etiquetas.[^10] Aquí el algoritmo descubre por sí mismo agrupaciones o estructuras en los datos. Por ejemplo, los sistemas de recomendación que sugerir productos, películas o música mediante el análisis del comportamiento de los usuarios.
+- **Por refuerzo:** El modelo aprende por prueba y error, recibiendo recompensas cuando acierta y penalizaciones cuando se equivoca.[^11] Así se entrenó [AlphaGo](https://es.wikipedia.org/wiki/AlphaGo) para jugar Go.
+#### 3. Entrenamiento (la práctica)
+Así como una persona aprende con la práctica, un modelo prueba una y otra vez con los datos, ajustándose cuando se equivoca. [^12] Es como estudiar para un examen con tarjetas didácticas, pero haciendo millones de repeticiones. Durante el entrenamiento, el modelo ajusta millones de parámetros internos (llamados "pesos") hasta minimizar sus errores. El tipo de entrenamiento depende del algoritmo: en el supervisado, el modelo compara sus predicciones con las respuestas correctas; en el no supervisado, busca patrones y agrupaciones; en el de refuerzo, optimiza una función de recompensa.
 
-### 5. Validación — El examen
-Una vez entrenado, el modelo se prueba con datos que nunca ha visto antes para verificar si realmente aprendió patrones generalizables o solo memorizó los ejemplos de entrenamiento [13]. Este paso es crucial: un modelo que solo memoriza (lo que se llama *overfitting*) puede tener un rendimiento perfecto con sus datos de entrenamiento pero fallar con datos nuevos. La validación funciona como un examen sorpresa — si el modelo realmente aprendió, puede responder preguntas que nunca vio [13, 10].
+#### 4. Validación (el examen)
+Una vez entrenado, el modelo se prueba con datos que nunca ha visto antes para verificar si realmente aprendió patrones generalizables o solo memorizó los ejemplos de entrenamiento. [^13] Un modelo que solo memoriza (lo que se llama [sobreajuste](https://es.wikipedia.org/wiki/Sobreajuste) u *overfitting*) puede tener un rendimiento perfecto con sus datos de entrenamiento pero fallar con datos nuevos. La validación funciona como un examen sorpresa, si el modelo realmente aprendió, puede responder preguntas que nunca ha visto antes.
+#### 5. Fine-tuning (la especialización)
+Un modelo pre-entrenado tiene conocimiento general, pero no necesariamente hace bien una tarea específica. El *fine-tuning* (o refinamiento) es el proceso de tomar ese modelo general y adaptarlo con datos especializados, sin tener que entrenarlo desde cero [^14].  Por ejemplo, un modelo de visión por computadora entrenado para reconocer objetos generales puede refinarse con imágenes médicas para detectar tumores. Un modelo de texto general puede refinarse con documentos legales para asistir abogados. En lugar de construir un modelo desde cero para cada tarea, lo que requeriría millones de datos y mucho cómputo, el fine-tuning permite reutilizar el conocimiento previo y especializarlo con menos recursos.
+#### 6. Inferencia (la aplicación)
+Cuando el modelo ya entrenado aplica lo aprendido a datos nuevos. Cada vez que un modelo de IA clasifica una imagen, traduce un texto o genera una respuesta, está haciendo *inferencia*n No está aprendiendo nada nuevo, está usando lo que ya aprendió [^15].  
 
-### 6. Fine-tuning y RLHF — De modelo base a modelo alineado
-Un modelo de lenguaje entrenado con texto de Internet puede predecir palabras, pero no necesariamente sigue instrucciones ni se alinea con valores humanos. Para cerrar esa brecha, se utilizan dos técnicas adicionales:
+## ¿Cómo Funciona el Aprendizaje Profundo? (Deep Learning)
 
-**Fine-tuning supervisado (SFT):** Se toma el modelo base y se entrena con ejemplos de comportamiento deseado — pares de pregunta-respuesta donde un humano escribió la respuesta "correcta". Es como enseñar con ejercicios resueltos [14, 15].
+El aprendizaje profundo es un subconjunto del aprendizaje automático (_Machine Learning_) que se basa en redes neuronales artificiales.[^16] Estas redes están inspiradas en cómo funcionan las neuronas del cerebro humano, representadas por nodos y conexiones entre ellos. [^18]
 
-**RLHF (Reinforcement Learning from Human Feedback):** En lugar de dar respuestas "correctas" únicas, evaluadores humanos comparan pares de respuestas del modelo y eligen cuál es mejor. Con esas comparaciones se entrena un "modelo de recompensa" que aprende a predecir qué respuestas prefieren los humanos. Luego el modelo se optimiza para maximizar esas recompensas [14, 15].
+![Diagrama de una red neuronal artificial mostrando capas de entrada, ocultas y de salida](images/02_RedesNeuronales.png)
 
-!!! example "InstructGPT: el tamaño no lo es todo"
-    El ejemplo histórico más importante es **InstructGPT** (Ouyang et al., 2022): un modelo de 1.3 mil millones de parámetros entrenado con SFT+RLHF superó al GPT-3 de 175 mil millones de parámetros en evaluaciones humanas [14]. Esto demostró que el tamaño del modelo no es lo único que importa — la *alineación con preferencias humanas* es igualmente crítica.
+La palabra "profundo" significa que tiene muchas capas ocultas (decenas, cientos o miles). Cada capa transforma los datos un poco más, descubriendo patrones cada vez más complejos.[^18] En la práctica, una red neuronal está organizada en tres tipos de capas:
 
-Hoy, todos los modelos comerciales (ChatGPT, Claude, Gemini, Llama) siguen este patrón: entrenamiento base → fine-tuning supervisado → RLHF [14, 15].
+1. **Capa de entrada:** Recibe los datos crudos (una imagen, un texto convertido en números, una tabla de datos)
+2. **Capas ocultas:** Aquí ocurre el procesamiento. Cada capa aprende patrones progresivamente más complejos. Por ejemplo, en reconocimiento de imágenes: la primera capa detecta bordes y líneas, la siguiente reconoce formas geométricas, las más profundas identifican objetos completos como un rostro o un auto.[^18]
+3. **Capa de salida:** Produce el resultado final (una predicción, una clasificación, un texto generado)
 
-### 7. Inferencia — Cuando nos exponemos a los modelos
-Cuando el modelo ya entrenado aplica lo aprendido a datos nuevos. Cuando alguien le pregunta algo a ChatGPT, el modelo no está "entrenando", está haciendo inferencia [10].
+Cada conexión entre neuronas tiene un peso, un número que indica qué tan importante es esa conexión. Durante el entrenamiento, estos pesos se ajustan millones de veces hasta que la red aprende a dar respuestas correctas.[^18]
 
-## La Jerarquía: IA > ML > Deep Learning
+??? info "Profundiza: el ciclo de entrenamiento paso a paso"
+    A diferencia de la programación tradicional, donde una persona escribe reglas fijas, en el aprendizaje profundo la máquina descubre sus propias reglas. Lo hace repitiendo un ciclo de tres pasos:
 
-### Inteligencia Artificial (campo amplio)
-Sistemas que imitan capacidades cognitivas humanas. Incluye reglas, lógica y sistemas expertos [13, 9].
+    1. **Propagación hacia adelante (*Forward Propagation*):** Los datos entran por la capa de entrada y viajan hacia adelante, capa por capa, hasta producir una respuesta en la salida.[^17]
+    2. **Cálculo del error:** El sistema compara su respuesta con la correcta y calcula qué tan equivocado está usando una "función de pérdida", básicamente, una medida numérica de su error.[^19]
+    3. **Retropropagación (*Backpropagation*):** El error se envía de regreso por la red para ajustar los pesos de las conexiones. Las conexiones que contribuyeron al error se debilitan; las que habrían dado la respuesta correcta se refuerzan.[^20]
 
-### Machine Learning / Aprendizaje Automático (subconjunto de IA)
-Algoritmos que aprenden de datos sin programación explícita [13, 9]. 
+    Este ciclo se repite millones de veces. Con cada repetición la red minimiza sus errores, hasta que es capaz de hacer predicciones precisas con datos que nunca ha visto.
 
-### Deep Learning / Aprendizaje Profundo (subconjunto de ML)
-Redes neuronales artificiales con múltiples capas de procesamiento. "Profundo" se refiere a la arquitectura con muchas capas, no a que sea más inteligente [13, 10].
+## ¿Qué es la Inteligencia Artificial Generativa? (Generative AI)
 
-**¿Dónde está ChatGPT?** Dentro de Deep Learning. Es un Transformer (un tipo específico de red neuronal profunda) entrenado con aprendizaje profundo [6, 10].
+Durante la mayor parte de la década pasada, el enfoque del aprendizaje profundo estuvo en la clasificación y predicción. Estos modelos aprenden la frontera de decisión entre categorías (ej. "esto es un perro" vs. "esto es un gato") basándose en características de los datos de entrenamiento. Se les llama modelos *discriminativos* porque su tarea es distinguir, es decir, responden a la pregunta "¿qué es esto?". Son los que están detrás de aplicaciones como filtros de spam, detección de fraudes bancarios, diagnóstico médico por imagen y análisis de sentimientos en redes sociales [^21].
 
-## Redes Neuronales — Cómo Funciona el Deep Learning
+Los modelos *generativos* hacen algo fundamentalmente distinto, en lugar de aprender solo las fronteras entre categorías, aprenden la distribución completa de los datos, es decir, las reglas estadísticas de cómo se estructura la información [^21]. Esto les permite crear contenido nuevo que se asemeja a lo que vieron durante el entrenamiento: texto, imágenes, audio, video.
 
-Una red neuronal está organizada en capas:
+??? example "Comparación: modelos discriminativos vs generativos"
+    |               | Discriminativos                                           | Generativos                         |
+    | ------------- | --------------------------------------------------------- | ----------------------------------- |
+    | **Qué hacen** | Clasifican o distinguen entre categorías                  | Crean contenido nuevo               |
+    | **Pregunta**  | "¿Qué es esto?"                                           | "¿Cómo sería algo como esto?"       |
+    | **Cómo aprenden** | Fronteras de decisión entre clases (aprendizaje supervisado) | Distribuciones completas de datos (auto-supervisado o no supervisado) [^21] |
+    | **Ejemplos**  | Filtro de spam, reconocimiento facial, diagnóstico médico | ChatGPT, DALL-E, Midjourney, Suno   |
+    | **Ventaja**   | Más rápidos de entrenar, más fáciles de interpretar [^21] | Pueden crear contenido original y manejar datos limitados [^21] |
+    | **Limitación** | No pueden generar nada nuevo                             | Costosos computacionalmente, pueden generar contenido sesgado [^21] |
 
-1. **Capa de entrada:** Recibe datos iniciales (texto, imagen, números) [13, 10]
-2. **Capas ocultas:** Procesamiento — cada capa aprende patrones progresivamente más complejos [13, 10]
-3. **Capa de salida:** Produce el resultado (predicción, clasificación, texto generado) [13, 10]
+En 2017, un equipo de Google publicó "Attention Is All You Need", el paper que introdujo la arquitectura Transformer.[^22] Los modelos anteriores (llamados redes recurrentes) procesaban texto palabra por palabra, en secuencia. El Transformer cambió esto con un mecanismo de "atención" que permite al modelo enfocarse en las partes más relevantes de todo el texto de entrada simultáneamente, procesando secuencias completas en paralelo. Esto lo hizo mucho más rápido de entrenar y permitió que los modelos crecieran exponencialmente.[^22]
 
-Lo "profundo" = muchas capas ocultas (decenas, cientos o miles). Cada "neurona" está conectada con otras mediante "pesos", números que se ajustan millones de veces durante el entrenamiento [13].
+El resultado: en noviembre de 2022, OpenAI lanzó ChatGPT, un modelo basado en TransformerS, al público y alcanzó 100 millones de usuarios en solo dos meses, un récord histórico de adopción tecnológica.[^23]
+## ¿Cómo Funcionan los Modelos de Lenguaje de Gran Tamaño?
 
-## Modelos Discriminativos vs. Generativos
-
-La mayoría de la IA cotidiana es discriminativa: el algoritmo de TikTok decidiendo qué mostrarte en tu feed, el filtro de tu correo que decide qué es spam, Google Maps prediciendo tráfico o Google prediciendo el clima. Los modelos generativos (ChatGPT, Claude, Gemini) son los más conocidos, pero son solo una parte del ecosistema de modelos de IA utilizados desde hace más de 50 años [10, 9].
-
-|               | Discriminativos                                           | Generativos                         |
-| ------------- | --------------------------------------------------------- | ----------------------------------- |
-| **Qué hacen** | Clasifican o distinguen entre categorías                  | Crean contenido nuevo               |
-| **Pregunta**  | "¿Qué es esto?"                                           | "¿Cómo sería algo como esto?"       |
-| **Ejemplos**  | Filtro de spam, reconocimiento facial, diagnóstico médico | ChatGPT, DALL-E, Midjourney, Suno   |
-| **Analogía**  | Un crítico de arte que distingue estilos                  | Un artista que pinta cuadros nuevos |
-
-## Cómo Funciona ChatGPT: El "Loro Estocástico"
-
-### Qué son los modelos grandes de lenguaje (LLMs)
-La inteligencia artificial generativa crea contenido nuevo, como texto, imágenes, audio o video, en lugar de solo clasificar o predecir. ChatGPT fue entrenado leyendo enormes cantidades de texto de Internet y aprendió patrones estadísticos sobre cómo las palabras se relacionan entre sí [10].
-
-### Cómo generan texto los LLMs
-El modelo predice cuál es la siguiente palabra más probable, luego la siguiente, y así sucesivamente. **No "entiende" lo que dice**, predice basándose en patrones estadísticos [7, 10].
-
+Los modelos de de lenguaje de gran tamaño son modelos de inteligencia artificial generativa que son entrenados con enormes cantidades de texto de Internet, lo que les permite procesar y generar lenguaje natural[^24]. Cuando escribes algo, el modelo calcula la distribución de probabilidad para el siguiente **token** (que puede ser una palabra o parte de ella) basándose en todo el contexto previo. **No "entienden" lo que dicen**, predicen palabras basándose en patrones estadísticos.
 ### "Cotorros estocásticos" (Stochastic Parrots)
-Este término fue acuñado por las investigadoras Emily Bender y Timnit Gebru (2021) [7]. La metáfora sugiere que estos modelos son como loros sofisticados que combinan patrones de lenguaje sin comprender su significado.
+
+![Ilustración de un loro estocástico representando los modelos de lenguaje](images/03_cotorros.png)
+
+Este término fue acuñado por las investigadoras Emily Bender y Timnit Gebru (2021) [^25]. La metáfora sugiere que estos modelos son como loros sofisticados que combinan patrones de lenguaje sin comprender su significado.
 
 !!! warning "Implicaciones"
     - Pueden generar texto convincente pero completamente falso (**alucinaciones**)
-    - Reproducen los sesgos de sus datos de entrenamiento [7]
-    - Fueron entrenados principalmente con texto de Internet en inglés, de sitios web creados mayoritariamente por hombres, blancos, del Norte Global [7]
+    - Pueden reproducir los sesgos de sus datos de entrenamiento
+    - Fueron entrenados principalmente con texto de Internet en inglés, de sitios web creados mayoritariamente por hombres, blancos, del Norte Global
 
-> "Estos modelos son como espejos de la sociedad que los creó."
+??? example "Sobre Timnit Gebru y el paper que sacudió a Google"
+    Investigadora eritreo-etíope-estadounidense en ética de la IA. En diciembre de 2020, su empleo en Google terminó por el paper "On the Dangers of Stochastic Parrots". Aproximadamente 2,700 empleados firmaron una carta de protesta. Es cofundadora de Black in AI y fundadora del [Distributed Artificial Intelligence Research Institute (DAIR)](https://www.dair-institute.org/). Su caso es emblemático sobre el poder de las grandes empresas tecnológicas sobre la investigación crítica.[^26]
 
-**Sobre Timnit Gebru:** Investigadora eritreo-etíope-estadounidense en ética de la IA. En diciembre de 2020, su empleo en Google terminó en circunstancias disputadas por el paper "On the Dangers of Stochastic Parrots" [7]. Aproximadamente 2,700 empleados firmaron una carta de protesta. Es cofundadora de Black in AI y fundadora del Distributed Artificial Intelligence Research Institute (DAIR). Su caso es emblemático sobre el poder de las grandes empresas tecnológicas sobre la investigación crítica.
-![Timnit Gebru](images/timnit-gebru.png)
-<!-- TODO: Renombrar y agregar la imagen a la carpeta images/ del repositorio -->
-## La Arquitectura Transformer
+### Alineación: cómo se hacen útiles (y seguros) los LLMs
 
-En 2017, un equipo de Google publicó "Attention Is All You Need" — el paper que introdujo la arquitectura Transformer, que cuenta más de 173,000 citas académicas[6]. El mecanismo de "atención" permite al modelo enfocarse en las partes más relevantes del texto de entrada al generar cada palabra de salida [6].
+Un modelo de lenguaje entrenado con texto de Internet puede predecir palabras, pero no necesariamente tiene los resultados deseados ni se alinea con valores humanos. Para cerrar esa brecha se utilizan técnicas de alineación:
 
-Los modelos anteriores (redes recurrentes) procesaban texto palabra por palabra, en secuencia. Los Transformers procesan todo en paralelo, lo que los hace mucho más rápidos y permite modelos más grandes [6, 10].
-## Conceptos Técnicos Clave
+???+ info "¿Cómo se alinean los LLMs? SFT, RLHF y Constitutional AI"
+    **Fine-tuning supervisado (SFT):** Consiste en tomar un modelo de lenguaje preentrenado y seguir entrenándolo con un conjunto de datos más pequeño y específico para una tarea, con ejemplos etiquetados para que funcione mejor en la tarea específica sin perder los conocimientos generales adquiridos durante el preentrenamiento. [^27].
 
-### Tokenización
-Los LLMs nunca "ven" texto directamente. El texto se divide en "tokens" — fragmentos que se convierten en números. Un token equivale a aproximadamente 4 caracteres en inglés. El vocabulario de GPT-4 tiene 100,258 tokens [10].
+    **RLHF (Reinforcement Learning from Human Feedback):** Evaluadores humanos comparan pares de respuestas del modelo y eligen cuál es mejor. Con esas comparaciones se entrena un "modelo de recompensa" que aprende a predecir qué respuestas prefieren los humanos. El modelo se optimiza para maximizar esas recompensas [^28].
 
-!!! info "Implicación para el español"
-    Los modelos entrenados principalmente en inglés son menos eficientes con español — necesitan más tokens para representar el mismo contenido, lo que puede significar respuestas más cortas y potencialmente menos precisas [7, 10].
+    **Constitutional AI (Anthropic, 2022):** En lugar de depender exclusivamente de evaluadores humanos, el modelo se entrena usando un conjunto de principios escritos (una "constitución"). El modelo genera respuestas, se autocritica según esos principios, y se revisa a sí mismo.[^29]
 
-### Temperatura
-Controla la aleatoriedad de las respuestas. Baja = respuestas predecibles. Alta = respuestas diversas pero potencialmente incoherentes [10]. Es como el "volumen de creatividad."
+## IA Agéntica (Agentic AI)
 
-### Ventana de contexto
-La cantidad máxima de texto que un LLM puede procesar en una interacción [10]:
-- 2023: 4,000-8,000 tokens (~3,000-6,000 palabras)
-- 2025: 200,000+ tokens (~150,000 palabras)
-- Algunos modelos: 1,000,000+ tokens
+Sistemas de IA que actúan de manera autónoma para lograr objetivos específicos, realizando múltiples acciones en secuencia sin intervención humana constante [^30]. La principal diferencia con ChatGPT y otros chatbots es que estas aplicaciones responden a prompts individuales, mientras que un agente de IA puede planear, ejecutar tareas complejas y adaptarse según los resultados.
 
-Si la conversación excede la ventana, el modelo "olvida" el inicio.
-
-## IA Agnética (Agentic AI)
-
-Sistemas de IA que actúan de manera autónoma para lograr objetivos específicos, realizando múltiples acciones en secuencia sin intervención humana constante [9].
-
-La principal diferencia con ChatGPT y otros chatbots es que estas aplicaciones responden a prompts individuales, mientras que un agente de IA puede planear, ejecutar tareas complejas y adaptarse según los resultados [9]
+![Diagrama de cómo funciona un agente de IA: planear, ejecutar, adaptarse](images/04_AgenticAI.png)
 
 **Ejemplo:** En lugar de pedir "escríbeme un análisis de mercado" y recibir una respuesta, un agente podría buscar datos en internet, organizarlos, hacer el análisis, crear visualizaciones y escribir un reporte completo.
 
 !!! danger "Advertencia"
     Los agentes de IA requieren supervisión humana. No son todavía lo suficientemente confiables para tareas críticas sin supervisión. Deben usarse para aumentar la productividad, no para reemplazar el criterio humano. **Nunca compartas contraseñas, información bancaria o datos sensibles con estos sistemas.**
 
-## Breve Historia de la IA
+## ¿Y ahora qué? De entender la IA a cuestionar sus impactos
 
-La IA tiene 70 años de historia. Los "inviernos" ocurrieron porque se prometió demasiado — un patrón que se repite hoy. Lo que habilitó la IA moderna: más datos + más cómputo (GPUs) + mejores algoritmos (Transformers) [1, 6, 9]. Desde 2019, el poder de cómputo para IA se duplica cada ~10 meses [1].
+La IA tiene más de 70 años de historia. A lo largo de ese camino hubo "inviernos", periodos donde se prometió demasiado y la tecnología no cumplió. Ese patrón se repite hoy, la IA generativa y agéntica genera enormes expectativas, pero también riesgos reales que es importante entender.
 
-| Año       | Hito                                                          | Por qué importa                                                                                                                         |
-| --------- | ------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| 1950      | Alan Turing publica "Computing Machinery and Intelligence"    | Primera formulación teórica de "¿pueden pensar las máquinas?" Propone el Test de Turing: si no puedes distinguir una máquina de un humano en una conversación, ¿la máquina "piensa"? [8, 13] |
-| 1956      | Conferencia de Dartmouth — se acuña "Inteligencia Artificial" | John McCarthy, Marvin Minsky y otros investigadores fundan oficialmente el campo. Prometen que en una generación las máquinas harían todo lo que un humano puede hacer [8, 13] |
-| 1966      | ELIZA (MIT) — primer chatbot                                  | Creado por Joseph Weizenbaum, simulaba un psicoterapeuta usando reglas simples de sustitución de texto [8]. Ya entonces la gente le atribuía "comprensión" a un programa simple — el mismo fenómeno que ocurre hoy con ChatGPT [7] |
-| 1974-1980 | Primer "invierno de la IA"                                    | El Reporte Lighthill (1973, Reino Unido) criticó devastadoramente a la IA por no cumplir sus promesas. DARPA retiró fondos. La IA había generado expectativas imposibles de cumplir [8, 13] |
-| 1987-1993 | Segundo "invierno de la IA"                                   | Los "sistemas expertos" — programas basados en reglas para tareas específicas — resultaron frágiles y carísimos de mantener. El proyecto japonés de Quinta Generación fracasó. Otra década de decepción [8, 13] |
-| 1997      | Deep Blue (IBM) derrota a Kasparov en ajedrez                 | Primera vez que una máquina supera al campeón mundial en una tarea cognitiva específica. Pero Deep Blue usaba fuerza bruta (200 millones de posiciones/segundo), no "inteligencia" [8] |
-| 2011      | Siri (Apple) — primer asistente virtual masivo                | La IA sale de los laboratorios y llega al bolsillo de millones de personas como producto de consumo [8] |
-| 2012      | AlexNet gana ImageNet                                         | La red neuronal de Geoffrey Hinton y Alex Krizhevsky demostró que el deep learning con GPUs era dramáticamente superior a los métodos anteriores para clasificar imágenes. Punto de inflexión del campo [8, 13] |
-| 2016      | AlphaGo (DeepMind) derrota al campeón mundial de Go           | Go tiene más posiciones posibles que átomos en el universo — la fuerza bruta no alcanza. AlphaGo combinó deep learning con aprendizaje por refuerzo [8] |
-| 2017      | "Attention Is All You Need" (Google)                          | El paper que introdujo la arquitectura Transformer y el mecanismo de "atención". Con 173,000+ citas, es la base de todos los LLMs actuales (GPT, Claude, Gemini, Llama) [6] |
-| 2020      | GPT-3 (OpenAI)                                                | Con 175 mil millones de parámetros, primera demostración masiva de que un modelo de lenguaje podía generar texto coherente en múltiples tareas sin entrenamiento específico [9] |
-| 2022      | InstructGPT y ChatGPT                                         | InstructGPT demostró que RLHF podía alinear modelos con preferencias humanas [14]. ChatGPT se lanzó al público el 30 de noviembre y alcanzó 100 millones de usuarios en 2 meses — récord histórico de adopción [3] |
-| 2023-2026 | Explosión de IA generativa                                    | Imágenes (DALL-E, Midjourney), video (Sora), audio (Suno), agentes de IA autónomos. Los modelos se vuelven multimodales: procesan texto, imagen, audio y código [1, 9] |
+Lo que habilitó la IA moderna fue una combinación de tres factores: más datos disponibles, más poder de cómputo (GPUs) y mejores algoritmos (especialmente los Transformers). Pero entender *cómo* funciona la IA es solo el primer paso. Las preguntas más importantes son: **¿para quién funciona? ¿a quién deja fuera? ¿qué sesgos reproduce?**
 
-## Recursos Recomendados
+Los modelos de IA aprenden de datos que reflejan las desigualdades del mundo real. Si un modelo se entrena con datos que sobrerrepresentan a ciertos grupos y subrrepresentan a otros, sus predicciones reproducirán esas mismas desigualdades. En el siguiente módulo exploraremos los **sesgos algorítmicos**: cómo se originan, cómo afectan a comunidades en América Latina, y qué podemos hacer al respecto.
 
-### Herramientas interactivas (sin programar)
-- **Teachable Machine (Google):** https://teachablemachine.withgoogle.com/ — Entrena tu primer modelo de IA sin código
-- **TensorFlow Playground:** https://playground.tensorflow.org/ — Visualiza cómo aprenden las redes neuronales
-- **Google Quick, Draw!:** https://quickdraw.withgoogle.com/ — Dibuja y ve cómo una IA adivina qué es
-- **Embedding Visualization:** https://helboukkouri.github.io/embedding-visualization/ — Ve cómo la IA representa palabras como números
-- **Google Colab:** https://colab.research.google.com/ — Notebooks de Python gratis en tu navegador
-- **Hugging Face:** https://huggingface.co/ — Prueba miles de modelos de IA ya entrenados
+!!! info "Lo que viene"
+    **Módulo 2: Sesgos algorítmicos**. ¿Qué pasa cuando la IA discrimina? Casos reales, desde reconocimiento facial hasta sistemas de justicia, y herramientas para identificar y cuestionar estos sesgos.
+    
+??? abstract "Glosario de conceptos clave"
+    | Concepto                     | Definición breve                                                                                                                                                                       |
+    | ---------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+    | Inteligencia Artificial (IA) | Sistemas informáticos que realizan tareas cognitivas: interpretar habla, identificar patrones, hacer predicciones                                                                      |
+    | Machine Learning (ML)        | Algoritmos que aprenden de datos sin ser programados explícitamente                                                                                                                    |
+    | Deep Learning                | Redes neuronales con múltiples capas. Son "profundos" porque contienen muchas capas, no porque son "más inteligentes"                                                                  |
+    | Red neuronal                 | Modelo computacional inspirado en las neuronas del cerebro, organizado en capas de entrada, ocultas y de salida                                                                        |
+    | Datos de entrenamiento       | El conjunto de ejemplos que un modelo usa para aprender patrones. Su calidad y representatividad determinan el comportamiento del modelo                                                |
+    | Fine-tuning                  | Tomar un modelo preentrenado y adaptarlo con datos especializados para una tarea específica, sin entrenarlo desde cero                                                                 |
+    | LLM (Large Language Model)   | Modelos de lenguaje generativos que predicen la siguiente palabra más probable                                                                                                         |
+    | Transformer                  | Arquitectura de red neuronal con mecanismo de "atención" que procesa secuencias completas en paralelo (Google, 2017)                                                                   |
+    | Inferencia                   | Cuando un modelo ya entrenado aplica lo aprendido a datos nuevos                                                                                                                       |
+    | Tokenización                 | Los LLMs nunca "ven" texto directamente. El texto se divide en "tokens", fragmentos de texto que se convierten en números. Un token equivale a aproximadamente 4 caracteres en inglés. |
+    | IA generativa                | IA que crea contenido nuevo (texto, imagen, audio, video)                                                                                                                              |
+    | IA discriminativa            | IA que clasifica o distingue entre categorías                                                                                                                                          |
+    | Alineación (RLHF)           | Técnicas para que los modelos respondan de forma útil y segura, usando retroalimentación humana o principios escritos                                                                   |
+    | Alucinaciones                | Cuando un modelo genera texto convincente pero factualmente incorrecto, porque predice palabras probables, no verifica hechos                                                          |
+    | IA agéntica (Agentic AI)     | Sistemas de IA que actúan de forma autónoma para lograr objetivos, ejecutando múltiples acciones en secuencia                                                                          |
+    | Temperatura                  | Controla la aleatoriedad de las respuestas. Baja = respuestas predecibles. Alta = respuestas diversas pero potencialmente incoherentes.                                                |
+    | Ventana de contexto          | La cantidad máxima de texto que un LLM puede procesar en una interacción. Si la conversación excede la ventana, el modelo "olvida".                                                    |
 
-### Cursos gratuitos
-- **Elements of AI (en español):** https://www.elementsofai.com/es/
-- **Google AI - Intro al ML (español):** https://cloud.google.com/learn/training/machinelearning-ai?hl=es
-- **Fast.ai:** https://www.fast.ai/
-- **Anthropic Courses:** https://anthropic.skilljar.com/
-
-### Videos
-- **3Blue1Brown — "Cómo funciona ChatGPT":** https://www.youtube.com/watch?v=wjZofJX0v4M
-- **3Blue1Brown — "What is a neural network?":** https://www.youtube.com/watch?v=aircAruvnKk
-- **DotCSV (en español):** Canal de YouTube sobre IA con explicaciones visuales
-
-### Lecturas
-- **Anthropic — "Past, Present, Future of AI":** https://cdn.prod.website-files.com/68a89ee4a2b77491c31e8ae5/68cc6a3a6e848100068d6cf3_T1_Past%2C%20present%2C%20future%20of%20AI%20(15m).pdf
-- **Anthropic — "Intro to Generative AI":** https://cdn.prod.website-files.com/68a89ee4a2b77491c31e8ae5/68d1c2e1c9196fae1645b0c7_Intro%20to%20Generative%20AI%20(20m).pdf
-- **IBM — Historia de la IA:** https://www.ibm.com/es-es/think/topics/history-of-artificial-intelligence
-
-### Perspectiva crítica
-- **AI Now Institute:** https://ainowinstitute.org/
-- **Data & Society:** https://datasociety.net/
-
-### Paper técnico clave
-- **"Attention Is All You Need" (Vaswani et al., 2017):** https://arxiv.org/abs/1706.03762
+??? tip "Recursos para seguir aprendiendo"
+    - **Teachable Machine (Google):** https://teachablemachine.withgoogle.com/ — Entrena tu primer modelo de IA sin código
+    - **Google Quick, Draw!:** https://quickdraw.withgoogle.com/ — Dibuja y ve cómo una IA adivina qué es
+    - **Embedding Visualization:** https://helboukkouri.github.io/embedding-visualization/ — Ve cómo la IA representa palabras como números
+    - **Elements of AI (en español):** https://www.elementsofai.com/es/
+    - **Google AI - Intro al ML (español):** https://cloud.google.com/learn/training/machinelearning-ai?hl=es
+    - **Fast.ai:** https://www.fast.ai/
+    - **Anthropic Courses:** https://anthropic.skilljar.com/
+    - https://www.skills.google/
+    - https://notebooklm.google.com/
 
 ---
 
-## Fuentes
+## Referencias
 
-| #   | Fuente                                                                                                            | Tipo                    |
-| --- | ----------------------------------------------------------------------------------------------------------------- | ----------------------- |
-| 1   | Stanford AI Index Report 2024                                                                                     | Reporte anual           |
-| 2   | Epoch AI (2024) — arxiv.org/html/2405.21015v2                                                                     | Paper técnico           |
-| 3   | DemandSage / Backlinko (2026) — demandsage.com/chatgpt-statistics/                                                | Estadísticas            |
-| 4   | CEPAL (2024) — cepal.org/en/pressreleases/latin-america-and-caribbean-accelerate-adoption-artificial-intelligence | Reporte regional        |
-| 5   | UNESCO (2024)                                                                                                     | Reporte educativo       |
-| 6   | Vaswani et al. (2017) — "Attention Is All You Need" — arxiv.org/abs/1706.03762                                    | Paper fundacional       |
-| 7   | Bender & Gebru (2021) — "On the Dangers of Stochastic Parrots"                                                    | Paper crítico           |
-| 8   | IBM — Historia de la IA — ibm.com/es-es/think/topics/history-of-artificial-intelligence                           | Artículo divulgativo    |
-| 9   | Anthropic — "Past, Present, Future of AI"                                                                         | Lectura técnica         |
-| 10  | Anthropic — "Intro to Generative AI"                                                                              | Lectura técnica         |
-| 11  | QS Insights Magazine (2025)                                                                                       | Ranking educativo       |
-| 12  | Alcor (2024), Mexico News Daily (2025), Global Policy Watch (2025)                                                | Artículos periodísticos |
-| 13  | Russell & Norvig — "Artificial Intelligence: A Modern Approach"                                                   | Libro de texto          |
-| 14  | Ouyang et al. (2022) — "Training language models to follow instructions with human feedback" — arxiv.org/abs/2203.02155 | Paper (InstructGPT/RLHF) |
-| 15  | IBM — "What Is RLHF?" — ibm.com/think/topics/rlhf                                                                | Artículo divulgativo    |
-
----
-
-*Contenido basado en investigación y materiales educativos del proyecto Descifrando la IA (2026).  
+[^1]: Google Cloud. Artificial intelligence (AI): a simple-to-understand guide. [https://hai.stanford.edu/assets/files/hai_ai-index-report-2024-smaller2.pdf](https://cloud.google.com/learn/what-is-artificial-intelligence?hl=en)
+[^2]: Boston Institute of Analytics. How Machine Learning Powers Recommendation Systems (Netflix, Amazon, Spotify). <https://bostoninstituteofanalytics.org/blog/how-machine-learning-powers-recommendation-systems-netflix-amazon-spotify/#:~:text=Machine%20Learning%20provides%20recommendation%20systems,provides%20the%20most%20tailored%20recommendations>.
+[^3]: Google. Google Maps 101: How AI helps predict traffic and determine routes. <https://blog.google/products-and-platforms/products/maps/google-maps-101-how-ai-helps-predict-traffic-and-determine-routes/#:~:text=To%20predict%20what%20traffic%20will,Sydney%2C%20Tokyo%2C%20and%20Washington%20D.C.>
+[^4]: ScienceABC. How Do Snapchat And Instagram Filters Work?. <https://www.scienceabc.com/innovation/how-do-snapchat-and-instagram-filters-work.html#:~:text=The%20computer%20converts%20the%20image,your%20face%20to%20one%20side.>
+[^5]: IBM. ¿Qué es el aprendizaje automático?. <https://www.ibm.com/mx-es/think/topics/machine-learning>
+[^6]: DataRobot. The importance of machine learning data. <https://www.datarobot.com/blog/the-importance-of-machine-learning-data/#:~:text=What%20type%20of%20data%20does,series%20data%2C%20and%20text%20data.>
+[^7]: DataCamp. *What Is an Algorithm?*. <https://www.datacamp.com/blog/what-is-an-algorithm>
+[^8]: GeeksforGeeks. Traditional Programming vs Machine Learning. <https://www.geeksforgeeks.org/machine-learning/traditional-programming-vs-machine-learning/>
+[^9]: Google for Developers. *Supervised Learning*. <https://developers.google.com/machine-learning/intro-to-ml/supervised>
+[^10]: GeeksforGeeks. *What is Unsupervised Learning*. <https://developers.google.com/machine-learning/intro-to-ml/supervised>
+[^11]: IBM. Qué es el aprendizaje por refuerzo. <https://www.ibm.com/mx-es/think/topics/reinforcement-learning>
+[^12]: IBM. ¿Qué es el entrenamiento de modelos?. <https://www.ibm.com/mx-es/think/topics/model-training>
+[^13]: GeeksforGeeks. *What is Model Validation and Why is it Important?*. <https://www.geeksforgeeks.org/machine-learning/what-is-model-validation-and-why-is-it-important/>
+[^14]: IBM. ¿Qué es el refinamiento?. <https://www.ibm.com/mx-es/think/topics/fine-tuning>
+[^15]: Google Cloud. ¿Qué es la inferencia de IA?. <https://cloud.google.com/discover/what-is-ai-inference?hl=es-419>
+[^16]: IBM. El modelo de redes neuronales. <https://www.ibm.com/docs/es/spss-modeler/saas?topic=networks-neural-model>
+[^17]: DataCamp. Propagación hacia delante en redes neuronales: Guía completa. <https://www.datacamp.com/es/tutorial/forward-propagation-neural-networks>
+[^18]: IBM. ¿Qué es el aprendizaje profundo?. <https://www.ibm.com/mx-es/think/topics/deep-learning>
+[^19]: DataCamp. Explicación de las funciones de pérdida en el machine learning. <https://www.datacamp.com/es/tutorial/loss-function-in-machine-learning>
+[^20]: IBM. ¿Qué es la retropropagación?. <https://www.ibm.com/mx-es/think/topics/backpropagation>
+[^21]: GeeksforGeeks. Generative AI vs Discriminative AI. Artículo divulgativo. <https://www.geeksforgeeks.org/artificial-intelligence/generative-ai-vs-discriminative-ai/>
+[^22]: Vaswani et al. (2017). "*Attention Is All You Need*". <https://arxiv.org/abs/1706.03762>
+[^23]: Capgemini. "*A Chorus of Disruption: From Cave Paintings to Large Language Models*". <https://www.capgemini.com/mx-es/insights/expert-perspectives/auditing-chatgpt-part-i/#:~:text=The%20technological%20history%20of%20the,launched%20the%20era%20of%20LLMs.>
+[^24]: IBM. ¿Qué son los grandes modelos de lenguaje (LLM)?. <https://www.ibm.com/mx-es/think/topics/large-language-models>
+[^25]: Bender & Gebru (2021). "*On the Dangers of Stochastic Parrots.*" <https://dl.acm.org/doi/10.1145/3442188.3445922>
+[^26]: MIT Technology Review. "*We read the paper that forced Timnit Gebru out of Google. Here’s what it says.*" <https://www.technologyreview.com/2020/12/04/1013294/google-ai-ethics-research-paper-forced-out-timnit-gebru/>
+[^27]: GeeksforGeeks. "*Supervised Fine-Tuning (SFT) for LLMs.*" <https://www.geeksforgeeks.org/artificial-intelligence/supervised-fine-tuning-sft-for-llms/>
+[^28]: Sandgarden. "#*Teaching AI to Play Nice: The Art and Science of LLM Alignment.*" <https://www.sandgarden.com/learn/llm-alignment>
+[^29]: Bai et al. (2022). "*Constitutional AI: Harmlessness from AI Feedback*". <https://arxiv.org/abs/2212.08073>
+[^30]: Google Cloud. "*What is an AI agent*?. <https://cloud.google.com/discover/what-are-ai-agents?hl=en>

@@ -1,13 +1,256 @@
 /* Hijas de Internet — Descifrando la IA wiki styles */
+/* Full brand palette from DESIGN_GUIDELINES.md */
 
-/* Adjust these colors to match HdI brand */
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&display=swap');
+
 :root {
-  --hdi-primary: #6a1b9a;    /* deep purple */
-  --hdi-accent: #e91e63;     /* pink */
-  --hdi-light: #f3e5f5;      /* light purple bg */
+  --hdi-canvas: #FAF8F5;
+  --hdi-surface: #F3EFE9;
+  --hdi-text: #2C2825;
+  --hdi-text-secondary: #6B635B;
+  --hdi-peach: #F2C4A0;
+  --hdi-lavender: #C7BFE0;
+  --hdi-sage: #B5CCBA;
+  --hdi-sky: #A8C8DD;
+  --hdi-rose: #E0B4B7;
+  --hdi-sand: #D4C9B5;
+  /* Darker variants for accessible link/hover states */
+  --hdi-sky-dark: #6BA3BD;
+  --hdi-peach-dark: #D4955E;
+  --hdi-sage-dark: #7DA886;
+  /* Legacy aliases */
+  --hdi-primary: #A8C8DD;
+  --hdi-accent: #F2C4A0;
+  --hdi-light: #F3EFE9;
 }
 
-/* Spotify embed responsive */
+/* ═══════════════════════════════════════════
+   LIGHT MODE — warm off-white canvas
+   ═══════════════════════════════════════════ */
+
+/* Page background */
+[data-md-color-scheme="default"] {
+  --md-default-bg-color: var(--hdi-canvas);
+  --md-default-fg-color: var(--hdi-text);
+  --md-default-fg-color--light: var(--hdi-text-secondary);
+  --md-primary-fg-color: var(--hdi-text);
+  --md-primary-bg-color: var(--hdi-canvas);
+  --md-accent-fg-color: var(--hdi-sky-dark);
+}
+
+/* Header & nav bar — lavender */
+.md-header,
+.md-tabs {
+  background-color: var(--hdi-lavender);
+  color: var(--hdi-text);
+}
+
+.md-header .md-header__title,
+.md-header .md-logo,
+.md-header .md-search__input,
+.md-header .md-header__button,
+.md-tabs .md-tabs__link {
+  color: var(--hdi-text);
+}
+
+.md-header .md-header__button:hover,
+.md-tabs .md-tabs__link--active,
+.md-tabs .md-tabs__link:hover {
+  color: var(--hdi-text);
+  opacity: 0.7;
+}
+
+/* Sidebar navigation */
+.md-sidebar {
+  background-color: var(--hdi-surface);
+}
+
+.md-nav__link {
+  color: var(--hdi-text);
+}
+
+.md-nav__link:hover,
+.md-nav__link--active {
+  color: var(--hdi-sky-dark);
+}
+
+.md-nav__item--active > .md-nav__link {
+  color: var(--hdi-sky-dark);
+  font-weight: 600;
+}
+
+/* Links — sky blue, accessible */
+.md-typeset a {
+  color: var(--hdi-sky-dark);
+}
+
+.md-typeset a:hover {
+  color: var(--hdi-peach-dark);
+}
+
+/* Footer — dark ink, matching header */
+.md-footer {
+  background-color: var(--hdi-text);
+  color: var(--hdi-surface);
+}
+
+.md-footer a {
+  color: var(--hdi-sky);
+}
+
+.md-footer-meta {
+  background-color: var(--hdi-text);
+  font-size: 0.85rem;
+}
+
+/* Search bar */
+.md-search__input {
+  background-color: var(--hdi-surface);
+}
+
+/* ═══════════════════════════════════════════
+   TYPOGRAPHY — Lora body, Inter headings
+   ═══════════════════════════════════════════ */
+
+.md-typeset {
+  font-family: 'Lora', Georgia, serif;
+  color: var(--hdi-text);
+}
+
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset h4 {
+  font-family: 'Inter', sans-serif;
+  color: var(--hdi-text);
+}
+
+.md-typeset h1 {
+  border-bottom: 2px solid var(--hdi-sand);
+  padding-bottom: 0.3em;
+}
+
+/* ═══════════════════════════════════════════
+   ADMONITIONS — brand-colored by type
+   ═══════════════════════════════════════════ */
+
+/* info → sky */
+.md-typeset .admonition.info,
+.md-typeset details.info {
+  border-color: var(--hdi-sky);
+}
+.md-typeset .info > .admonition-title,
+.md-typeset .info > summary {
+  background-color: rgba(168, 200, 221, 0.15);
+}
+
+/* tip → sage */
+.md-typeset .admonition.tip,
+.md-typeset details.tip {
+  border-color: var(--hdi-sage);
+}
+.md-typeset .tip > .admonition-title,
+.md-typeset .tip > summary {
+  background-color: rgba(181, 204, 186, 0.15);
+}
+
+/* warning → peach */
+.md-typeset .admonition.warning,
+.md-typeset details.warning {
+  border-color: var(--hdi-peach);
+}
+.md-typeset .warning > .admonition-title,
+.md-typeset .warning > summary {
+  background-color: rgba(242, 196, 160, 0.15);
+}
+
+/* danger → rose */
+.md-typeset .admonition.danger,
+.md-typeset details.danger {
+  border-color: var(--hdi-rose);
+}
+.md-typeset .danger > .admonition-title,
+.md-typeset .danger > summary {
+  background-color: rgba(224, 180, 183, 0.15);
+}
+
+/* example → lavender */
+.md-typeset .admonition.example,
+.md-typeset details.example {
+  border-color: var(--hdi-lavender);
+}
+.md-typeset .example > .admonition-title,
+.md-typeset .example > summary {
+  background-color: rgba(199, 191, 224, 0.15);
+}
+
+/* abstract → sand */
+.md-typeset .admonition.abstract,
+.md-typeset details.abstract {
+  border-color: var(--hdi-sand);
+}
+.md-typeset .abstract > .admonition-title,
+.md-typeset .abstract > summary {
+  background-color: rgba(212, 201, 181, 0.15);
+}
+
+/* ═══════════════════════════════════════════
+   TABLES
+   ═══════════════════════════════════════════ */
+
+.md-typeset table:not([class]) {
+  border: 1px solid var(--hdi-sand);
+}
+
+.md-typeset table:not([class]) th {
+  background-color: var(--hdi-surface);
+  color: var(--hdi-text);
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+}
+
+.md-typeset table:not([class]) tr:nth-child(even) {
+  background-color: var(--hdi-surface);
+}
+
+/* ═══════════════════════════════════════════
+   BLOCKQUOTES
+   ═══════════════════════════════════════════ */
+
+.md-typeset blockquote {
+  border-left-color: var(--hdi-peach);
+  font-style: italic;
+  color: var(--hdi-text-secondary);
+}
+
+/* ═══════════════════════════════════════════
+   FOOTNOTES — subtle, secondary text
+   ═══════════════════════════════════════════ */
+
+.md-typeset .footnote {
+  font-size: 0.85rem;
+  color: var(--hdi-text-secondary);
+}
+
+.md-typeset .footnote-ref {
+  color: var(--hdi-sky-dark);
+}
+
+/* ═══════════════════════════════════════════
+   CODE — JetBrains Mono with warm surface bg
+   ═══════════════════════════════════════════ */
+
+.md-typeset code {
+  background-color: var(--hdi-surface);
+  color: var(--hdi-text);
+  border-radius: 3px;
+  padding: 0.1em 0.3em;
+}
+
+/* ═══════════════════════════════════════════
+   SPOTIFY EMBEDS
+   ═══════════════════════════════════════════ */
+
 .spotify-embed {
   max-width: 600px;
   margin: 1rem 0;
@@ -17,28 +260,54 @@
   border-radius: 12px;
 }
 
-/* Subtle background for key concept callouts */
-.md-typeset .admonition.info,
-.md-typeset details.info {
-  border-color: var(--hdi-primary);
+/* ═══════════════════════════════════════════
+   DARK MODE OVERRIDES
+   ═══════════════════════════════════════════ */
+
+[data-md-color-scheme="slate"] {
+  --md-default-bg-color: #1e1c1a;
+  --md-default-fg-color: #e8e4df;
+  --md-primary-fg-color: #e8e4df;
+  --md-primary-bg-color: #1e1c1a;
+  --md-accent-fg-color: var(--hdi-sky);
 }
 
-/* Data tables — zebra striping for readability */
-.md-typeset table:not([class]) tr:nth-child(even) {
-  background-color: var(--hdi-light);
+[data-md-color-scheme="slate"] .md-header,
+[data-md-color-scheme="slate"] .md-tabs {
+  background-color: #3d3660;
+}
+
+[data-md-color-scheme="slate"] .md-header .md-header__title,
+[data-md-color-scheme="slate"] .md-header .md-logo,
+[data-md-color-scheme="slate"] .md-header .md-header__button,
+[data-md-color-scheme="slate"] .md-tabs .md-tabs__link {
+  color: #e8e4df;
+}
+
+[data-md-color-scheme="slate"] .md-sidebar {
+  background-color: #252220;
+}
+
+[data-md-color-scheme="slate"] .md-footer {
+  background-color: #141210;
 }
 
 [data-md-color-scheme="slate"] .md-typeset table:not([class]) tr:nth-child(even) {
   background-color: rgba(255, 255, 255, 0.05);
 }
 
-/* Quote blocks — style for key quotes */
-.md-typeset blockquote {
-  border-left-color: var(--hdi-accent);
-  font-style: italic;
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) th {
+  background-color: rgba(255, 255, 255, 0.08);
 }
 
-/* Footer social links */
-.md-footer-meta {
-  font-size: 0.85rem;
+[data-md-color-scheme="slate"] .md-typeset code {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+[data-md-color-scheme="slate"] .md-typeset a {
+  color: var(--hdi-sky);
+}
+
+[data-md-color-scheme="slate"] .md-typeset blockquote {
+  color: #a8a098;
 }
