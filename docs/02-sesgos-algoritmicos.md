@@ -3,6 +3,8 @@
 Los modelos de IA toman decisiones que afectan nuestras vidas reales: desde quién pasa un filtro de contratación,[^21] qué contenido ves en redes sociales o el contenido que generas a través de los modelos de lenguaje. Si los datos y modelos están sesgados, sus resultados también lo estarán, reproduciendo y amplificando desigualdades existentes en la sociedad.
 
 Para descifrar los sesgos en la IA, lo primero es romper con un mito fundamental: **la idea de que los datos y los modelos de IA son objetivos o neutrales**. La IA funciona más bien como un espejo de nuestra sociedad, refleja nuestras virtudes, pero también magnifica nuestros prejuicios y desigualdades históricas.
+
+![La IA como espejo de la sociedad](images/05_Espejo.png)
 ## ¿Qué es un sesgo algorítmico?
 
 Un sesgo algorítmico es un patrón sistemático en los resultados de un modelo que favorece o perjudica de manera injusta a ciertos grupos, dando lugar a resultados distorsionados y consecuencias potencialmente perjudiciales.[^1] Entender estos sesgos es particularmente importante cuando usamos modelos de lenguaje como ChatGPT, Claude o Gemini, ya que el lenguaje está profundamente arraigado en la cultura, codifica distintas visiones del mundo, normas sociales y relaciones históricas de poder.[^2] Los resultados que generan estos modelos siempre deben evaluarse con una mirada crítica, nunca como una verdad absoluta.
@@ -49,6 +51,8 @@ Los sesgos más profundos no están en errores técnicos sino en las estructuras
 
 Como vimos en el [módulo 1](01-que-es-la-ia.md#cómo-funciona-el-aprendizaje-profundo-deep-learning), las redes neuronales tienen millones de parámetros internos (pesos) que se ajustan durante el entrenamiento. A diferencia de un programa tradicional donde un humano escribe las reglas, en el aprendizaje profundo la máquina descubre sus propias reglas. Sabemos *cómo* están construidos los modelos, su arquitectura, las capas de la red neuronal, los mecanismos de atención, pero no podemos predecir con certeza *por qué* generan un resultado específico en lugar de otro.[^27]
 
+![El problema de la caja negra](images/06_CajaNegra.png)
+
 Esto importa porque cuando un modelo toma una decisión que afecta a una persona no basta con saber que "el modelo lo decidió". Necesitamos poder preguntar *por qué*, y ahí es donde la interpretabilidad se vuelve crucial: sin ella, no hay forma de detectar si una decisión fue justa o discriminatoria, ni de corregir el sistema cuando falla.[^27]
 
 !!! warning "Interpretabilidad no es transparencia"
@@ -65,18 +69,18 @@ SESGO (*Spanish Evaluation of Stereotypical Generative Outputs*) es el primer be
 !!! info "Metodología de SESGO"
 	Los investigadores adaptaron un benchmark conocido en inglés pero con contenido original latinoamericano.[^2] Lo innovador es el uso de "dichos populares" y expresiones coloquiales latinoamericanas que codifican estereotipos regionales que reflejan tendencias sobre roles de género, clasismo codificado en el habla cotidiana.
 
-SESGO evaluó 6 modelos comerciales (GPT-4o mini, Gemini 2.0 Flash, Claude 3.5 Haiku, Llama 3.1, Llama Uncensored y DeepSeek R1) con más de 4 mil prompts en español.[^2] Los resultados revelaron que **todos los modelos muestran sesgos**, pero en grados muy distintos. La xenofobia fue la categoría con los puntajes más altos en todos los modelos, mientras que los modelos sin guardrails de seguridad [explica que es un guardial con una fuente, puede ser en inglés] (como Llama Uncensored) mostraron sesgos extremos en todas las categorías. 
+SESGO evaluó 6 modelos comerciales (GPT-4o mini, Gemini 2.0 Flash, Claude 3.5 Haiku, Llama 3.1, Llama Uncensored y DeepSeek R1) con más de 4 mil prompts en español.[^2] Los resultados revelaron que **todos los modelos muestran sesgos**, pero en grados muy distintos. La xenofobia fue la categoría con los puntajes más altos en todos los modelos, mientras que los modelos sin guardrails de seguridad, es decir, sin los mecanismos de [alineación](01-que-es-la-ia.md#alineación-cómo-se-hacen-útiles-y-seguros-los-llms) diseñados para evitar que el modelo genere contenido dañino, (como Llama Uncensored) mostraron sesgos extremos en todas las categorías. 
 ### Las 4 categorías
 
 **1. Género (684 prompts):** Los modelos reproducen estereotipos de género predecibles: asocian a mujeres con cuidado de hijos y tareas domésticas, predicen que las mujeres fallarán en matemáticas, y perpetúan el estereotipo de que "los hombres no lloran".[^2] Son los mismos estereotipos que históricamente han limitado la participación de mujeres en ciencia y tecnología.
 
-**2. Racismo (1,318 prompts):** Los modelos deflectan (evaden) cuando se usan términos raciales directos como "negro/a" o "indígena", activando sus guardrails de seguridad. Pero muestran sesgo discriminatorio cuando se usan **proxies geográficos** — por ejemplo, "nacido en el Chocó" (departamento colombiano con población mayoritariamente afrodescendiente) o "de la sierra" en México.[^2] También reproducen dichos racistas populares que normalizan el racismo en la cultura cotidiana.
+**2. Racismo (1,318 prompts):** Los modelos deflectan (evaden) cuando se usan términos raciales directos como "negro/a" o "indígena", activando sus guardrails de seguridad. Pero muestran sesgo discriminatorio cuando se usan **proxies geográficos**, por ejemplo, "nacido en el Chocó" (departamento colombiano con población mayoritariamente afrodescendiente) o "de la sierra" en México.[^2] También reproducen dichos racistas populares que normalizan el racismo en la cultura cotidiana.
 
-**3. Clasismo (810 prompts):** Los modelos asocian apariencia física con estatus criminal ("tiene cara de delincuente"), discriminan basándose en el habla y acento, y expresan bajas expectativas para personas de bajos recursos.[^2] En Latinoamérica, clasismo y racismo son interseccionales — las categorías no son independientes.
+**3. Clasismo (810 prompts):** Los modelos asocian apariencia física con estatus criminal ("tiene cara de delincuente"), discriminan basándose en el habla y acento, y expresan bajas expectativas para personas de bajos recursos.[^2] En Latinoamérica, clasismo y racismo son interseccionales, las categorías no son independientes.
 
 **4. Xenofobia (1,344 prompts — la categoría con mayor sesgo):** Los modelos tratan a migrantes venezolanos como un grupo homogéneo negativo, asociándolos con "inseguridad" y "criminalidad".[^2] Contexto: 7.7 millones de venezolanos desplazados, y encuestas que muestran que el 67% de peruanos expresan opiniones negativas hacia migrantes venezolanos.[^2] Los modelos amplifican estos prejuicios sociales existentes.
 
-!!! danger "La mitigación de sesgos en inglés NO se transfiere al español"
+!!! danger "La mitigación de sesgos en inglés no se transfiere al español"
     Los modelos Llama mostraron aproximadamente 1.5 veces más sesgo en español que en inglés.[^2] Esto demuestra que las técnicas de seguridad y alineamiento desarrolladas para inglés son insuficientes para otros idiomas.
 
 ## Cuando los sesgos tienen consecuencias reales
@@ -87,11 +91,11 @@ COMPAS es un algoritmo usado en tribunales de EE.UU. para predecir la probabilid
 
 ### Reconocimiento facial en Brasil: racismo automatizado
 
-Entre 2019 y 2025, Brasil documentó 24 casos de arrestos injustos por errores de reconocimiento facial. **Más del 90% de los arrestados son personas negras**, y en el 75% de los casos de identificación errónea, las víctimas eran negras.[^18] Los datasets de entrenamiento de estos sistemas provienen mayoritariamente de EE.UU. y Europa, lo que significa que tienen tasas de error más altas para personas de piel oscura — el mismo problema que Joy Buolamwini documentó en *Gender Shades*[^4], pero con consecuencias penales directas.
+Entre 2019 y 2025, Brasil documentó 24 casos de arrestos injustos por errores de reconocimiento facial. **Más del 90% de los arrestados son personas negras**, y en el 75% de los casos de identificación errónea, las víctimas eran negras.[^18] Los datasets de entrenamiento de estos sistemas provienen mayoritariamente de EE.UU. y Europa, lo que significa que tienen tasas de error más altas para personas de piel oscura (el mismo problema que Joy Buolamwini documentó en *Gender Shades*).[^4]
 
 ### Vigilancia sin regulación en México
 
-En México, **15 estados han adquirido equipos de reconocimiento facial** para vigilancia. En la CDMX, el Centro de Comando y Control (C29) opera 50 cámaras con esta tecnología.[^18] El problema: **no existe legislación específica que regule el reconocimiento facial en México**.[^18] Los sistemas no han sido auditados públicamente por sesgos raciales o étnicos, a pesar de que los datasets de entrenamiento (de EE.UU./Europa) probablemente tienen tasas de error más altas para personas indígenas, morenas y mestizas.
+En México, **15 estados han adquirido equipos de reconocimiento facial** para vigilancia. En la CDMX, el Centro de Comando y Control (C29) opera 50 cámaras con esta tecnología.[^18] El problema es que **no existe legislación específica que regule el reconocimiento facial en México**.[^18] 
 
 ### Discriminación algorítmica en programas sociales de América Latina
 
@@ -101,15 +105,7 @@ Una investigación del Harvard Kennedy School (2024) analizó 234 algoritmos pú
 
 Las empresas tecnológicas extraen valor de datos generados globalmente, pero las decisiones se toman desde pocas empresas del Norte Global.[^10] América Latina produce el 6.6% del PIB global pero recibe solo el 1.12% de la inversión global en IA.[^19] Contribuimos datos (uso de redes sociales, texto en internet, datos de comportamiento) pero tenemos poca influencia sobre cómo se entrenan los modelos, qué idiomas se priorizan o qué sesgos se corrigen.
 
-## Marco analítico: 6 preguntas críticas
-
-Cuando te encuentres usando cualquier modelo de IA, pregúntate lo siguiente:
-1. **¿Quién se beneficia de este sistema?** ¿Qué empresa? ¿Qué gobierno? ¿Qué grupo social?
-2. **¿A quién puede perjudicar?** ¿Quién es invisible en los datos? ¿Quién no fue consultado?
-3. **¿Con qué datos fue entrenado?** ¿De dónde vienen? ¿Qué representan? ¿Qué excluyen?
-4. **¿Quién decidió cómo funciona?** ¿Qué valores se priorizaron en el diseño?
-5. **¿Existe forma de apelar o cuestionar una decisión algorítmica?** ¿Hay transparencia? ¿Hay rendición de cuentas?
-6. **¿Qué pasa cuando falla?** ¿Quién es responsable?
+![Kit de defensa contra sesgos](images/08_KitDefensa.png)
 
 !!! info "Lo que viene"
     **Módulo 3: Impactos ambientales de la IA.** Entrenar un modelo de IA consume enormes cantidades de energía y agua. ¿Quién paga los costos ambientales de la revolución tecnológica?

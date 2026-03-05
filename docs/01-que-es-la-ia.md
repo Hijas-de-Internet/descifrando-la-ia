@@ -14,7 +14,7 @@ La inteligencia artificial es el desarrollo de sistemas informáticos capaces de
 ## ¿Cómo Funciona el Aprendizaje de Máquina? (Machine Learning)
 
 El aprendizaje automático es la principal tecnología detrás de lo que conocemos como Inteligencia Artificial. En realidad es una rama de las ciencias de la computación que busca desarrollar algoritmos que aprenden de datos sin programación explícita [^5]. Para que este proceso ocurra, necesitamos combinar varios elementos clave:
-#### 1. Datos (la materia prima)
+#### Datos (la materia prima)
 Un modelo de aprendizaje automático necesita miles o millones de ejemplos para aprender. [^6] Para entrenar un modelo de aprendizaje supervisado que aprenda a reconocer gatos, se necesitan miles de fotos de gatos. Aquí es importante preguntarnos, ¿quién genera estos datos? ¿quién los sistematiza? ¿qué historias se cuentan a partir de ellos? 
 
 ???+ tip "Escucha: Datos y políticas públicas"
@@ -22,7 +22,7 @@ Un modelo de aprendizaje automático necesita miles o millones de ejemplos para 
 
     <iframe src="https://creators.spotify.com/pod/profile/hijas-de-internet/embed/episodes/T3-EP-6--Datos-y-polticas-pblicas-e1alhpe/a-a6uv6rb" height="102px" width="400px" frameborder="0" scrolling="no"></iframe>
 
-#### 2. Algoritmo (la receta)
+#### Algoritmos (la receta)
 Un algoritmo es un conjunto de reglas matemáticas que le dice al modelo cómo procesar datos y encontrar patrones [^7]. En la programación tradicional, los humanos escribimos instrucciones explícitas (si pasa A, haz B). El aprendizaje automático cambia esto: en lugar de darle las reglas a la computadora, le damos datos y dejamos que los algoritmos descubran los patrones por sí mismos para realizar predicciones o tomar decisiones sin ser programado para cada escenario específico.[^8]
 
 Existen distintos tipos de algoritmos de aprendizaje, y la elección depende de la tarea y los datos disponibles:
@@ -30,14 +30,14 @@ Existen distintos tipos de algoritmos de aprendizaje, y la elección depende de 
 - **Supervisado:** El modelo aprende de datos etiquetados de ejemplos donde ya conocemos la respuesta correcta.[^9] Por ejemplo, miles de fotos ya clasificadas como "gato" o "perro". El modelo aprende a asociar las características de la imagen con la etiqueta correcta.
 - **No supervisado:** El modelo encuentra patrones sin etiquetas.[^10] Aquí el algoritmo descubre por sí mismo agrupaciones o estructuras en los datos. Por ejemplo, los sistemas de recomendación que sugerir productos, películas o música mediante el análisis del comportamiento de los usuarios.
 - **Por refuerzo:** El modelo aprende por prueba y error, recibiendo recompensas cuando acierta y penalizaciones cuando se equivoca.[^11] Así se entrenó [AlphaGo](https://es.wikipedia.org/wiki/AlphaGo) para jugar Go.
-#### 3. Entrenamiento (la práctica)
+#### Entrenamiento (la práctica)
 Así como una persona aprende con la práctica, un modelo prueba una y otra vez con los datos, ajustándose cuando se equivoca. [^12] Es como estudiar para un examen con tarjetas didácticas, pero haciendo millones de repeticiones. Durante el entrenamiento, el modelo ajusta millones de parámetros internos (llamados "pesos") hasta minimizar sus errores. El tipo de entrenamiento depende del algoritmo: en el supervisado, el modelo compara sus predicciones con las respuestas correctas; en el no supervisado, busca patrones y agrupaciones; en el de refuerzo, optimiza una función de recompensa.
 
-#### 4. Validación (el examen)
+#### Validación (el examen)
 Una vez entrenado, el modelo se prueba con datos que nunca ha visto antes para verificar si realmente aprendió patrones generalizables o solo memorizó los ejemplos de entrenamiento. [^13] Un modelo que solo memoriza (lo que se llama [sobreajuste](https://es.wikipedia.org/wiki/Sobreajuste) u *overfitting*) puede tener un rendimiento perfecto con sus datos de entrenamiento pero fallar con datos nuevos. La validación funciona como un examen sorpresa, si el modelo realmente aprendió, puede responder preguntas que nunca ha visto antes.
-#### 5. Fine-tuning (la especialización)
+#### Fine-tuning (la especialización)
 Un modelo pre-entrenado tiene conocimiento general, pero no necesariamente hace bien una tarea específica. El *fine-tuning* (o refinamiento) es el proceso de tomar ese modelo general y adaptarlo con datos especializados, sin tener que entrenarlo desde cero [^14].  Por ejemplo, un modelo de visión por computadora entrenado para reconocer objetos generales puede refinarse con imágenes médicas para detectar tumores. Un modelo de texto general puede refinarse con documentos legales para asistir abogados. En lugar de construir un modelo desde cero para cada tarea, lo que requeriría millones de datos y mucho cómputo, el fine-tuning permite reutilizar el conocimiento previo y especializarlo con menos recursos.
-#### 6. Inferencia (la aplicación)
+#### Inferencia (la aplicación)
 Cuando el modelo ya entrenado aplica lo aprendido a datos nuevos. Cada vez que un modelo de IA clasifica una imagen, traduce un texto o genera una respuesta, está haciendo *inferencia*n No está aprendiendo nada nuevo, está usando lo que ya aprendió [^15].  
 
 ## ¿Cómo Funciona el Aprendizaje Profundo? (Deep Learning)
@@ -85,7 +85,7 @@ El resultado: en noviembre de 2022, OpenAI lanzó ChatGPT, un modelo basado en T
 ## ¿Cómo Funcionan los Modelos de Lenguaje de Gran Tamaño?
 
 Los modelos de de lenguaje de gran tamaño son modelos de inteligencia artificial generativa que son entrenados con enormes cantidades de texto, lo que les permite procesar y generar lenguaje natural[^24]. Cuando escribes algo, el modelo calcula la distribución de probabilidad para el siguiente **token** (que puede ser una palabra o parte de ella) basándose en todo el contexto previo. **No "entienden" lo que dicen**, predicen palabras basándose en patrones estadísticos.
-### "Cotorros estocásticos" (Stochastic Parrots)
+### Cotorros estocásticos (Stochastic Parrots)
 
 ![Ilustración de un loro estocástico representando los modelos de lenguaje](images/03_cotorros.png)
 
@@ -99,7 +99,7 @@ Este término fue acuñado por las investigadoras Emily Bender y Timnit Gebru (2
 ??? example "Sobre Timnit Gebru y el paper que sacudió a Google"
     Investigadora eritreo-etíope-estadounidense en ética de la IA. En diciembre de 2020, su empleo en Google terminó por el paper "On the Dangers of Stochastic Parrots". Aproximadamente 2,700 empleados firmaron una carta de protesta. Es cofundadora de Black in AI y fundadora del [Distributed Artificial Intelligence Research Institute (DAIR)](https://www.dair-institute.org/). Su caso es emblemático sobre el poder de las grandes empresas tecnológicas sobre la investigación crítica.[^26]
 
-### Alineación: cómo se hacen útiles (y seguros) los LLMs
+### Alineación 
 
 Un modelo de lenguaje entrenado con texto de Internet puede predecir palabras, pero no necesariamente tiene los resultados deseados ni se alinea con valores humanos. Para cerrar esa brecha se utilizan técnicas de alineación:
 
@@ -121,7 +121,7 @@ Sistemas de IA que actúan de manera autónoma para lograr objetivos específico
 !!! danger "Advertencia"
     Los agentes de IA requieren supervisión humana. No son todavía lo suficientemente confiables para tareas críticas sin supervisión. Deben usarse para aumentar la productividad, no para reemplazar el criterio humano. **Nunca compartas contraseñas, información bancaria o datos sensibles con estos sistemas.**
 
-## ¿Y ahora qué? De entender la IA a cuestionar sus impactos
+## De entender la IA a cuestionar sus impactos
 
 La IA tiene más de 70 años de historia. A lo largo de ese camino hubo "inviernos", periodos donde se prometió demasiado y la tecnología no cumplió. Ese patrón se repite hoy, la IA generativa y agéntica genera enormes expectativas, pero también riesgos reales que es importante entender.
 
