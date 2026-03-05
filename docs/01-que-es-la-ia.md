@@ -1,11 +1,11 @@
 # Descifrando la Inteligencia Artificial: conceptos básicos
 
-Hoy, usamos tecnologías de Inteligencia Artificial (IA) todos los días. Las redes sociales (TikTok, Instagram, Facebook) usan algoritmos de IA para decidir qué contenido mostrar. Netflix y Spotify aprenden de las series y películas que vemos.[^2] Google Maps predice tráfico con datos de millones de teléfonos.[^3] Los filtros de Snapchat e Instagram usan visión por computadora para identificar los rasgos faciales en tiempo real, lo que les permite aplicar con precisión máscaras y efectos digitales en tu rostro. [^3] 
-
 En este módulo, podrás entender qué es la Inteligencia Artificial, cómo funcionan las tecnologías detrás de ellas y profundizar sobre los modelos de lenguaje y otros conceptos clave que es necesario entender cuando usamos herramientas de IA. El principal objetivo es entender que la IA no es magia, es un conjunto de tecnologías que funcionan con matemáticas y modelos estadísticos que todas y todos tenemos la capacidad de entender. 
 
 ![La IA no es magia](images/00_Magia.png)
 ## ¿Qué es la Inteligencia Artificial?
+
+Hoy, usamos tecnologías de Inteligencia Artificial (IA) todos los días. Las redes sociales (TikTok, Instagram, Facebook) usan algoritmos de IA para decidir qué contenido mostrar. Netflix y Spotify aprenden de las series y películas que vemos.[^2] Google Maps predice tráfico con datos de millones de teléfonos.[^3] Los filtros de Snapchat e Instagram usan visión por computadora para identificar los rasgos faciales en tiempo real, lo que les permite aplicar con precisión máscaras y efectos digitales en tu rostro. [^3] 
 
 La inteligencia artificial es el desarrollo de sistemas informáticos capaces de realizar tareas asociadas a funciones cognitivas humanas: interpretar el habla, identificar patrones, hacer predicciones y resolver problemas.[^1] Se compone de varias tecnologías, como el aprendizaje de máquina (Machine Learning) y el aprendizaje profundo (Deep Learning), que permiten a las computadoras aprender de datos y hacer predicciones o tomar decisiones basadas en ellos.
 
@@ -79,12 +79,12 @@ Los modelos *generativos* hacen algo fundamentalmente distinto, en lugar de apre
     | **Ventaja**   | Más rápidos de entrenar, más fáciles de interpretar [^21] | Pueden crear contenido original y manejar datos limitados [^21] |
     | **Limitación** | No pueden generar nada nuevo                             | Costosos computacionalmente, pueden generar contenido sesgado [^21] |
 
-En 2017, un equipo de Google publicó "Attention Is All You Need", el paper que introdujo la arquitectura Transformer.[^22] Los modelos anteriores (llamados redes recurrentes) procesaban texto palabra por palabra, en secuencia. El Transformer cambió esto con un mecanismo de "atención" que permite al modelo enfocarse en las partes más relevantes de todo el texto de entrada simultáneamente, procesando secuencias completas en paralelo. Esto lo hizo mucho más rápido de entrenar y permitió que los modelos crecieran exponencialmente.[^22]
+En 2017, un equipo de Google publicó "Attention Is All You Need", el paper que introdujo la arquitectura Transformer.[^22] Los modelos anteriores (llamados redes recurrentes) procesaban texto palabra por palabra, en secuencia. El Transformer cambió esto con un mecanismo de "atención" que permite al modelo enfocarse en las partes más relevantes de todo el texto de entrada simultáneamente, procesando secuencias completas en paralelo.[^31] Esto hizo que los modelos fueran mucho más rápidos de entrenar y permitió que los modelos crecieran exponencialmente.[^22]
 
 El resultado: en noviembre de 2022, OpenAI lanzó ChatGPT, un modelo basado en TransformerS, al público y alcanzó 100 millones de usuarios en solo dos meses, un récord histórico de adopción tecnológica.[^23]
 ## ¿Cómo Funcionan los Modelos de Lenguaje de Gran Tamaño?
 
-Los modelos de de lenguaje de gran tamaño son modelos de inteligencia artificial generativa que son entrenados con enormes cantidades de texto de Internet, lo que les permite procesar y generar lenguaje natural[^24]. Cuando escribes algo, el modelo calcula la distribución de probabilidad para el siguiente **token** (que puede ser una palabra o parte de ella) basándose en todo el contexto previo. **No "entienden" lo que dicen**, predicen palabras basándose en patrones estadísticos.
+Los modelos de de lenguaje de gran tamaño son modelos de inteligencia artificial generativa que son entrenados con enormes cantidades de texto, lo que les permite procesar y generar lenguaje natural[^24]. Cuando escribes algo, el modelo calcula la distribución de probabilidad para el siguiente **token** (que puede ser una palabra o parte de ella) basándose en todo el contexto previo. **No "entienden" lo que dicen**, predicen palabras basándose en patrones estadísticos.
 ### "Cotorros estocásticos" (Stochastic Parrots)
 
 ![Ilustración de un loro estocástico representando los modelos de lenguaje](images/03_cotorros.png)
@@ -163,6 +163,7 @@ Los modelos de IA aprenden de datos que reflejan las desigualdades del mundo rea
     - **Anthropic Courses:** https://anthropic.skilljar.com/
     - https://www.skills.google/
     - https://notebooklm.google.com/
+    - https://www.youtube.com/@googlecloudtech
 
 ---
 
@@ -198,3 +199,4 @@ Los modelos de IA aprenden de datos que reflejan las desigualdades del mundo rea
 [^28]: Sandgarden. "#*Teaching AI to Play Nice: The Art and Science of LLM Alignment.*" <https://www.sandgarden.com/learn/llm-alignment>
 [^29]: Bai et al. (2022). "*Constitutional AI: Harmlessness from AI Feedback*". <https://arxiv.org/abs/2212.08073>
 [^30]: Google Cloud. "*What is an AI agent*?. <https://cloud.google.com/discover/what-are-ai-agents?hl=en>
+[^31]: Jay Alammar. "*The Illustrated Transformer*. <https://jalammar.github.io/illustrated-transformer/#:~:text=As%20the%20model%20processes%20each,one%20we're%20currently%20processing.>
