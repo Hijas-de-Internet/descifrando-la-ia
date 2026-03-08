@@ -1,6 +1,6 @@
 // Accessibility: font size controls
 document.addEventListener("DOMContentLoaded", function () {
-  var sizes = [85, 90, 95, 100, 110, 120];
+  var sizes = [85, 90, 95, 100, 110, 120, 135, 150];
   var saved = localStorage.getItem("hdi-font-size");
   var current = saved ? parseInt(saved, 10) : 100;
 
