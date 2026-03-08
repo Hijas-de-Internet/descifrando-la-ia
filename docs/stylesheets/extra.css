@@ -38,11 +38,12 @@
   --md-accent-fg-color: var(--hdi-sky-dark);
 }
 
-/* Header & nav bar — lavender */
+/* Header & nav bar — lavender, no shadow */
 .md-header,
 .md-tabs {
   background-color: var(--hdi-lavender);
   color: var(--hdi-text);
+  box-shadow: none;
 }
 
 .md-header .md-header__title,
@@ -60,9 +61,21 @@
   opacity: 0.7;
 }
 
-/* Sidebar navigation */
+/* Sidebar navigation — blends with page */
 .md-sidebar {
-  background-color: var(--hdi-surface);
+  background-color: transparent;
+}
+
+/* Sidebar titles (nav + toc) — clean, no background box */
+.md-sidebar .md-nav__title {
+  background-color: transparent;
+  box-shadow: none;
+  color: var(--hdi-text-secondary);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 .md-nav__link {
@@ -103,9 +116,27 @@
   font-size: 0.85rem;
 }
 
-/* Search bar */
-.md-search__input {
-  background-color: var(--hdi-surface);
+/* Search form container — remove grey corners */
+.md-search__form {
+  background-color: transparent !important;
+  border-radius: 8px;
+  box-shadow: none !important;
+}
+
+/* Search bar — lavender tint matching header */
+.md-search__input,
+.md-search__input:hover,
+.md-search__input:focus {
+  background-color: #d8d2ea !important;
+  border-radius: 8px;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  color: var(--hdi-text);
+}
+
+.md-search__input::placeholder {
+  color: var(--hdi-text-secondary);
 }
 
 /* ═══════════════════════════════════════════
@@ -114,6 +145,7 @@
 
 .md-typeset {
   font-family: 'Lora', Georgia, serif;
+  font-size: 0.9rem;
   color: var(--hdi-text);
 }
 
@@ -195,6 +227,15 @@
 }
 
 /* ═══════════════════════════════════════════
+   TEXT SELECTION — warm peach highlight
+   ═══════════════════════════════════════════ */
+
+::selection {
+  background-color: var(--hdi-peach);
+  color: var(--hdi-text);
+}
+
+/* ═══════════════════════════════════════════
    TABLES
    ═══════════════════════════════════════════ */
 
@@ -228,8 +269,9 @@
    ═══════════════════════════════════════════ */
 
 .md-typeset .footnote {
-  font-size: 0.85rem;
+  font-size: 0.72rem;
   color: var(--hdi-text-secondary);
+  line-height: 1.4;
 }
 
 .md-typeset .footnote-ref {
@@ -261,15 +303,54 @@
 }
 
 /* ═══════════════════════════════════════════
+   FONT SIZE CONTROLS — accessibility
+   ═══════════════════════════════════════════ */
+
+.font-size-controls {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-right: 8px;
+}
+
+.font-size-btn {
+  background: rgba(255, 255, 255, 0.25);
+  border: none;
+  border-radius: 4px;
+  color: var(--hdi-text);
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 0.75rem;
+  padding: 4px 8px;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.font-size-btn:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+[data-md-color-scheme="slate"] .font-size-btn {
+  background: rgba(255, 255, 255, 0.12);
+  color: #e8e4df;
+}
+
+[data-md-color-scheme="slate"] .font-size-btn:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* ═══════════════════════════════════════════
    DARK MODE OVERRIDES
    ═══════════════════════════════════════════ */
 
 [data-md-color-scheme="slate"] {
   --md-default-bg-color: #1e1c1a;
   --md-default-fg-color: #e8e4df;
+  --md-default-fg-color--light: #a8a098;
   --md-primary-fg-color: #e8e4df;
   --md-primary-bg-color: #1e1c1a;
   --md-accent-fg-color: var(--hdi-sky);
+  --md-typeset-color: #e8e4df;
 }
 
 [data-md-color-scheme="slate"] .md-header,
@@ -285,9 +366,41 @@
 }
 
 [data-md-color-scheme="slate"] .md-sidebar {
-  background-color: #252220;
+  background-color: transparent;
 }
 
+/* Dark mode — text visibility */
+[data-md-color-scheme="slate"] .md-typeset {
+  color: #e8e4df;
+}
+
+[data-md-color-scheme="slate"] .md-typeset h1,
+[data-md-color-scheme="slate"] .md-typeset h2,
+[data-md-color-scheme="slate"] .md-typeset h3,
+[data-md-color-scheme="slate"] .md-typeset h4 {
+  color: #f0ece7;
+}
+
+[data-md-color-scheme="slate"] .md-typeset h1 {
+  border-bottom-color: #3a3632;
+}
+
+/* Dark mode — sidebar nav + TOC */
+[data-md-color-scheme="slate"] .md-nav__link {
+  color: #c8c2ba;
+}
+
+[data-md-color-scheme="slate"] .md-nav__link:hover,
+[data-md-color-scheme="slate"] .md-nav__link--active,
+[data-md-color-scheme="slate"] .md-nav__item--active > .md-nav__link {
+  color: var(--hdi-sky);
+}
+
+[data-md-color-scheme="slate"] .md-sidebar .md-nav__title {
+  color: #a8a098;
+}
+
+/* Dark mode — footer, tables, code */
 [data-md-color-scheme="slate"] .md-footer {
   background-color: #141210;
 }
@@ -298,10 +411,12 @@
 
 [data-md-color-scheme="slate"] .md-typeset table:not([class]) th {
   background-color: rgba(255, 255, 255, 0.08);
+  color: #e8e4df;
 }
 
 [data-md-color-scheme="slate"] .md-typeset code {
   background-color: rgba(255, 255, 255, 0.08);
+  color: #e8e4df;
 }
 
 [data-md-color-scheme="slate"] .md-typeset a {
@@ -309,5 +424,32 @@
 }
 
 [data-md-color-scheme="slate"] .md-typeset blockquote {
+  color: #a8a098;
+}
+
+/* Dark mode — search bar */
+[data-md-color-scheme="slate"] .md-search__input,
+[data-md-color-scheme="slate"] .md-search__input:hover,
+[data-md-color-scheme="slate"] .md-search__input:focus {
+  background-color: rgba(255, 255, 255, 0.12) !important;
+  color: #e8e4df;
+}
+
+[data-md-color-scheme="slate"] .md-search__form {
+  background-color: transparent !important;
+}
+
+[data-md-color-scheme="slate"] .md-search__input::placeholder {
+  color: #a8a098;
+}
+
+/* Dark mode — selection */
+[data-md-color-scheme="slate"] ::selection {
+  background-color: #6B5B8D;
+  color: #f0ece7;
+}
+
+/* Dark mode — footnotes */
+[data-md-color-scheme="slate"] .md-typeset .footnote {
   color: #a8a098;
 }

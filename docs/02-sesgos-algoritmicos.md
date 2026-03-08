@@ -1,10 +1,12 @@
 # Sesgos algorítmicos y de datos
 
+![La IA como espejo de la sociedad](images/05_Espejo.png)
+
 Los modelos de IA toman decisiones que afectan nuestras vidas reales: desde quién pasa un filtro de contratación,[^21] qué contenido ves en redes sociales o el contenido que generas a través de los modelos de lenguaje. Si los datos y modelos están sesgados, sus resultados también lo estarán, reproduciendo y amplificando desigualdades existentes en la sociedad.
 
 Para descifrar los sesgos en la IA, lo primero es romper con un mito fundamental: **la idea de que los datos y los modelos de IA son objetivos o neutrales**. La IA funciona más bien como un espejo de nuestra sociedad, refleja nuestras virtudes, pero también magnifica nuestros prejuicios y desigualdades históricas.
 
-![La IA como espejo de la sociedad](images/05_Espejo.png)
+
 ## ¿Qué es un sesgo algorítmico?
 
 Un sesgo algorítmico es un patrón sistemático en los resultados de un modelo que favorece o perjudica de manera injusta a ciertos grupos, dando lugar a resultados distorsionados y consecuencias potencialmente perjudiciales.[^1] Entender estos sesgos es particularmente importante cuando usamos modelos de lenguaje como ChatGPT, Claude o Gemini, ya que el lenguaje está profundamente arraigado en la cultura, codifica distintas visiones del mundo, normas sociales y relaciones históricas de poder.[^2] Los resultados que generan estos modelos siempre deben evaluarse con una mirada crítica, nunca como una verdad absoluta.
@@ -31,7 +33,7 @@ Los sesgos no son "errores mágicos" del software. Tienen orígenes muy claros e
 
 **Alucinaciones:** Como vimos en el [módulo 1](01-que-es-la-ia.md#cotorros-estocásticos-stochastic-parrots), las alucinaciones suceden cuando los modelos de lenguaje generan información convincente, pero falsa, debido a que por construcción, estos modelos predicen la siguiente secuencia de palabras más probable sin necesariamente verificar si el resultado es verdadero o no. Las tasas varían entre 3% y más del 13% según el modelo.[^6] Casos documentados incluyen: un abogado que presentó ante un juez citas legales inventadas por ChatGPT (2023), una herramienta de transcripción médica que inventaba medicamentos inexistentes y fue encontrada con errores en 8 de cada 10 transcripciones[^7], y un chatbot de aerolínea que informó a un pasajero sobre una tarifa de duelo retroactiva que no existía, donde el pasajero demandó y ganó el caso.[^8]
 
-**Sicofancia:** Esto sucede cuando el modelo tiende a confirmar las creencias del usuario, aunque sean incorrectas.[^22] Esto resulta del entrenamiento con retroalimentación humana ([RLHF](01-que-es-la-ia.md#alineación-cómo-se-hacen-útiles-y-seguros-los-llms)). El modelo aprende que ser "agradable" produce mejores calificaciones, incluso si eso significa estar de acuerdo con información incorrecta.[^9]
+**Sicofancia:** Esto sucede cuando el modelo tiende a confirmar las creencias del usuario, aunque sean incorrectas.[^22] Esto resulta del entrenamiento con retroalimentación humana ([RLHF](01-que-es-la-ia.md#alineación)). El modelo aprende que ser "agradable" produce mejores calificaciones, incluso si eso significa estar de acuerdo con información incorrecta.[^9]
 
 **Persuasión:** Los LLMs no solo reproducen sesgos de forma pasiva, también pueden amplificarlos activamente a través de la persuasión personalizada. Investigaciones han documentado que los LLMs han alcanzado capacidad persuasiva en múltiples dominios.[^23]
 
@@ -49,7 +51,7 @@ Los sesgos más profundos no están en errores técnicos sino en las estructuras
 - **Diseño:** La fuerza laboral en IA es predominantemente masculina, blanca/asiática, y localizada en Silicon Valley. Las decisiones de diseño reflejan las prioridades y puntos ciegos de quienes construyen.[^10]
 ## El problema de la caja negra
 
-Como vimos en el [módulo 1](01-que-es-la-ia.md#cómo-funciona-el-aprendizaje-profundo-deep-learning), las redes neuronales tienen millones de parámetros internos (pesos) que se ajustan durante el entrenamiento. A diferencia de un programa tradicional donde un humano escribe las reglas, en el aprendizaje profundo la máquina descubre sus propias reglas. Sabemos *cómo* están construidos los modelos, su arquitectura, las capas de la red neuronal, los mecanismos de atención, pero no podemos predecir con certeza *por qué* generan un resultado específico en lugar de otro.[^27]
+Como vimos en el [módulo 1](01-que-es-la-ia.md#como-funciona-el-aprendizaje-profundo-deep-learning), las redes neuronales tienen millones de parámetros internos (pesos) que se ajustan durante el entrenamiento. A diferencia de un programa tradicional donde un humano escribe las reglas, en el aprendizaje profundo la máquina descubre sus propias reglas. Sabemos *cómo* están construidos los modelos, su arquitectura, las capas de la red neuronal, los mecanismos de atención, pero no podemos predecir con certeza *por qué* generan un resultado específico en lugar de otro.[^27]
 
 ![El problema de la caja negra](images/06_CajaNegra.png)
 
