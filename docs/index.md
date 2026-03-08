@@ -13,11 +13,11 @@ A lo largo de esta wiki, podrás encontrar conceptos básicos sobre inteligencia
 
 | #   | Tema                                            | Descripción                                                            |
 | --- | ----------------------------------------------- | ---------------------------------------------------------------------- |
-| 1   | [Qué es la IA](01-que-es-la-ia.md)              | Definiciones, cómo funcionan los modelos y conceptos clave             |
-| 2   | [Sesgos algorítmicos](02-sesgos-algoritmicos)   | Cómo los datos y algoritmos reproducen sesgos presentes en la sociedad |
-| 3   | [Impactos ambientales](03-impactos-ambientales) | El costo material de entrenar modelos de IA                            |
-| 4   | [Futuro del trabajo](04-futuro-del-trabajo)     | Automatización, nuevos perfiles y el rol humano                        |
-| 5   | Herramientas y uso responsable                  | Cómo usar IA de forma crítica e informada — *próximamente*             |
+| 1   | **[Qué es la IA](01-que-es-la-ia.md)**              | Definiciones, cómo funcionan los modelos y conceptos clave             |
+| 2   | **[Sesgos algorítmicos](02-sesgos-algoritmicos)**   | Cómo los datos y algoritmos reproducen sesgos presentes en la sociedad |
+| 3   | **[Impactos ambientales](03-impactos-ambientales)** | El costo material de entrenar modelos de IA                            |
+| 4   | **[Futuro del trabajo](04-futuro-del-trabajo)**     | Automatización, nuevos perfiles y el rol humano                        |
+| 5   | **Herramientas y uso responsable**                  | Cómo usar IA de forma crítica e informada — *próximamente*             |
 
 ## ¿Para quién es esta guía?
 
