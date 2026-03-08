@@ -149,6 +149,13 @@
   color: var(--hdi-text);
 }
 
+/* Larger base on wide screens (external monitors) */
+@media (min-width: 1400px) {
+  .md-typeset {
+    font-size: 1.1rem;
+  }
+}
+
 .md-typeset h1,
 .md-typeset h2,
 .md-typeset h3,
