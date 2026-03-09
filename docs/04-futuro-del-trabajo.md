@@ -16,6 +16,8 @@ Este módulo examina cómo la IA está transformando el trabajo: qué dicen los 
 | **OIT** | 1 de cada 4 empleos expuesto a IA generativa. 4.7% de empleos de mujeres en máxima exposición vs. 2.4% de hombres | 2025[^10] |
 | **McKinsey** | 57% de las horas de trabajo en EE.UU. técnicamente automatizables, pero automatizable ≠ automatizado | 2025[^13] |
 | **Banco Mundial/OIT** | 26-38% de empleos en América Latina influenciados por IA generativa. Solo 2-5% en riesgo de automatización total | 2024[^5] |
+| **Anthropic Research** | La cobertura real de IA es una fracción del potencial teórico (33% vs. 94% en computación). 30% de trabajadores tiene exposición cero. No hay aumento sistemático de desempleo, pero la contratación de jóvenes (22-25) cayó 14% en ocupaciones expuestas | 2026[^27] |
+| **Stanford HAI** | Demanda laboral de IA en EE.UU. creció de 1.4% a 1.8% de ofertas de empleo. La demanda de IA generativa creció casi 4x en un año | 2025[^28] |
 
 !!! warning "Las cifras varían enormemente"
     Las estimaciones dependen de qué se mide: "expuesto a la IA" no es lo mismo que "será reemplazado." El saldo neto del WEF (+78 millones de empleos) puede ser positivo, pero la distribución importa más que el agregado: quienes pierden los 92 millones y quienes ganan los 170 millones no son las mismas personas, los mismos países, ni los mismos sectores.
@@ -45,11 +47,28 @@ Los usuarios individuales tienden a **colaborar** con la IA; las empresas tiende
 !!! info "La IA no reemplaza empleos completos"
     En noviembre de 2025, el **49% de las ocupaciones** mostraba uso de IA en al menos una cuarta parte de sus tareas, pero solo el **4%** la usaba en más del 75%. **Ningún empleo muestra automatización total.**[^26] La IA no está eliminando profesiones enteras; está redistribuyendo tareas dentro de cada profesión.
 
+Un estudio posterior de Anthropic Research (2026) refuerza este panorama con una métrica nueva: la *"exposición observada"*, que combina la capacidad teórica de los LLMs con datos reales de uso.[^27] Los resultados muestran que **la IA está lejos de alcanzar su potencial teórico**: en ocupaciones de computación y matemáticas, la capacidad teórica es del 94%, pero la cobertura real es apenas del 33%.[^27] El 30% de los trabajadores tiene exposición cero — cocineros, mecánicos, salvavidas, bartenders.[^27]
+
+A pesar de la alta exposición, **no se observa aumento sistemático en el desempleo** de los trabajadores más expuestos desde el lanzamiento de ChatGPT a finales de 2022.[^27] Pero hay una señal preocupante para quienes están entrando al mercado laboral.
+
 ### El efecto *deskilling*: la IA reemplaza las tareas más complejas
 
 Contrario a la automatización histórica (que reemplazaba trabajo manual y repetitivo), la IA cubre tareas que requieren en promedio **14.4 años de educación**, mientras que el promedio de la economía es **13.2 años**.[^26] La IA no está reemplazando trabajo manual — está reemplazando trabajo cognitivo de nivel medio-alto. Esto invierte la lógica histórica de la automatización y tiene implicaciones directas para profesionistas.
 
 En términos de velocidad: una tarea que toma **3.1 horas sin IA** se reduce a **15 minutos con IA**. La aceleración es de **12x para tareas de nivel universitario**.[^26] Si la IA genera entre 0.6 y 1.2 puntos porcentuales adicionales de crecimiento de productividad al año, eso es comparable al impacto histórico de la electricidad o la computadora personal.[^26] Pero la pregunta distributiva persiste: ¿quién captura esas ganancias?
+
+Estos hallazgos se confirman con datos de uso real: los trabajadores más expuestos a la IA ganan **47% más** y tienen **3.9 veces más probabilidad de tener un posgrado** que los no expuestos.[^27] La IA no amenaza primero a los más vulnerables — amenaza al trabajo cognitivo de nivel medio-alto, invirtiendo la lógica histórica de la automatización.
+
+### El impacto en los primeros empleos
+
+!!! danger "La puerta de entrada se está cerrando"
+    La tasa de contratación de **jóvenes de 22 a 25 años** en ocupaciones expuestas a la IA cayó un **14%** desde el lanzamiento de ChatGPT. Este efecto **no se observa en trabajadores mayores de 25 años**.[^27]
+
+Esto tiene implicaciones directas para estudiantes y recién egresados. Muchos trabajos *entry-level* — asistentes de investigación, analistas junior, redactores, programadores principiantes, atención al cliente — son precisamente las tareas que la IA puede cubrir más fácilmente. Históricamente, estos empleos eran la puerta de entrada: donde se aprendía haciendo, se construían redes profesionales y se ganaba experiencia de dominio.
+
+Si las empresas usan IA para automatizar esas tareas en lugar de contratar juniors, se genera una paradoja: los profesionistas del futuro necesitan experiencia para supervisar la IA, pero la IA les está quitando las oportunidades donde tradicionalmente obtenían esa experiencia. El riesgo no es solo perder un empleo — es **no poder empezar una carrera**.
+
+La respuesta no es rechazar la IA, sino **usarla como ventaja competitiva desde el inicio**: quien llega al mercado laboral sabiendo usar estas herramientas de forma crítica y efectiva (ver [Módulo 5: Herramientas y uso responsable](05-herramientas-uso-responsable.md)) tiene más posibilidades de diferenciarse. La experiencia de dominio — entender las instituciones, el contexto local, la realidad de tu disciplina — sigue siendo algo que la IA no tiene.
 
 ## La brecha geográfica: ¿quién usa la IA y quién no?
 
@@ -68,6 +87,20 @@ Cada **1% de aumento en PIB per cápita** se asocia con **0.7% más uso de IA pe
 
 !!! danger "La tecnología que "democratiza" sigue las líneas de desigualdad"
     Países de altos ingresos usan la IA de forma diversificada (trabajo, personal, educación) y más colaborativa. Países de bajos ingresos la usan de forma concentrada (programación, tareas escolares) y más automatizada.[^25] Si las ganancias de productividad se concentran en países que ya son prósperos, la IA podría **ampliar la desigualdad global** en lugar de reducirla.
+
+### Contratación de talento IA por país
+
+El Stanford HAI AI Index (2025) mide la tasa de crecimiento en contrataciones de IA por país. Los datos muestran que América Latina está incorporando talento IA a tasas comparables con las economías más dinámicas:[^28]
+
+| País | Crecimiento en contrataciones IA (2024) |
+|------|----------------------------------------|
+| India | 33.39% |
+| **Brasil** | **30.83%** |
+| Arabia Saudita | 28.71% |
+| **Argentina** | **26.39%** |
+| **México** | **24.02%** |
+
+Esto contrasta con el panorama del Anthropic Economic Index, que muestra bajo uso per cápita en la región.[^25] La interpretación: los países latinoamericanos están **formando** talento IA, pero ese talento no necesariamente se queda — la fuga de cerebros sigue siendo un problema documentado.[^11]
 
 ## México: entre el nearshoring y la informalidad
 
@@ -143,6 +176,8 @@ La IA no es neutral en términos de género. Los datos con los que se entrenan l
 - **51% de las madres** en México han pausado sus carreras vs. **20% de los padres**[^6]
 - A nivel global, **4.7% de empleos de mujeres** están en máxima exposición a IA generativa vs. **2.4% de hombres**[^10]
 - Los sistemas de IA clasifican a las mujeres como "outliers" debido a datos históricos sesgados[^16]
+- Los trabajadores en ocupaciones más expuestas a la IA son **16 puntos porcentuales más probablemente mujeres** que los no expuestos[^27]
+- A nivel global, el **69.46% del talento en IA es masculino** y solo el **30.54% femenino** — una proporción que no ha cambiado significativamente desde 2016[^28]
 
 La IA amenaza con automatizar empleos del sector formal donde las mujeres en América Latina han logrado avances: banca, administración pública, servicios.[^16] Si esos empleos desaparecen, podría empujar a las mujeres de vuelta hacia la economía informal.
 
@@ -190,6 +225,18 @@ El 24 de diciembre de 2024, México reformó la Ley Federal del Trabajo para tra
 4. Pensamiento creativo
 5. Resiliencia, flexibilidad y agilidad
 
+### Las habilidades técnicas más demandadas (Stanford HAI, 2025)
+
+Los datos de ofertas de empleo muestran qué habilidades técnicas específicas están creciendo más rápido:[^28]
+
+| Habilidad | Crecimiento en demanda |
+|-----------|----------------------|
+| Python | +527% |
+| Data Analysis | +208% |
+| Computer Science | +131% |
+
+La demanda de habilidades relacionadas con **IA generativa** creció casi **4 veces** en un año.[^28] Esto refuerza el punto: no basta con saber usar ChatGPT — el mercado laboral demanda habilidades técnicas concretas y la capacidad de combinarlas con juicio crítico y experiencia de dominio.
+
 El verdadero diferenciador no es saber escribir prompts — es **juicio**: pensar críticamente sobre lo que produce la IA, reconocer limitaciones, ajustar enfoques.[^9] La experiencia de dominio (entender las instituciones, el contexto político, la realidad local) combinada con fluidez en IA es más valiosa que habilidades técnicas puras. Instituciones como el Banco de Pagos Internacionales ya exploran cómo integrar IA en banca central[^23], y el NBER investiga el uso de agentes de IA en investigación económica[^24] — señales de que la disciplina se está transformando desde adentro.
 
 ### Marco de Competencias de la UNESCO (2024)
@@ -209,6 +256,18 @@ La UNESCO propone 12 competencias en 4 dimensiones para estudiantes:[^7]
 | Aumento en inscripciones de IA generativa en Coursera | +356% en 2025 (el más alto de LatAm) |
 | Crecimiento en demanda de habilidades de IA | +148% entre 2023-2025 |
 | Empresas de manufactura avanzada que no encuentran talento | 4 de cada 5[^9] |
+
+### Educación en IA: el panorama global
+
+Muy pocos países incluyen educación en IA explícitamente en sus currículas (Ghana, Corea del Sur, Países Bajos). La mayoría la subsume bajo educación en ciencias de la computación o TIC.[^28]
+
+- En 2024, ~**dos tercios** de los países del mundo ofrecían o planeaban ofrecer educación en CS
+- Es **obligatoria** en el 30% de los países (concentrados en Europa)
+- **África y América Latina** registraron los mayores aumentos en acceso en los últimos 5 años
+- Solo **10 países** han emitido guías sobre IA en educación — **Uruguay es el único de América Latina**[^28]
+
+!!! warning "La brecha educativa"
+    Solo el 34% de escuelas primarias en África subsahariana tienen acceso a electricidad. Sin infraestructura básica, la educación en IA es inalcanzable.[^28] En América Latina, el avance es mayor pero desigual: mientras Uruguay lidera en política educativa de IA, México aún no tiene guías nacionales sobre IA en educación.
 
 ## Propuestas de política pública
 
@@ -247,6 +306,7 @@ Para evaluar cualquier noticia, reporte o afirmación sobre IA y trabajo, estas 
 - [WEF Future of Jobs Report 2025](https://www.weforum.org/publications/the-future-of-jobs-report-2025/) — Proyecciones globales de empleo
 - [UNESCO AI Competency Framework](https://www.unesco.org/en/articles/ai-competency-framework-students) — Marco de competencias para estudiantes
 - Mary Gray & Siddharth Suri, [*Ghost Work*](https://ghostwork.info/) (2019) — El trabajo invisible detrás de la IA
+- [Stanford HAI AI Index 2025](https://hai.stanford.edu/ai-index/2025-ai-index-report) — Reporte anual con datos globales sobre adopción, talento, inversión y regulación de IA
 
 ## Referencias
 
@@ -276,3 +336,5 @@ Para evaluar cualquier noticia, reporte o afirmación sobre IA y trabajo, estas 
 [^24]: NBER (2025). "AI Agents for Economic Research." Paper. <https://www.nber.org/papers/w34202>
 [^25]: Anthropic (2025). "Anthropic Economic Index — September 2025 Report." Reporte. <https://www.anthropic.com/research/anthropic-economic-index-september-2025-report>
 [^26]: Anthropic (2026). "Anthropic Economic Index — January 2026 Report." Reporte. <https://www.anthropic.com/research/anthropic-economic-index-january-2026-report>
+[^27]: Massenkoff, M. y McCrory, P. (2026). "Labor market impacts of AI: A new measure and early evidence." Anthropic Research. <https://www.anthropic.com/research/labor-market-impacts>
+[^28]: Stanford HAI (2025). "AI Index Report 2025." Reporte. <https://hai.stanford.edu/ai-index/2025-ai-index-report>
