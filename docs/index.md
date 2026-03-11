@@ -3,11 +3,11 @@
 **Una guía para entender y cuestionar a la inteligencia artificial**
 
 ---
-**Descifrando la IA** es un proyecto de [Hijas de Internet](https://instagram.com/hijasdeinternet) que busca acercar estos temas de forma accesible, crítica y en español.
+**Descifrando la IA** es un proyecto de [Hijas de Internet](https://instagram.com/hijasdeinternet) que busca acercar el conocimiento sobre cómo funcionan los modelos de inteligencia artificial que usamos todos los días, conocer sus alcances y sus limitaciones, para poder hacer un uso responsable y crítico de estas tecnologías. 
 
-La inteligencia artificial está en muchos ámbitos de nuestras vidas: en las redes sociales que usamos, en los traductores automáticos, en las recomendaciones de música y video. Pero, ¿entendemos realmente cómo funciona? ¿Quién la diseña? ¿A quién beneficia y a quién puede perjudicar?
+La inteligencia artificial está en muchos ámbitos de nuestras vidas: en los chat bots como ChatGPT, Gemini o Claude, las redes sociales, traductores automáticos, en las recomendaciones de música y video. Pero, ¿entendemos realmente cómo funcionan? ¿quién las diseña? ¿a quién benefician y a quién puede perjudicar?
 
-A lo largo de esta wiki, podrás encontrar conceptos básicos sobre inteligencia artificial, así como referencias de distintas fuentes para que puedas consultar y seguir aprendiendo. 
+A lo largo de esta wiki, podrás encontrar de forma general conceptos básicos sobre inteligencia artificial, herramientas para cuestionar sus sesgos e impactos ambientales, su papel en el futuro de trabajo y tips para usarlas de forma responsable. Pero si te gustaría seguir explorando estos temas, te compartimos referencias de distintas fuentes para que puedas consultar y seguir aprendiendo. 
 
 ## Módulos
 
@@ -17,7 +17,7 @@ A lo largo de esta wiki, podrás encontrar conceptos básicos sobre inteligencia
 | 2   | **[Sesgos algorítmicos](02-sesgos-algoritmicos)**   | Cómo los datos y algoritmos reproducen sesgos presentes en la sociedad |
 | 3   | **[Impactos ambientales](03-impactos-ambientales)** | El costo material de entrenar modelos de IA                            |
 | 4   | **[Futuro del trabajo](04-futuro-del-trabajo)**     | Automatización, nuevos perfiles y el rol humano                        |
-| 5   | **Herramientas y uso responsable**                  | Cómo usar IA de forma crítica e informada — *próximamente*             |
+| 5   | **[Herramientas y uso responsable](05-herramientas-uso-responsable.md)** | Cómo usar IA de forma crítica e informada             |
 
 ## ¿Para quién es esta guía?
 

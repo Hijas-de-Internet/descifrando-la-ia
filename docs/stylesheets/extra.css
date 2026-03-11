@@ -460,3 +460,238 @@
 [data-md-color-scheme="slate"] .md-typeset .footnote {
   color: #a8a098;
 }
+
+/* ═══════════════════════════════════════════
+   INTERACTIVE QUIZZES — Ponte a prueba
+   ═══════════════════════════════════════════ */
+
+.quiz {
+  border: 1.5px solid var(--hdi-lavender);
+  border-radius: 6px;
+  padding: 0.8rem 1rem;
+  margin: 1.2rem 0;
+  background-color: var(--hdi-surface);
+  max-width: 600px;
+}
+
+.quiz-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--hdi-text);
+  margin: 0 0 0.6rem 0;
+}
+
+.quiz-option {
+  display: block;
+  padding: 0.35rem 0.6rem;
+  margin: 0.2rem 0;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: background-color 0.2s, border-color 0.2s;
+  font-family: 'Lora', Georgia, serif;
+  font-size: 0.9rem;
+}
+
+.quiz-option:hover {
+  background-color: rgba(199, 191, 224, 0.2);
+}
+
+.quiz-option input[type="radio"] {
+  margin-right: 0.4rem;
+  accent-color: var(--hdi-sky-dark);
+}
+
+.quiz-option.quiz-correct {
+  background-color: rgba(181, 204, 186, 0.35);
+  border-color: var(--hdi-sage);
+}
+
+.quiz-option.quiz-wrong {
+  background-color: rgba(224, 180, 183, 0.3);
+  border-color: var(--hdi-rose);
+}
+
+.quiz-check {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.35rem 0.9rem;
+  background-color: var(--hdi-lavender);
+  color: var(--hdi-text);
+  border: none;
+  border-radius: 5px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.quiz-check:hover:not(:disabled) {
+  background-color: #b5acd4;
+}
+
+.quiz-check:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.quiz-feedback {
+  margin-top: 0.5rem;
+  padding: 0.5rem 0.8rem;
+  border-radius: 5px;
+  font-family: 'Lora', Georgia, serif;
+  font-size: 0.85rem;
+  display: none;
+}
+
+.quiz-feedback:not(:empty) {
+  display: block;
+}
+
+.quiz-success {
+  background-color: rgba(181, 204, 186, 0.3);
+  border-left: 3px solid var(--hdi-sage);
+}
+
+.quiz-error {
+  background-color: rgba(224, 180, 183, 0.2);
+  border-left: 3px solid var(--hdi-rose);
+}
+
+.quiz-neutral {
+  background-color: rgba(212, 201, 181, 0.3);
+  border-left: 3px solid var(--hdi-sand);
+}
+
+/* Dark mode — quizzes */
+[data-md-color-scheme="slate"] .quiz {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-color: #3d3660;
+}
+
+[data-md-color-scheme="slate"] .quiz-title {
+  color: #f0ece7;
+}
+
+[data-md-color-scheme="slate"] .quiz-option {
+  color: #e8e4df;
+}
+
+[data-md-color-scheme="slate"] .quiz-option:hover {
+  background-color: rgba(199, 191, 224, 0.12);
+}
+
+[data-md-color-scheme="slate"] .quiz-check {
+  background-color: #3d3660;
+  color: #e8e4df;
+}
+
+[data-md-color-scheme="slate"] .quiz-check:hover:not(:disabled) {
+  background-color: #4d4578;
+}
+
+/* ═══════════════════════════════════════════
+   INTERACTIVE CHECKLIST — Comprensión
+   ═══════════════════════════════════════════ */
+
+.checklist {
+  border: 1.5px solid var(--hdi-sand);
+  border-radius: 6px;
+  padding: 0.8rem 1rem;
+  margin: 1.2rem 0;
+  background-color: var(--hdi-surface);
+  transition: border-color 0.3s;
+  max-width: 600px;
+}
+
+.checklist-complete {
+  border-color: var(--hdi-sage);
+}
+
+.checklist-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--hdi-text);
+  margin: 0 0 0.2rem 0;
+}
+
+.checklist-subtitle {
+  font-family: 'Lora', Georgia, serif;
+  color: var(--hdi-text-secondary);
+  font-size: 0.85rem;
+  margin: 0 0 0.5rem 0;
+}
+
+.checklist-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  padding: 0.3rem 0.5rem;
+  margin: 0.15rem 0;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Lora', Georgia, serif;
+  font-size: 0.9rem;
+  transition: background-color 0.15s;
+}
+
+.checklist-item:hover {
+  background-color: rgba(212, 201, 181, 0.25);
+}
+
+.checklist-item input[type="checkbox"] {
+  margin-top: 0.2rem;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  accent-color: var(--hdi-sage-dark);
+  cursor: pointer;
+}
+
+.checklist-item:has(input:checked) {
+  text-decoration: line-through;
+  color: var(--hdi-text-secondary);
+}
+
+.checklist-progress {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--hdi-text-secondary);
+  margin: 0.5rem 0 0 0;
+  padding-top: 0.4rem;
+  border-top: 1px solid var(--hdi-sand);
+}
+
+.checklist-complete .checklist-progress {
+  color: var(--hdi-sage-dark);
+}
+
+/* Dark mode — checklist */
+[data-md-color-scheme="slate"] .checklist {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-color: #3a3632;
+}
+
+[data-md-color-scheme="slate"] .checklist-complete {
+  border-color: var(--hdi-sage-dark);
+}
+
+[data-md-color-scheme="slate"] .checklist-title {
+  color: #f0ece7;
+}
+
+[data-md-color-scheme="slate"] .checklist-item {
+  color: #e8e4df;
+}
+
+[data-md-color-scheme="slate"] .checklist-item:hover {
+  background-color: rgba(255, 255, 255, 0.06);
+}
+
+[data-md-color-scheme="slate"] .checklist-item:has(input:checked) {
+  color: #a8a098;
+}

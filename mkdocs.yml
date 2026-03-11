@@ -41,14 +41,15 @@ nav:
   - "2. Sesgos algorítmicos": 02-sesgos-algoritmicos.md
   - "3. Impactos ambientales": 03-impactos-ambientales.md
   - "4. Futuro del trabajo": 04-futuro-del-trabajo.md
-  # Uncomment as you create each page:
-  # - "5. Herramientas y uso responsable": 05-herramientas-uso-responsable.md
+  - "5. Herramientas y uso responsable": 05-herramientas-uso-responsable.md
 
 markdown_extensions:
   - footnotes
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
   - pymdownx.tabbed:
       alternate_style: true
   - tables
@@ -78,5 +79,6 @@ extra_css:
 extra_javascript:
   - javascripts/external-links.js
   - javascripts/font-size.js
+  - javascripts/quiz.js
 
 copyright: "&copy; 2026 Hijas de Internet &bull; Descifrando la IA"

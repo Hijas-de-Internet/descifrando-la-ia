@@ -27,6 +27,8 @@ Cada centro de datos requiere:
 
 Para conocer la huella ambiental de la IA debemos considerar sus impactos a través de su ciclo de vida, que se compone de dos dimensiones, el software y hardware.[^15] El **ciclo de software** incluye la recolección de datos, el desarrollo de los modelos, entrenamiento, validación, despliegue, inferencia, mantenimiento y retiro. El **ciclo de hardware** abarca la producción de chips y GPUs, la construcción y operación de centros de datos, desde la extracción de materias primas, pasando por la manufactura y el transporte, hasta la operación, mantenimiento y disposición de basura electrónica. 
 
+![Ciclo de Vida](images/10_LCA.png)
+
 !!! warning "Los datos que tenemos (y los que no)"
     Aunque existen estudios sobre el impacto ambiental de distintas etapas del ciclo de vida de la IA, **la investigación comprehensiva sigue siendo escasa**.[^15] Esto ha provocado la proliferación de estadísticas en medios de comunicación, muchas sin respaldo riguroso. Estimar con precisión el impacto ambiental de la IA es difícil por los retos de medición, particularmente la falta de datos sobre efectos indirectos. Para conocer los impactos en cada etapa y aspecto (minerales, energía, emisiones, agua y basura digital) se necesitan más y mejores datos.[^15] Los datos de este módulo son los mejores disponibles que pudimos encontrar, pero deben leerse con esa cautela.
 
