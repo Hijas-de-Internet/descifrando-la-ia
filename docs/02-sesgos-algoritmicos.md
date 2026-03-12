@@ -140,6 +140,7 @@ Las empresas tecnológicas extraen valor de datos generados globalmente, pero la
     - **"Weapons of Math Destruction" — Cathy O'Neil (2016)** — Cómo los algoritmos amplían la desigualdad
     - **"Automating Inequality" — Virginia Eubanks (2018)** — Sistemas automatizados y su impacto en los pobres
     - **"Algorithms of Oppression" — Safiya Umoja Noble (2018)** — Sesgo racial en motores de búsqueda
+    - **Anthropic Courses — Prompt Evaluations:** <https://github.com/anthropics/courses/tree/master/prompt_evaluations> — Curso gratuito (9 lecciones) para aprender a evaluar sistemáticamente los resultados de modelos de IA[^28]
 
 ---
 
@@ -169,3 +170,4 @@ Las empresas tecnológicas extraen valor de datos generados globalmente, pero la
 [^25]: IBM. ¿Qué son los puntos de referencia LLM?. <https://www.ibm.com/mx-es/think/topics/llm-benchmarks>
 [^26]: World Economic Forum (2024). Global Gender Gap Report. <https://www.weforum.org/publications/global-gender-gap-report-2024/>
 [^27]: GeeksforGeeks (2024). "Black Box Problem in AI." <https://www.geeksforgeeks.org/artificial-intelligence/black-box-problem-in-ai/>
+[^28]: Anthropic (2024). "Prompt Evaluations Course." Curso. <https://github.com/anthropics/courses/tree/master/prompt_evaluations>

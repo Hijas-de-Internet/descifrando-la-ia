@@ -172,15 +172,24 @@ Los modelos de IA aprenden de datos que reflejan las desigualdades del mundo rea
     | Ventana de contexto          | La cantidad máxima de texto que un LLM puede procesar en una interacción. Si la conversación excede la ventana, el modelo "olvida".                                                    |
 
 ??? tip "Recursos para seguir aprendiendo"
+    **Experimenta con IA (sin código):**
+
     - **Teachable Machine (Google):** https://teachablemachine.withgoogle.com/ — Entrena tu primer modelo de IA sin código
     - **Google Quick, Draw!:** https://quickdraw.withgoogle.com/ — Dibuja y ve cómo una IA adivina qué es
     - **Embedding Visualization:** https://helboukkouri.github.io/embedding-visualization/ — Ve cómo la IA representa palabras como números
-    - **Elements of AI (en español):** https://www.elementsofai.com/es/
-    - **Google AI - Intro al ML (español):** https://cloud.google.com/learn/training/machinelearning-ai?hl=es
-    - **Fast.ai:** https://www.fast.ai/
-    - **Anthropic Courses:** https://anthropic.skilljar.com/
-    - **Google Skills:** https://www.skills.google/ — Cursos gratuitos de Google sobre IA y tecnología
     - **NotebookLM (Google):** https://notebooklm.google.com/ — Asistente de IA para analizar documentos y tomar notas
+
+    **Cursos gratuitos (conceptos fundamentales):**
+
+    - **Generative AI for Everyone (DeepLearning.AI):** https://www.coursera.org/learn/generative-ai-for-everyone — Curso introductorio de Andrew Ng sobre cómo funciona la IA generativa, sus aplicaciones y su impacto. Sin requisitos previos, ~3 horas
+    - **Elements of AI (en español):** https://www.elementsofai.com/es/ — Fundamentos conceptuales de IA (Universidad de Helsinki)
+    - **Google AI - Intro al ML (español):** https://cloud.google.com/learn/training/machinelearning-ai?hl=es — Introducción al aprendizaje automático
+    - **Google Skills:** https://www.skills.google/ — Cursos gratuitos de Google sobre IA y tecnología
+
+    **Cursos gratuitos (técnicos):**
+
+    - **Fast.ai:** https://www.fast.ai/ — Deep learning práctico, de lo aplicado a lo teórico
+    - **Anthropic Courses:** https://anthropic.skilljar.com/ — Prompt engineering y evaluación de modelos
     - **Google Cloud Tech (YouTube):** https://www.youtube.com/@googlecloudtech — Videos explicativos sobre IA y cloud
 
 ---

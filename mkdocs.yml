@@ -42,6 +42,7 @@ nav:
   - "3. Impactos ambientales": 03-impactos-ambientales.md
   - "4. Futuro del trabajo": 04-futuro-del-trabajo.md
   - "5. Herramientas y uso responsable": 05-herramientas-uso-responsable.md
+  - "Cómo hicimos esta wiki": como-se-hizo.md
 
 markdown_extensions:
   - footnotes

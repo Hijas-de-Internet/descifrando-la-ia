@@ -38,6 +38,13 @@ Estas limitaciones no son barreras temporales, son características estructurale
 !!! danger "Las citas de IA pueden ser inventadas"
     Si una estadística o cita suena perfecta, probablemente sea fabricada. Siempre verifica estadísticas contra fuentes oficiales y citas académicas en Google Scholar o el sitio de la revista.
 
+??? tip "3 técnicas para reducir alucinaciones"
+    Cuando trabajes con un LLM, puedes reducir las alucinaciones con estas estrategias:[^29]
+
+    1. **Dale una salida.** Agrega instrucciones como *"Si no estás seguro, dilo"* o *"Solo responde si tienes certeza."* Sin esta salida, el modelo intentará responder siempre, aunque invente.
+    2. **Pide evidencia primero.** En lugar de preguntar directamente, pide que extraiga las citas o datos relevantes del texto antes de responder. Si no encuentra evidencia, es más probable que admita que no sabe.
+    3. **Ancla la respuesta a un documento.** Sube o pega el texto fuente y pide: *"Responde únicamente con información de este documento."* Esto limita al modelo a trabajar con datos reales en vez de generar de memoria.
+
 ### Deepfakes: cuando los datos mismos son fabricados
 
 El problema de verificación se intensifica cuando ya no solo el texto, sino la imagen, el audio y el video pueden ser generados:
@@ -134,7 +141,7 @@ No toda la IA es igual. La evolución va de herramientas que responden a herrami
 | **Agentes de IA** | Logran un objetivo singular, automatizan flujos completos | Un asistente que busca en internet, ejecuta código y genera un reporte |
 | **IA Agéntica** | Se adapta en tiempo real; agentes autónomos colaboran entre sí | Múltiples agentes coordinándose: uno busca datos, otro los limpia, otro analiza y otro redacta, todo con una sola instrucción |
 
-La diferencia crítica: los agentes de IA agéntica no siguen simplemente reglas preprogramadas, pueden **razonar, planear y actuar** con mínima intervención humana.[^2]
+La diferencia crítica: un agente de IA individual ejecuta tareas dentro de un alcance definido (responder consultas, buscar documentos). La IA agéntica va un paso más allá: múltiples agentes especializados colaboran entre sí, descomponiendo un objetivo complejo en subtareas que se distribuyen, secuencian y adaptan en tiempo real.[^31] No siguen reglas preprogramadas — razonan, planean y actúan con mínima intervención humana.[^2]
 
 ### Cómo funcionan los agentes por dentro
 
@@ -221,6 +228,7 @@ La IA agéntica promete mucho, pero más autonomía no es sinónimo de mejor res
 3. **Seguridad:** Agentes con acceso a internet pueden ejecutar acciones dañinas sin autorización
 4. **Costo:** Consumen muchos más tokens (y energía) que un chatbot simple
 5. **Comportamiento autónomo excesivo:** Los modelos de frontera a veces toman acciones riesgosas sin pedir permiso[^1]
+6. **Sin razonamiento causal:** Los LLMs detectan correlaciones estadísticas, pero no entienden causa y efecto. Un agente puede observar que las visitas al hospital coinciden con enfermedad, pero no puede determinar cuál causa cuál, ni imaginar qué pasaría si se cambiara una variable.[^31]
 
 ### Transparencia radical: el caso del Sabotage Risk Report
 
@@ -334,6 +342,7 @@ Los cambios tecnológicos profundos, como los políticos, casi siempre se siente
     |-----------|-------------|-----------|
     | **Texto y análisis** | ChatGPT (OpenAI) | Lluvia de ideas, explicaciones, análisis rápido |
     | | Claude (Anthropic) | Análisis de documentos largos, codificación, redacción |
+    | | [Claude Code](https://claude.com/blog/how-anthropic-teams-use-claude-code) (Anthropic) | Agente de programación en terminal, útil para automatizar tareas y explorar código[^30] |
     | | Gemini (Google) | Tareas multimodales, integración con Google Docs |
     | **Investigación** | Perplexity | Búsqueda con fuentes citadas |
     | | Consensus | Consenso científico sobre un tema |
@@ -394,3 +403,6 @@ Los cambios tecnológicos profundos, como los políticos, casi siempre se siente
 [^26]: DataCamp (2025). "AI Agent Frameworks: Tools for Smarter Systems." Blog. <https://www.datacamp.com/blog/ai-agent-frameworks>
 [^27]: Revzin, S. & Revzin, V. (2026). "How To Separate Artificial Intelligence Signal From Noise." Forbes. <https://www.forbes.com/sites/sergeirevzin/2026/01/07/how-to-separate-artificial-intelligence-signal-from-noise/>
 [^28]: Dakan, R. & Feller, J. (2025). "AI Fluency Framework." Anthropic / Ringling College / University College Cork. CC BY-NC-ND 4.0. <https://aifluencyframework.org/>
+[^29]: AWS Samples (2024). "Prompt Engineering with Anthropic's Claude 3.X." Workshop. <https://github.com/aws-samples/prompt-engineering-with-anthropic-claude-v-3>
+[^30]: Anthropic (2025). "How Anthropic Teams Use Claude Code." Blog. <https://claude.com/blog/how-anthropic-teams-use-claude-code>
+[^31]: (2025). "Foundational Understanding of AI Agents." Information Fusion, Elsevier. <https://www.sciencedirect.com/science/article/pii/S1566253525006712>
