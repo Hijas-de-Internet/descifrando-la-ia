@@ -1,8 +1,8 @@
 # Descifrando la Inteligencia Artificial: conceptos básicos
 
-![La IA no es magia](images/00_Magia.png)
-
 Hoy, usamos tecnologías de Inteligencia Artificial (IA) todos los días. Las redes sociales (TikTok, Instagram, Facebook) usan algoritmos de IA para decidir qué contenido mostrar. Netflix y Spotify aprenden de las series y películas que vemos.[^2] Google Maps predice tráfico con datos de millones de teléfonos.[^3] Los filtros de Snapchat e Instagram usan visión por computadora para identificar los rasgos faciales en tiempo real, lo que les permite aplicar máscaras y efectos digitales en tu rostro. [^3] 
+
+![La IA no es magia](images/00_Magia.png)
 
 En este módulo, podrás entender qué es la Inteligencia Artificial, cómo funcionan las tecnologías detrás de ellas y profundizar sobre los modelos de lenguaje y otros conceptos clave que es necesario entender cuando usamos herramientas de IA. **El principal objetivo es entender que la IA no es magia**, es un conjunto de tecnologías que funcionan con matemáticas y modelos estadísticos que todas y todos tenemos la capacidad de entender.
 
@@ -42,8 +42,17 @@ Así como una persona aprende con la práctica, un modelo prueba una y otra vez 
 
 #### Validación (el examen)
 Una vez entrenado, el modelo **se prueba con datos que nunca ha visto antes** para verificar si realmente aprendió patrones generalizables o solo memorizó los ejemplos de entrenamiento. [^13] Un modelo que solo memoriza (lo que se llama [sobreajuste](https://es.wikipedia.org/wiki/Sobreajuste) u *overfitting*) puede tener un rendimiento perfecto con sus datos de entrenamiento pero fallar con datos nuevos. La validación funciona como un examen sorpresa, si el modelo realmente aprendió, puede responder preguntas que nunca ha visto antes.
-#### Refinamiento (la especialización)
-Un modelo pre-entrenado tiene conocimiento general, pero no necesariamente hace bien una tarea específica. El refinamiento (o *fine-tuning*) es el proceso de tomar ese modelo general y adaptarlo con datos especializados, sin tener que entrenarlo desde cero [^14].  En lugar de construir un modelo desde cero para cada tarea, lo que requeriría millones de datos y mucho cómputo, el fine-tuning permite reutilizar el conocimiento previo y especializarlo con menos recursos.
+#### Ajuste o refinamiento (la especialización)
+Un modelo pre-entrenado tiene conocimiento general, pero no necesariamente hace bien una tarea específica. El refinamiento (o *fine-tuning*) consiste en tomar ese modelo general y volver a ajustar sus pesos internos (el mismo mecanismo del entrenamiento original) pero con un conjunto de datos más pequeño y enfocado en una tarea concreta.[^14] 
+
+Pero refinar un modelo para que sea bueno en una tarea no garantiza que se *comporte bien*. Si le preguntas a un chatbot cómo fabricar un arma, ¿te da instrucciones o se niega? Eso no depende de qué tan bueno sea el modelo en generar texto, depende de cómo fue alineado. La **alineación** es el proceso de codificar valores y objetivos humanos en los modelos de IA para que sean útiles, seguros y fiables.[^32] Este proceso toma más relevancia si somos conscientes de los [múltiples sesgos que tienen los datos de entrenamiento](02-sesgos-algoritmicos.md).
+
+??? info "Técnicas de alineación: SFT, RLHF y Constitutional AI"
+    **Fine-tuning supervisado (SFT):** Se re-entrena el modelo con ejemplos etiquetados de cómo *debería* responder en distintas situaciones — básicamente, se le dan ejemplos del comportamiento deseado.[^27]
+
+    **RLHF (Reinforcement Learning from Human Feedback):** Evaluadores humanos comparan pares de respuestas y eligen cuál es mejor. Con esas comparaciones se entrena un "modelo de recompensa" que aprende a predecir qué respuestas prefieren los humanos. El modelo se optimiza para maximizar esas recompensas.[^28]
+
+    **Constitutional AI (Anthropic, 2022):** En lugar de depender exclusivamente de evaluadores humanos, el modelo se entrena con un conjunto de principios escritos (una "constitución"). Genera respuestas, se autocritica según esos principios, y se revisa a sí mismo.[^29]
 #### Inferencia (la aplicación)
 Es la etapa cuando el modelo ya entrenado aplica lo aprendido a datos nuevos. Cada vez que un modelo de IA clasifica una imagen, traduce un texto o genera una respuesta, está haciendo *inferencia*. No está aprendiendo nada nuevo, está usando lo que ya aprendió [^15].  
 
@@ -109,17 +118,6 @@ El término de **loros estocásticos** fue acuñado por las investigadoras Emily
 ??? example "Conoce más sobre Timnit Gebru"
     Investigadora eritreo-etíope-estadounidense en ética de la IA. En diciembre de 2020, su empleo en Google terminó por el paper "On the Dangers of Stochastic Parrots". Aproximadamente 2,700 empleados firmaron una carta de protesta. Es cofundadora de Black in AI y fundadora del [Distributed Artificial Intelligence Research Institute (DAIR)](https://www.dair-institute.org/). Su caso es emblemático sobre el poder de las grandes empresas tecnológicas sobre la investigación crítica.[^26]
 
-### Alineación
-
-Un modelo de lenguaje entrenado con texto de Internet puede predecir palabras, pero no necesariamente tiene los resultados deseados ni se alinea con valores humanos. Para cerrar esa brecha se utilizan técnicas de alineación. 
-
-??? info "¿Cómo se alinean los LLMs? SFT, RLHF y Constitutional AI"
-    **Fine-tuning supervisado (SFT):** Consiste en tomar un modelo de lenguaje preentrenado y seguir entrenándolo con un conjunto de datos más pequeño y específico para una tarea, con ejemplos etiquetados para que funcione mejor en la tarea específica sin perder los conocimientos generales adquiridos durante el preentrenamiento. [^27].
-
-    **RLHF (Reinforcement Learning from Human Feedback):** Evaluadores humanos comparan pares de respuestas del modelo y eligen cuál es mejor. Con esas comparaciones se entrena un "modelo de recompensa" que aprende a predecir qué respuestas prefieren los humanos. El modelo se optimiza para maximizar esas recompensas [^28].
-
-    **Constitutional AI (Anthropic, 2022):** En lugar de depender exclusivamente de evaluadores humanos, el modelo se entrena usando un conjunto de principios escritos (una "constitución"). El modelo genera respuestas, se autocritica según esos principios, y se revisa a sí mismo.[^29]
-
 ## IA Agéntica *(Agentic AI)*
 
 La IA agéntica se refiere a **sistemas de IA que actúan de manera autónoma** para lograr objetivos específicos, realizando múltiples acciones en secuencia **sin intervención humana constante**. [^30] La principal diferencia con ChatGPT y otros chatbots es que estas aplicaciones responden a prompts individuales, mientras que un agente de IA puede planear, ejecutar tareas complejas y adaptarse según los resultados.
@@ -182,7 +180,8 @@ Los modelos de IA aprenden de datos que reflejan las desigualdades del mundo rea
     **Cursos gratuitos (conceptos fundamentales):**
 
     - **Generative AI for Everyone (DeepLearning.AI):** https://www.coursera.org/learn/generative-ai-for-everyone — Curso introductorio de Andrew Ng sobre cómo funciona la IA generativa, sus aplicaciones y su impacto. Sin requisitos previos, ~3 horas
-    - **Elements of AI (en español):** https://www.elementsofai.com/es/ — Fundamentos conceptuales de IA (Universidad de Helsinki)
+    - **Elements of AI (en español):** https://course.elementsofai.com/es/ — Fundamentos conceptuales de IA (Universidad de Helsinki)
+    - **Recursos Educativos Abiertos en IA (Tec de Monterrey):** https://observatorio.tec.mx/recursos-educativos-abiertos-en-inteligencia-artificial/ — Colección de recursos abiertos sobre inteligencia artificial
     - **Google AI - Intro al ML (español):** https://cloud.google.com/learn/training/machinelearning-ai?hl=es — Introducción al aprendizaje automático
     - **Google Skills:** https://www.skills.google/ — Cursos gratuitos de Google sobre IA y tecnología
 
@@ -227,3 +226,4 @@ Los modelos de IA aprenden de datos que reflejan las desigualdades del mundo rea
 [^29]: Bai et al. (2022). "*Constitutional AI: Harmlessness from AI Feedback*". <https://arxiv.org/abs/2212.08073>
 [^30]: Google Cloud. "*What is an AI agent*?. <https://cloud.google.com/discover/what-are-ai-agents?hl=en>
 [^31]: Jay Alammar. "*The Illustrated Transformer*. <https://jalammar.github.io/illustrated-transformer/#:~:text=As%20the%20model%20processes%20each,one%20we're%20currently%20processing.>
+[^32]: IBM. ¿Qué es la alineación de la IA?. <https://www.ibm.com/mx-es/think/topics/ai-alignment>
