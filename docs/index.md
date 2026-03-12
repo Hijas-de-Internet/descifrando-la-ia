@@ -18,6 +18,7 @@ A lo largo de esta wiki, podrás encontrar de forma general conceptos básicos s
 | 3   | **[Impactos ambientales](03-impactos-ambientales)** | El costo material de entrenar modelos de IA                            |
 | 4   | **[Futuro del trabajo](04-futuro-del-trabajo)**     | Automatización, nuevos perfiles y el rol humano                        |
 | 5   | **[Herramientas y uso responsable](05-herramientas-uso-responsable.md)** | Cómo usar IA de forma crítica e informada             |
+|     | **[Cómo hicimos esta wiki](como-se-hizo.md)**   | Transparencia sobre el uso de IA en la producción de este proyecto     |
 
 ## ¿Para quién es esta guía?
 
@@ -37,14 +38,16 @@ Todo el contenido se desarrolla con una perspectiva crítica: no solo explicamos
 !!! quote "Pregunta guía"
     ¿Quién se beneficia? ¿Quién sale perjudicado/a? ¿Quién tiene acceso y quién no?
 
-## <!-- Escucha el podcast
+<!--
+## Escucha el podcast
 
 Este contenido acompaña la serie **Descifrando la IA** del podcast Hijas de Internet, disponible en todas las plataformas.
 
 <div class="spotify-embed">
 <iframe src="https://open.spotify.com/embed/show/hijasdeinternet" width="100%" height="152" frameBorder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 </div>
-TODO: Add 05_HerramientasIA.png -->
+TODO: Add 05_HerramientasIA.png
+-->
 ---
 
 *Proyecto desarrollado en 2026 como parte del proyecto Descifrando la IA, de hijas de Internet (ultima actualización marzo 2026).*
