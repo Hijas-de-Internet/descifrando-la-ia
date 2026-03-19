@@ -66,6 +66,9 @@ plugins:
   - search
 
 extra:
+  analytics:
+    provider: google
+    property: G-FESH4DYEHH
   social:
     - icon: fontawesome/brands/instagram
       link: https://instagram.com/hijasdeinternet
