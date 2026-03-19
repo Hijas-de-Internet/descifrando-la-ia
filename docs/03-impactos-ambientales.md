@@ -2,13 +2,9 @@
 
 ![El mito de la nube](images/09_MitoLaNube.png)
 
-Cuando "subimos" algo a la nube o le hacemos una pregunta a ChatGPT, la mayoría de las personas imaginamos algo etéreo e intangible. Pero detrás de esa interfaz hay edificios enormes que consumen electricidad las 24 horas del día, agua para enfriar servidores, y extracción de minerales para construir semiconductores y chips.
+Cuando "subimos" algo a la nube o le hacemos una pregunta a ChatGPT, la mayoría de las personas **imaginamos algo etéreo e intangible.** Pero detrás de esa interfaz hay edificios enormes que consumen electricidad las 24 horas del día, agua para enfriar servidores, y extracción de minerales para construir semiconductores y chips.
 
 Este módulo explora el costo ambiental de la Inteligencia Artificial: quién lo paga, cómo se distribuye y qué podemos hacer al respecto.
-
-!!! danger "El Límite de los 1.5°C"
-    En 2024, las temperaturas globales superaron **1.5°C sobre niveles preindustriales durante 12 meses consecutivos**.[^13] Al ritmo actual, se proyecta alcanzar este umbral de forma permanente para **2029**.[^29] Para evitarlo, las emisiones de CO2 deben reducirse **45% para 2030 y alcanzar cero neto para 2050**, pero actualmente emitimos ~42 GtCO2 al año.[^2] La diferencia entre 1.5°C y 2°C significa **el doble de personas expuestas a sequías severas**, la pérdida de prácticamente **todos los arrecifes de coral**, y veranos árticos sin hielo.[^2] Cada nueva fuente de emisiones cuenta, y la IA es una de las que más rápido crece.
-
 
 ## La infraestructura física detrás de lo digital
 
@@ -25,7 +21,7 @@ Cada centro de datos requiere:
 
 ## Evaluar el ciclo de vida de la IA
 
-Para conocer la huella ambiental de la IA debemos considerar sus impactos a través de su ciclo de vida, que se compone de dos dimensiones, el software y hardware.[^15] El **ciclo de software** incluye la recolección de datos, el desarrollo de los modelos, entrenamiento, validación, despliegue, inferencia, mantenimiento y retiro. El **ciclo de hardware** abarca la producción de chips y GPUs, la construcción y operación de centros de datos, desde la extracción de materias primas, pasando por la manufactura y el transporte, hasta la operación, mantenimiento y disposición de basura electrónica. 
+Para conocer la huella ambiental de la IA debemos considerar sus impactos a través de su ciclo de vida, que se compone de dos dimensiones, el software y hardware.[^15] El **ciclo de software** incluye la recolección de datos, el desarrollo de los modelos, entrenamiento, validación, despliegue, inferencia, mantenimiento y retiro. El **ciclo de hardware** abarca la producción de chips y GPUs, la construcción y operación de centros de datos, desde la extracción de materias primas, pasando por la manufactura y el transporte, hasta la operación, mantenimiento y disposición de basura electrónica.
 
 ![Ciclo de Vida](images/10_LCA.png)
 
@@ -38,15 +34,22 @@ En 2024, centros de datos a nivel mundial consumieron **415 TWh de electricidad,
 
 El consumo de energía de los centros de datos es un problema. Pero el problema más profundo es **de dónde viene esa energía**. Casi la **mitad de la electricidad** que consumen los centros de datos en Estados Unidos proviene de centrales de combustibles fósiles.[^31] Cuando Meta anunció Hyperion, su centro de datos de IA en Luisiana, que consumirá **más del doble de energía que toda la ciudad de Nueva Orleans**, los reguladores aprobaron la construcción de **tres nuevas plantas de gas natural** para alimentarlo.[^31]
 
-### ¿Cuánto contamina la IA?
+## ¿Cuánto contamina la IA?
 
 El sector TIC en su conjunto (centros de datos, redes, dispositivos) genera unas **700 millones de toneladas de CO2 equivalente (MtCO2e)** al año, lo que representa el **1.4% de las emisiones globales**.[^5] La Agencia Internacional de Energía (AIE) estima que los centros de datos son responsables de aproximadamente **180 millones de toneladas**, es decir, el **0.5% de las emisiones globales**.[^19] Puede parecer poco, pero la demanda energética de los centros de datos está creciendo rápidamente y se proyecta que se duplique para 2030.[^19][^30]
 
-#### ¿Cuánto contamina un modelo de lenguaje?
+### ¿Cuánto contamina un modelo de lenguaje?
 
 Uno de los primeros estudios que puso el tema en la agenda pública fue *"Energy and Policy Considerations for Deep Learning in NLP"*, publicado en 2019. De acuerdo con esta investigación, entrenar un modelo NAS emitió **~284 toneladas de CO2**, equivalente a **cinco veces las emisiones de un auto durante toda su vida útil**, incluyendo su fabricación. Incluso entrenar un solo modelo BERT emitió tanto CO2 como un vuelo transatlántico.[^4]
 
 Un estudio posterior de Luccioni, Viguier y Ligozat (2022) demostró que la fuente de electricidad importa tanto o más que el tamaño del modelo.[^6] BLOOM (176B parámetros) consumió 433,196 kWh de energía, comparable a GPT-3. Pero porque se entrenó en Francia (donde el 70% de la electricidad es nuclear), emitió solo **25 toneladas de CO2** frente a las **502 toneladas de GPT-3** (entrenado con electricidad estadounidense). Si incluimos manufactura de hardware y consumo idle, el total de BLOOM sube a 50.5 toneladas, aun así, **10 veces menos que GPT-3**.[^6]
+
+![BLOOM](images/11_BLOOMvsGPT3.png)
+
+<!-- 🖼️ IMAGEN: Comparación BLOOM vs GPT-3
+     Archivo: images/11_BLOOMvsGPT3.png
+     Flow prompt: "Hand-drawn style educational diagram comparing two language models' carbon footprint. Left side: 'BLOOM' with French flag, nuclear symbol, '25 tCO2' in sage green (#A8B5A0). Right side: 'GPT-3' with US flag, fossil fuel symbol, '502 tCO2' in warm rose (#D4A0A0). Scale bar showing 20x difference. Background warm off-white (#FAF8F5), dark ink text (#2C2825), Inter font headings. Square format, informative, clean, no photorealism."
+-->
 
 ??? example "Medir lo que la industria prefiere ignorar"
     **Sasha Luccioni** es investigadora franco-canadiense y líder de clima en Hugging Face. Su trabajo ha sido pionero en medir las emisiones reales de modelos de IA: desde calcular la huella de carbono completa de BLOOM[^6] hasta demostrar que generar una imagen consume 1,450 veces más energía que clasificar un texto.[^14] Es una de las voces más visibles en la intersección de IA y cambio climático.
@@ -73,17 +76,28 @@ Las grandes empresas tecnológicas se comprometieron públicamente a reducir sus
 !!! warning "¿Qué son los RECs y por qué importan?"
     Las empresas tecnológicas afirman operar con energía renovable comprando **Certificados de Energía Renovable (RECs)**. Es decir, compran créditos de alguien que produce energía verde en otro lugar, mientras sus centros de datos funcionan con carbón y gas natural de de forma local. Es el equivalente a afirmar que reciclas porque compraste un bono de reciclaje de alguien en otro país, pero tirar cada vez más basura en tu propio país. 16 fiscales generales de Estados Unidos han investigado a Amazon, Google, Meta y Microsoft por este tipo de afirmaciones.[^12]
 
+## El límite de los 1.5°C: por qué cada emisión cuenta
+
+!!! danger "El Límite de los 1.5°C"
+    En 2024, las temperaturas globales superaron **1.5°C sobre niveles preindustriales durante 12 meses consecutivos**.[^13] Al ritmo actual, se proyecta alcanzar este umbral de forma permanente para **2029**.[^29] Para evitarlo, las emisiones de CO2 deben reducirse **45% para 2030 y alcanzar cero neto para 2050**, pero actualmente emitimos ~42 GtCO2 al año.[^2] La diferencia entre 1.5°C y 2°C significa **el doble de personas expuestas a sequías severas**, la pérdida de prácticamente **todos los arrecifes de coral**, y veranos árticos sin hielo.[^2] Cada nueva fuente de emisiones cuenta, y la IA es una de las que más rápido crece.
+
+Y el impacto no se limita a la energía y el carbono, la IA también consume cantidades cada vez más grandes de agua. 
+
 ## El agua que consume la IA
 
-El impacto de los centros de datos no se limita a la energía. Como vimos en el [Módulo 1](01-que-es-la-ia.md), los modelos de deep learning realizan miles de millones de operaciones matemáticas para ajustar sus parámetros, cada una de esas operaciones genera calor en los procesadores. 
+<!-- 🖼️ IMAGEN: El agua que consume la IA
+     Archivo: images/12_AguaIA.png
+     Flow prompt: "Diagrama educativo para una wiki de alfabetización en IA. Estilo ilustración a mano, cálido y accesible. Un centro de datos estilizado con servidores visibles, del cual salen tuberías y vapor de agua. A un lado, una botella de agua de 500ml con la etiqueta '= 10-50 respuestas de ChatGPT.' Al otro lado, una gota de agua grande con el número '560 mil millones de litros/año' y una flecha hacia arriba que dice 'x2 para 2030.' En la parte inferior, siluetas de casas y campos de cultivo compitiendo por el mismo recurso hídrico. Fondo cálido off-white (#FAF8F5), texto en tinta oscura (#2C2825), gotas y tuberías en azul cielo (#A8C8DD), vegetación en verde salvia (#B5CCBA). Formato 1200x900 px (4:3, landscape), resolución para web. Informativo, sin fotorrealismo."
+-->
 
-Para evitar que los servidores se sobrecalienten, los centros de datos usan dos tipos de enfriamiento: **sistemas de aire acondicionado** (que consumen electricidad) o **enfriamiento con agua** (que consume agua directamente). Los sistemas de enfriamiento representan entre el **7% (centros hiperescala)** y el **30% (centros empresariales)** del consumo eléctrico total de un centro de datos.[^19] A nivel global, los centros de datos consumen alrededor de **560 mil millones de litros de agua por año**, y esto podría aumentar hasta alcanzar unos 1200 mil millones de litros al año en 2030.[^19]  
+El impacto de los centros de datos no se limita a la energía. Como vimos en el [Módulo 1](01-que-es-la-ia.md), los modelos de deep learning realizan miles de millones de operaciones matemáticas para ajustar sus parámetros, cada una de esas operaciones genera calor en los procesadores.
 
-El problema no es solo el consumo, sino lo que las empresas ocultan. En Uruguay, Google clasificó los datos de consumo de agua y energía de su centro de datos en Canelones como **"secreto industrial y comercial"**. Fue necesario un fallo judicial para obligar al Ministerio de Ambiente a revelar que el proyecto consumiría hasta **7.6 millones de litros de agua potable por día**.[^32]  
+Para evitar que los servidores se sobrecalienten, los centros de datos usan dos tipos de enfriamiento: **sistemas de aire acondicionado** (que consumen electricidad) o **enfriamiento con agua** (que consume agua directamente). Los sistemas de enfriamiento representan entre el **7% (centros hiperescala)** y el **30% (centros empresariales)** del consumo eléctrico total de un centro de datos.[^19] A nivel global, los centros de datos consumen alrededor de **560 mil millones de litros de agua por año**, y esto podría aumentar hasta alcanzar unos 1200 mil millones de litros al año en 2030.[^19]
 
+Para dimensionar el impacto por modelo: entrenar GPT-3 evaporó directamente **700,000 litros de agua limpia** solo en el enfriamiento on-site de los servidores. Incluyendo el agua utilizada para generar la electricidad necesaria, el total asciende a **5.4 millones de litros**.[^39] Y no solo el entrenamiento consume agua: en uso cotidiano, GPT-3 necesita una **botella de 500ml de agua por cada 10 a 50 respuestas**, dependiendo de la ubicación del centro de datos.[^39]
+
+![El agua que consume la IA](images/12_AguaIA.png)
 ### Caso de estudio: Querétaro, México
-
-<!-- TODO: Add 03_Queretaro.png -->
 
 Querétaro concentra el **65% de la capacidad de centros de datos de México**, con inversiones de AWS, Microsoft y Google Cloud.[^18] Al mismo tiempo, **17 de sus 18 municipios** experimentaron sequía moderada a severa en 2025.[^38] Residentes de Viborillas y Colón reportan recibir agua solo tres días por semana, y tanto las empresas como el gobierno estatal han negado solicitudes de información sobre uso de agua e impacto comunitario.[^24]
 
@@ -91,14 +105,33 @@ Querétaro concentra el **65% de la capacidad de centros de datos de México**, 
     "Estos centros de datos están en medio de áreas que se usaban para la recarga de acuíferos, la agricultura o la ganadería, que son fuente de ingreso para muchas familias." — Activista local, Voceras de la Madre Tierra.[^24]
 
 Las preguntas de fondo son: ¿quién decide cómo se asigna el agua, un recurso con demanda inelástica para hogares y agricultura, cuando compite con inversión tecnológica extranjera? ¿a dónde se van los beneficios?
-## La cadena de suministro oculta: minerales y basura electrónica
 
-La IA no solo consume energía y agua. Su hardware requiere minerales críticos que se extraen principalmente en el Sur Global. De 2001 a 2022, el número de chips vendidos se **cuadruplicó**, y la demanda no muestra señales de desaceleración.[^15] Además, la IA y la transición energética compiten por los mismos recursos escasos. Los minerales necesarios para la digitalización son prácticamente los mismos que se requieren para la transición a energías limpias: cobre, litio, cobalto, tierras raras.  
+## La IA no solo mina datos
+
+!!! quote ""
+    "Si el siglo XX funcionó con petróleo y acero, el siglo XXI funciona con cómputo y los minerales que lo alimentan." — Jacob Helberg, Departamento de Estado de EE.UU.[^41]
+
+### La anatomía de un chip
+
+<!-- 🖼️ IMAGEN: Anatomía de un chip de IA
+     Archivo: images/13_AnatomiaChip.png
+     Flow prompt: "Hand-drawn style exploded diagram of an AI chip showing material layers: silicon (quartz sand), copper (connections), lithium (batteries), cobalt (energy storage), rare earth elements (magnets), gold (conductors). Each layer labeled with mineral name and origin region. Warm palette: peach (#E8C4A0), sage (#A8B5A0), lavender (#B8A9C8), sky (#89B8C8). Off-white background (#FAF8F5), dark ink text (#2C2825). Square format, educational, hand-drawn aesthetic."
+-->
+
+Cada chip de IA se compone de capas de materiales que provienen de minas alrededor del mundo: **arena de cuarzo** (silicio), **cobre** (conexiones), **litio** (baterías), **cobalto** (almacenamiento de energía), **tierras raras** (componentes magnéticos) y **oro** (conductores).[^40] Cada centro de datos necesita semiconductores, baterías, cobre e infraestructura energética, cada componente se rastrea hasta una mina.[^41]
+
+![Chip](images/13_AnatomiaChip.png)
+
+De 2001 a 2022, el número de chips vendidos se **cuadruplicó**, y la demanda no muestra señales de desaceleración.[^15] Además, la IA y la transición energética compiten por los mismos recursos escasos: los minerales necesarios para la digitalización son prácticamente los mismos que se requieren para la transición a energías limpias.[^15]
+
+### Del chip a la mina: los impactos
+
+La minería de estos materiales contamina agua y aire, degrada la biodiversidad y genera emisiones de gases de efecto invernadero. El **52% de las minas de cobre** están en zonas de alto estrés hídrico y el reciclaje de estos materiales es bajo: **46% para cobre** y apenas **1% para tierras raras**.[^15]
+
+Para 2050 se necesitarán **6 nuevas minas grandes de cobre al año** solo para satisfacer la demanda. Y el impacto no es hipotético: el **92% de los sistemas de tratamiento de agua** cerca de minas de cobre ya han fallado, contaminando agua subterránea.[^40]
 
 !!! warning "De los modelos de IA a las minas"
-    Cada GPU de alto rendimiento contiene cobalto. La cadena de suministro de la IA comienza en minas donde, según Amnistía Internacional, trabajan niños en condiciones documentadas de abuso y trabajo forzado.[^1]
-
-La minería de estos materiales tiene impactos ambientales como la contaminación de agua y aire, degradación de biodiversidad, emisiones de gases de efecto invernadero. El **52% de las minas de cobre** están en zonas de alto estrés hídrico y el reciclaje de estos materiales es bajo, **46% para cobre** y apenas **1% para tierras raras**.[^15]
+    Cada GPU de alto rendimiento contiene cobalto. La cadena de suministro de la IA comienza en minas donde, según Amnistía Internacional, trabajan **25,000 niños** en condiciones documentadas de abuso y trabajo forzado.[^1]
 
 !!! example "Litio en América Latina"
     El "Triángulo del Litio" (Chile, Argentina, Bolivia) contiene las mayores reservas de litio del mundo. La minería en el Salar de Atacama ha causado una **reducción del 30% en los niveles de agua**, con pérdida de vegetación y declive en poblaciones de flamencos. Más de **400 comunidades indígenas** habitan las regiones impactadas.[^10] México ocupa el **9no lugar mundial en reservas de litio** (1.7 millones de toneladas) y nacionalizó el mineral en 2022 con la creación de LitioMx.[^10]
@@ -110,12 +143,6 @@ A nivel global se generan **62 millones de toneladas de basura electrónica al a
 - Las GPUs de alto rendimiento tienen una vida útil de **1 a 3 años** en ambientes de IA (versus 3-5 años en servidores tradicionales)[^11]
 - Se estima que las tecnologías de IA generarán **2.5 millones de toneladas de basura electrónica al año para 2030**[^11]
 - En 2024, una sola empresa envió más de 3.7 millones de GPUs, un millón más que el año anterior[^20]
-
-## Justicia ambiental y colonialismo digital
-
-América Latina y el Caribe contribuye solo el **~6.7% de las emisiones globales**, pero es una de las regiones **más vulnerables** al cambio climático.[^25] En 2024 se registraron huracanes récord, la primera tormenta Categoría 5 más temprana en la historia, sequías devastadoras e inundaciones mortales en la región.[^25]
-
-Los impactos ambientales de la IA no se distribuyen de forma equitativa, las herramientas se crean en el Norte Global pero dependen de extracción e infraestructura en el Sur Global. Además, el financiamiento climático para la región representa solo el **0.5% del PIB**, necesita multiplicarse 8-10 veces. La mayoría llega como préstamos, no como donaciones, incrementando la deuda regional.[^25]
 
 ## ¿Qué se está haciendo?
 
@@ -151,7 +178,7 @@ La IA no es etérea ni intangible. Detrás de cada consulta, cada imagen generad
 
 En el **[Módulo 1](01-que-es-la-ia.md)** aprendimos cómo funcionan los modelos de IA. Ahora podemos ponerle cifras a ese proceso: entrenar GPT-4 requirió ~50,000 MWh de electricidad.[^8] En el **[Módulo 2](02-sesgos-algoritmicos.md)** vimos que los sesgos se distribuyen de forma desigual. El mismo patrón aplica aquí: América Latina contribuye solo el 6.7% de las emisiones globales pero absorbe una parte desproporcionada de los costos ambientales de la infraestructura digital.[^25] El colonialismo digital es, también, un sesgo estructural.
 
-La transparencia es el primer paso. Sin datos confiables sobre consumo de energía, agua y emisiones, no es posible regular, exigir cuentas ni tomar decisiones informadas.  
+La transparencia es el primer paso. Sin datos confiables sobre consumo de energía, agua y emisiones, no es posible regular, exigir cuentas ni tomar decisiones informadas.
 
 !!! info "Lo que viene"
     **Módulo 4: IA y el futuro del trabajo.** ¿Qué empleos están en riesgo, cuáles se transforman y cuáles se crean? Especialmente para economistas en América Latina, ¿cómo pensar en la IA como herramienta y no como amenaza?
@@ -247,3 +274,6 @@ La transparencia es el primer paso. Sin datos confiables sobre consumo de energ�
 [^36]: Federation of American Scientists (2025). "Measuring AI's Energy/Environmental Footprint to Access Impacts." <https://fas.org/publication/measuring-and-standardizing-ais-energy-footprint/>
 [^37]: Emberson, L. & Rahman, R. (2024). "The power required to train frontier AI models is doubling annually." Epoch AI. <https://epoch.ai/data-insights/power-usage-trend>
 [^38]: El Economista, México. "# Sequía moderada cubre 94.4% de los municipios de Querétaro". <https://www.eleconomista.com.mx/estados/sequia-moderada-cubre-94-4-municipios-queretaro-20250421-755758.html>
+[^39]: Li, P., Yang, J., Islam, M.A. & Ren, S. (2023). "Making AI Less 'Thirsty': Uncovering and Addressing the Secret Water Footprint of AI Models." arXiv:2304.03271v5. <https://arxiv.org/abs/2304.03271>
+[^40]: Chance, H. & Hammersley, M.M. (2024). "AI Is Mining More Than Data." *Vermont Journal of Environmental Law*. <https://vjel.vermontlaw.edu/top-ten/2025-top-ten/2024/12/ai-is-mining-more-than-data/>
+[^41]: Lipstein, H. & Kneese, T. (2026). "US Critical Mineral Aggression Abroad Connected to Data Center Fights at Home." *Tech Policy Press*. <https://www.techpolicy.press/us-critical-mineral-aggression-abroad-connected-to-data-center-fights-at-home/>

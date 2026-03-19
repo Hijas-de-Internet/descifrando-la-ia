@@ -4,63 +4,20 @@
 
 A lo largo de esta serie, construimos las bases para entender qué hay detrás de la inteligencia artificial: [cómo funcionan los modelos](01-que-es-la-ia.md), [los sesgos que reproducen](02-sesgos-algoritmicos.md), [su costo ambiental](03-impactos-ambientales.md), y [cómo están transformando el trabajo](04-futuro-del-trabajo.md). Ahora la pregunta es más personal: ¿qué haces tú con todo esto?
 
-<!-- TODO: Add 05_HerramientasIA.png -->
+![Herramientas y uso responsable de la IA](images/17_HerramientasIA.png)
+<!-- 🖼️ IMAGEN: Herramientas y uso responsable de la IA
+     Archivo: images/17_HerramientasIA.png
+     Flow prompt: "Diagrama educativo para una wiki de alfabetización en IA. Estilo ilustración a mano, cálido y accesible. Una persona sentada frente a una computadora, rodeada de íconos flotantes que representan herramientas de IA (chat, código, documentos, gráficas). A un lado, un filtro o embudo que separa 'señal' (en verde salvia #B5CCBA) de 'ruido' (en gris tenue). Arriba del filtro, el texto 'Comprensión crítica.' Fondo cálido off-white (#FAF8F5), texto en tinta oscura (#2C2825), acentos en lavanda (#C7BFE0) y durazno (#F2C4A0). Formato 1200x900 px (4:3, landscape), resolución para web. Informativo, sin fotorrealismo."
+-->
 
 El 66% de la población mexicana ya usa alguna herramienta de IA[^11] y el 88% de estudiantes universitarios la utiliza para tareas académicas.[^9] Pero usar una herramienta no es lo mismo que entenderla. En medio de la avalancha de información y nuevas herramientas cada semana, distinguir la señal del ruido se ha vuelto una habilidad en sí misma.
 
 Este módulo es una guía para desarrollar esa habilidad: aprender a usar la IA de forma ética y responsable, con los filtros necesarios para no dejarte llevar por las tendencias, y con la perspectiva crítica para identificar las herramientas que sí marcarán el desarrollo de estas tecnologías en los próximos años.
 
-## La destreza fundamental: comprensión crítica de la IA
-
-Antes de aprender cualquier herramienta, necesitas un filtro mental. Los modelos de IA producen texto que *suena* autoritativo y profesional, incluso cuando es completamente falso. Las alucinaciones no vienen con advertencia. Las cifras pueden ser inventadas. Las citas académicas pueden no existir.[^1]
-
-### El método SIFT
-
-Desarrollado por Mike Caulfield para verificación de información digital, el método SIFT se adapta perfectamente para evaluar outputs de IA:[^18]
-
-| Paso | Significado | Aplicación a IA |
-|------|-----------|----------------|
-| **S** - Stop | Para. No actúes inmediatamente | Antes de usar o compartir un output de IA, detente. No confíes automáticamente en texto que suena profesional |
-| **I** - Investigate | Investiga la fuente | ¿Quién creó la herramienta? ¿Cuáles son sus limitaciones? ¿Con qué datos fue entrenada? |
-| **F** - Find better coverage | Busca mejores fuentes | Contrasta afirmaciones con fuentes autoritativas: organismos oficiales, datos abiertos, papers académicos |
-| **T** - Trace to original | Rastrea al original | Si la IA cita una fuente, **verifícala**. Busca el paper o artículo real. Muchas citas de IA son inventadas |
-
-### Lo que la IA no puede hacer (todavía)
-
-Estas limitaciones no son barreras temporales, son características estructurales de cómo funcionan los modelos actuales:
-
-- **Fabrican hechos con confianza.** Las alucinaciones son inherentes al funcionamiento estadístico del modelo. Son [*cotorros estocásticos*](01-que-es-la-ia.md#cotorros-estocasticos-stochastic-parrots): predicen patrones, no entienden causalidad.[^25]
-- **Prefieren darte la razón.** El sesgo de sicofancia hace que tiendan a estar de acuerdo contigo en lugar de desafiarte.
-- **No saben lo que no saben.** Tienen fechas de corte, lagunas culturales (~4% de datos de entrenamiento en español[^13]), y poca confiabilidad cuantitativa.
-- **No son enteramente reproducibles.** El mismo prompt puede dar respuestas diferentes en momentos diferentes.
-- **Pueden omitir lo importante.** Los modelos actuales pueden "mentir por omisión," presentando información parcial como si fuera completa.[^1]
-
-!!! danger "Las citas de IA pueden ser inventadas"
-    Si una estadística o cita suena perfecta, probablemente sea fabricada. Siempre verifica estadísticas contra fuentes oficiales y citas académicas en Google Scholar o el sitio de la revista.
-
-??? tip "3 técnicas para reducir alucinaciones"
-    Cuando trabajes con un LLM, puedes reducir las alucinaciones con estas estrategias:[^29]
-
-    1. **Dale una salida.** Agrega instrucciones como *"Si no estás seguro, dilo"* o *"Solo responde si tienes certeza."* Sin esta salida, el modelo intentará responder siempre, aunque invente.
-    2. **Pide evidencia primero.** En lugar de preguntar directamente, pide que extraiga las citas o datos relevantes del texto antes de responder. Si no encuentra evidencia, es más probable que admita que no sabe.
-    3. **Ancla la respuesta a un documento.** Sube o pega el texto fuente y pide: *"Responde únicamente con información de este documento."* Esto limita al modelo a trabajar con datos reales en vez de generar de memoria.
-
-### Deepfakes: cuando los datos mismos son fabricados
-
-El problema de verificación se intensifica cuando ya no solo el texto, sino la imagen, el audio y el video pueden ser generados:
-
-- **8 millones de deepfakes** proyectados para 2025 (vs. 500,000 en 2023)[^14]
-- El volumen de video deepfake crece al **900% anual**[^14]
-- Europol estima que el **90% del contenido en línea podría ser sintético para 2026**[^16]
-- Los humanos identificaron deepfakes de alta calidad solo el **24.5% del tiempo**[^14]
-- De los 25 deepfakes más populares, **96% contienen pornografía**. El **77% de las víctimas de deepfakes son mujeres**.[^15]  
-
-!!! warning "Verificar ya no es opcional"
-    Cuando los datos mismos pueden ser fabricados con IA, verificar fuentes se convierte en una habilidad de supervivencia profesional e informativa.
-
 ## El marco de las 4D: Delegación, Descripción, Discernimiento, Diligencia
 
 Saber que la IA tiene limitaciones es necesario, pero no suficiente. Necesitas un marco para decidir *cómo* interactuar con ella. El **AI Fluency Framework** de Anthropic propone que la fluidez en IA es "la capacidad de trabajar de manera **efectiva, eficiente, ética y segura** dentro de las modalidades emergentes de interacción humano-IA."[^28]
+
 ### Las 4D
 
 | Competencia | Qué implica | Preguntas clave |
@@ -124,7 +81,7 @@ Pedirle a ChatGPT "háblame de inflación" es como entrar a una biblioteca y gri
 
 ### Del *prompt engineering* al *context engineering*
 
-En junio 2025, Andrej Karpathy (ex-OpenAI, ex-Tesla AI) acuñó el término *"context engineering"* para describir la evolución: ya no se trata solo de escribir un buen prompt, sino de diseñar todo el contexto que alimenta al modelo, que pueden ser documentos de referencia, ejemplos, instrucciones de sistema, herramientas disponibles y memoria de conversaciones anteriores.[^19]
+En junio 2025, Andrej Karpathy (ex-OpenAI, ex-Tesla AI) acuñó el término *"context engineering"* para describir la evolución de solo de escribir un buen prompt a diseñar todo el contexto que alimenta al modelo, que pueden ser documentos de referencia, ejemplos, instrucciones de sistema, herramientas disponibles y memoria de conversaciones anteriores.[^19]
 
 !!! info "¿Es una habilidad real o hype?"
     "Prompt engineering" como título de empleo está perdiendo fuerza: se está convirtiendo en una habilidad integrada dentro de otros roles, no en una carrera independiente. Pero la capacidad de comunicarse efectivamente con sistemas de IA es una habilidad duradera. Lo que cambia son las herramientas, lo que permanece es el pensamiento crítico detrás.
@@ -141,7 +98,14 @@ No toda la IA es igual. La evolución va de herramientas que responden a herrami
 | **Agentes de IA** | Logran un objetivo singular, automatizan flujos completos | Un asistente que busca en internet, ejecuta código y genera un reporte |
 | **IA Agéntica** | Se adapta en tiempo real; agentes autónomos colaboran entre sí | Múltiples agentes coordinándose: uno busca datos, otro los limpia, otro analiza y otro redacta, todo con una sola instrucción |
 
-La diferencia crítica: un agente de IA individual ejecuta tareas dentro de un alcance definido (responder consultas, buscar documentos). La IA agéntica va un paso más allá: múltiples agentes especializados colaboran entre sí, descomponiendo un objetivo complejo en subtareas que se distribuyen, secuencian y adaptan en tiempo real.[^31] No siguen reglas preprogramadas — razonan, planean y actúan con mínima intervención humana.[^2]
+La diferencia crítica: un agente de IA individual ejecuta tareas dentro de un alcance definido (responder consultas, buscar documentos). La IA agéntica va un paso más allá: múltiples agentes especializados colaboran entre sí, descomponiendo un objetivo complejo en subtareas que se distribuyen, secuencian y adaptan en tiempo real.[^31] No siguen reglas preprogramadas, razonan, planean y actúan con mínima intervención humana.[^2]
+
+![Los 3 niveles de IA](images/18_NivelesIA.png)
+
+<!-- 🖼️ IMAGEN: Los 3 niveles de IA
+     Archivo: images/18_NivelesIA.png
+     Flow prompt: "Diagrama educativo para una wiki de alfabetización en IA. Estilo ilustración a mano, cálido y accesible. Tres escalones ascendentes de izquierda a derecha. Escalón 1 (abajo): 'IA Generativa' — un ícono de chat con burbujas de texto, en azul cielo (#A8C8DD). Escalón 2 (medio): 'Agentes de IA' — un ícono de robot con herramientas (lupa, código, documento), en lavanda (#C7BFE0). Escalón 3 (arriba): 'IA Agéntica' — múltiples robots conectados entre sí con flechas, en durazno (#F2C4A0). Flechas ascendentes entre niveles con texto 'más autonomía → más supervisión humana.' Fondo cálido off-white (#FAF8F5), texto en tinta oscura (#2C2825). Formato 1200x900 px (4:3, landscape), resolución para web. Informativo, sin fotorrealismo."
+-->
 
 ### Cómo funcionan los agentes por dentro
 
@@ -175,7 +139,8 @@ Hoy existen varios frameworks open source que permiten construir agentes sin par
 | **Google ADK** | Google | Agentes modulares con integración a múltiples LLMs | Sí |
 
 No necesitas dominar todos. Lo importante es saber que existen y que construir un agente ya no requiere miles de líneas de código. Si te interesa experimentar, CrewAI y Google ADK son los más accesibles para empezar.
-### El ecosistema: modelos open source vs. propietarios
+
+## El ecosistema: modelos open source vs. propietarios
 
 Los agentes necesitan un modelo base. Hoy hay dos caminos:
 
@@ -190,6 +155,11 @@ Los agentes necesitan un modelo base. Hoy hay dos caminos:
 | **Qwen 2.5** | Alibaba (China) | Sí | 0.5B-72B |
 | **Phi-3 / Phi-4** | Microsoft | Sí | 3.8B-14B |
 | **Gemma 2** | Google | Sí | 2B-27B |
+
+<!-- 🖼️ IMAGEN: Ecosistema open source
+     Archivo: images/19_OpenSource.png
+     Flow prompt: "Diagrama educativo para una wiki de alfabetización en IA. Estilo ilustración a mano, cálido y accesible. Dos columnas. Izquierda: 'Modelos propietarios' — logos estilizados de OpenAI, Anthropic, Google dentro de una caja cerrada con candado, en rosa (#E0B4B7). Derecha: 'Modelos open source' — logos estilizados de Llama, Mistral, DeepSeek dentro de una caja abierta con código visible, en verde salvia (#B5CCBA). Abajo, 5 íconos representando las ventajas del open source: escudo (soberanía), moneda (costo), llave inglesa (personalización), lupa (transparencia), bandera (independencia). Fondo cálido off-white (#FAF8F5), texto en tinta oscura (#2C2825). Formato 1200x900 px (4:3, landscape), resolución para web. Informativo, sin fotorrealismo."
+-->
 
 **¿Por qué importa el open source para América Latina?**
 
@@ -217,6 +187,54 @@ Solo ~4% de los datos de entrenamiento de los principales modelos de lenguaje es
     | **LM Studio** | Interfaz gráfica para descargar y usar modelos localmente | Mac/Linux/Windows, 8GB+ RAM |
     | **Hugging Face** | Plataforma con 2M+ modelos y 500,000+ datasets | Navegador web para explorar; GPU para modelos grandes |
 
+## Verificar siempre 
+
+Ahora que conoces las herramientas y lo que pueden hacer, viene la habilidad más importante: saber cuándo *no* confiar en ellas. Los modelos de IA producen texto que *suena* autoritativo y profesional, incluso cuando es completamente falso. Las alucinaciones no vienen con advertencia. Las cifras pueden ser inventadas. Las citas académicas pueden no existir.[^1]
+
+### El método SIFT
+
+Desarrollado por Mike Caulfield para verificación de información digital, el método SIFT se adapta perfectamente para evaluar outputs de IA:[^18]
+
+| Paso | Significado | Aplicación a IA |
+|------|-----------|----------------|
+| **S** - Stop | Para. No actúes inmediatamente | Antes de usar o compartir un output de IA, detente. No confíes automáticamente en texto que suena profesional |
+| **I** - Investigate | Investiga la fuente | ¿Quién creó la herramienta? ¿Cuáles son sus limitaciones? ¿Con qué datos fue entrenada? |
+| **F** - Find better coverage | Busca mejores fuentes | Contrasta afirmaciones con fuentes autoritativas: organismos oficiales, datos abiertos, papers académicos |
+| **T** - Trace to original | Rastrea al original | Si la IA cita una fuente, **verifícala**. Busca el paper o artículo real. Muchas citas de IA son inventadas |
+
+### Lo que la IA no puede hacer (todavía)
+
+Estas limitaciones no son barreras temporales, son características estructurales de cómo funcionan los modelos actuales:
+
+- **Fabrican hechos con confianza.** Las alucinaciones son inherentes al funcionamiento estadístico del modelo. Son [*cotorros estocásticos*](01-que-es-la-ia.md#cotorros-estocasticos-stochastic-parrots): predicen patrones, no entienden causalidad.[^25]
+- **Prefieren darte la razón.** El sesgo de sicofancia hace que tiendan a estar de acuerdo contigo en lugar de desafiarte.
+- **No saben lo que no saben.** Tienen fechas de corte, lagunas culturales (~4% de datos de entrenamiento en español[^13]), y poca confiabilidad cuantitativa.
+- **No son enteramente reproducibles.** El mismo prompt puede dar respuestas diferentes en momentos diferentes.
+- **Pueden omitir lo importante.** Los modelos actuales pueden "mentir por omisión," presentando información parcial como si fuera completa.[^1]
+
+!!! danger "Las citas de IA pueden ser inventadas"
+    Si una estadística o cita suena perfecta, probablemente sea fabricada. Siempre verifica estadísticas contra fuentes oficiales y citas académicas en Google Scholar o el sitio de la revista.
+
+??? tip "3 técnicas para reducir alucinaciones"
+    Cuando trabajes con un LLM, puedes reducir las alucinaciones con estas estrategias:[^29]
+
+    1. **Dale una salida.** Agrega instrucciones como *"Si no estás seguro, dilo"* o *"Solo responde si tienes certeza."* Sin esta salida, el modelo intentará responder siempre, aunque invente.
+    2. **Pide evidencia primero.** En lugar de preguntar directamente, pide que extraiga las citas o datos relevantes del texto antes de responder. Si no encuentra evidencia, es más probable que admita que no sabe.
+    3. **Ancla la respuesta a un documento.** Sube o pega el texto fuente y pide: *"Responde únicamente con información de este documento."* Esto limita al modelo a trabajar con datos reales en vez de generar de memoria.
+
+### Deepfakes: cuando los datos mismos son fabricados
+
+El problema de verificación se intensifica cuando ya no solo el texto, sino la imagen, el audio y el video pueden ser generados:
+
+- **8 millones de deepfakes** proyectados para 2025 (vs. 500,000 en 2023)[^14]
+- El volumen de video deepfake crece al **900% anual**[^14]
+- Europol estima que el **90% del contenido en línea podría ser sintético para 2026**[^16]
+- Los humanos identificaron deepfakes de alta calidad solo el **24.5% del tiempo**[^14]
+- De los 25 deepfakes más populares, **96% contienen pornografía**. El **77% de las víctimas de deepfakes son mujeres**.[^15]
+
+!!! warning "Verificar ya no es opcional"
+    Cuando los datos mismos pueden ser fabricados con IA, verificar fuentes se convierte en una habilidad de supervivencia profesional e informativa.
+
 ## Copiloto, no piloto automático
 
 La IA agéntica promete mucho, pero más autonomía no es sinónimo de mejor resultado. La metáfora correcta no es un piloto automático que te reemplaza, sino un copiloto que te asiste: tú sigues volando el avión.
@@ -230,9 +248,9 @@ La IA agéntica promete mucho, pero más autonomía no es sinónimo de mejor res
 5. **Comportamiento autónomo excesivo:** Los modelos de frontera a veces toman acciones riesgosas sin pedir permiso[^1]
 6. **Sin razonamiento causal:** Los LLMs detectan correlaciones estadísticas, pero no entienden causa y efecto. Un agente puede observar que las visitas al hospital coinciden con enfermedad, pero no puede determinar cuál causa cuál, ni imaginar qué pasaría si se cambiara una variable.[^31]
 
-### Transparencia radical: el caso del Sabotage Risk Report
+### El caso del Sabotage Risk Report
 
-En 2025, Anthropic publicó un documento de 52 páginas analizando públicamente los riesgos de que su propia IA actúe de forma autónoma y dañina.[^1] Es un ejercicio sin precedentes de transparencia corporativa en la industria.
+En 2025, Anthropic publicó un documento de 52 páginas analizando públicamente los riesgos de que su propia IA actúe de forma autónoma y dañina.[^1]  
 
 ??? example "Los 8 caminos hacia el daño catastrófico"
     | Camino | Qué podría pasar |
@@ -247,8 +265,6 @@ En 2025, Anthropic publicó un documento de 52 páginas analizando públicamente
     | 8. Sabotaje de decisiones gubernamentales | Influir en políticas de forma sutil |
 
     La conclusión de Anthropic: el riesgo es "muy bajo pero no despreciable." **Cada uno de los 8 caminos se mitiga con supervisión humana.**[^1]
-
-La pregunta que esto plantea es directa: si Anthropic publica estos riesgos sobre su propia IA, ¿por qué otras empresas no publican reportes equivalentes?
 
 ### Privacidad: ¿qué pasa con tu información?
 
@@ -267,48 +283,6 @@ Parte de ser copiloto, no piloto automático, es saber qué ocurre con los datos
     - **Nunca** compartas contraseñas, datos personales o información confidencial
     - **Nunca** subas documentos con datos sensibles de terceros
     - En ChatGPT gratuito, tus conversaciones **se usan para entrenar el modelo** a menos que lo desactives manualmente[^17]
-
-### El costo ambiental de cada consulta
-
-Cada interacción con IA tiene un costo energético real (ver [Módulo 3: Impactos ambientales](03-impactos-ambientales.md)):
-
-| Tipo de consulta | Energía aproximada | Contexto |
-|------------------|-------------------|----------|
-| Búsqueda de Google | ~0.03 Wh | Línea base |
-| Consulta de texto a ChatGPT | ~0.34 Wh | 10x una búsqueda de Google |
-| Generación de imagen | ~2.91 Wh | 97x una búsqueda de Google |
-| Razonamiento avanzado (DeepSeek R1, o1) | >33 Wh por prompt largo | 1,100x una búsqueda de Google |
-
-Usar IA con intención, no por inercia, también es una forma de responsabilidad.
-
-## Reclaiming the Human Element
-
-La IA no reduce la necesidad de pensamiento humano: la aumenta. En un mundo donde generar texto, imágenes y código es trivial, lo que se vuelve valioso es precisamente lo que la IA no puede hacer: juzgar, contextualizar, asumir responsabilidad, y conectar el conocimiento con un propósito.
-
-### Integridad académica
-
-| Uso | ¿Aceptable? |
-|-----|-----------|
-| Usar IA para entender conceptos | Sí |
-| Usar IA para generar ideas y luego desarrollarlas tú | Sí |
-| Usar IA para revisar gramática y estilo | Sí |
-| Pedirle feedback sobre tu escritura | Sí |
-| Generar un primer borrador y luego editarlo sustancialmente | Depende del contexto / preguntar al profesor |
-| Copiar y pegar respuestas de IA como trabajo propio | **No** |
-| Usar IA sin entender lo que generó | **No** |
-| Presentar citas de IA sin verificarlas | **No** |
-
-**Cómo citar contenido generado por IA (APA 7a edición):**[^8]
-
-```
-Autor de la herramienta. (Año). Nombre de la herramienta (Versión) [Large language model]. URL
-
-Ejemplo:
-OpenAI. (2025). ChatGPT (versión Feb 13) [Large language model]. https://chat.openai.com
-```
-
-!!! info "Tendencias en universidades"
-    Las universidades están pasando de prohibiciones generales a reglas matizadas por curso. En México, ANUIES estableció un comité para el uso ético de IA, y varias instituciones ya tienen marcos de uso responsable. La tendencia global es: autonomía del profesor para definir políticas de IA por materia, y declaraciones obligatorias de uso de IA en tareas.
 
 ### Encontrar tu propósito en medio del ruido
 

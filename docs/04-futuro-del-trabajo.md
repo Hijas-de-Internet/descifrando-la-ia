@@ -1,23 +1,22 @@
 # IA y el futuro del trabajo
 
-¿La IA va a quitar empleos? El Fondo Monetario Internacional estima que el **40% de los empleos globales** están expuestos a la inteligencia artificial.[^4] Pero "expuesto" no es lo mismo que "reemplazado." Las reglas del mercado laboral están cambiando, y entender *cómo* cambian (quién gana, quién pierde, qué pasa en México y América Latina) es el primer paso para navegar esos cambios, ya sea que estés empezando tu carrera, en medio de ella, o simplemente quieras entender qué está pasando.
+¿La IA nos va a quitar nuestros trabajos? El Fondo Monetario Internacional estima que el **40% de los empleos globales** están expuestos a la inteligencia artificial.[^4] Pero "expuesto" no es lo mismo que "reemplazado." Las reglas del mercado laboral están cambiando, y entender *cómo* cambian (quién gana, quién pierde, qué pasa en México y América Latina) es el primer paso para navegar esos cambios, ya sea que estés empezando tu carrera, en medio de ella, o simplemente quieras entender qué está pasando.
 
 Esto no es un escenario futuro, ya está pasando. Más del **10% de los profesionales** contratados hoy tienen títulos de empleo que **no existían en el año 2000**: data analyst, full stack engineer, social media manager, data scientist.[^31] Y quienes entran hoy al mercado laboral tendrán el **doble de empleos** a lo largo de su carrera comparado con hace 15 años.[^31] Las trayectorias lineales (estudiar algo, trabajar en eso toda la vida) son cada vez menos la norma.
 
 !!! info "Nota sobre las fuentes"
     Los datos de esta sección provienen de los informes más actualizados disponibles hasta marzo de 2026: FMI, OCDE, OIT, Banco Mundial, WEF, Stanford HAI, Anthropic Research, LinkedIn y Microsoft, entre otros. Este es un campo que se mueve rápido, las cifras pueden cambiar, pero los patrones que describen son consistentes.
-## El impacto no se distribuye igual
 
-### Las cifras grandes (y por qué hay que leerlas con cuidado)
+## Las cifras grandes (y por qué hay que leerlas con cuidado)
 
 De acuerdo con diversas publicaciones **entre una cuarta parte y un tercio de los empleos** están expuestos a la IA. La OCDE calcula el **27%** en sus países miembros,[^2] la OIT dice **1 de cada 4**.[^10] Pero "expuesto" no significa lo mismo en todas partes. En América Latina, el Banco Mundial y la OIT estiman que entre el **26% y 38%** de los empleos están influenciados por IA generativa, pero solo el **2-5%** enfrenta riesgo de automatización total.[^5] La diferencia real está entre *exposición teórica* y *uso real*. La investigación más reciente de Anthropic (2026) muestra que la cobertura real de IA en el trabajo es apenas una fracción del potencial teórico, y no hay aumento sistemático de desempleo de forma agregada.[^27]
 
-!!! warning "Cuidado con los titulares"
-    El World Economic Forum proyecta que para 2030 se crearán **170 millones de empleos** y se desplazarán **92 millones**, un saldo neto de +78 millones.[^9] Suena positivo, pero quienes pierden los 92 millones y quienes ganan los 170 millones **no son las mismas personas, los mismos países, ni los mismos sectores.** "Expuesto a la IA" no es lo mismo que "será reemplazado", pero la distribución importa más que el agregado.
+!!! warning "Imapactos diferenciados"
+    El impacto varía drásticamente según el nivel de desarrollo. En economías avanzadas, el **60%** de los empleos están expuestos (27% en roles donde la IA augmenta y 33% donde podría automatizar). En economías emergentes baja a **40%**, y en países de bajos ingresos a **26%**.[^33] La capacidad de cada país para innovar, adoptar y adaptar determinará si la IA se convierte en motor de crecimiento inclusivo o en una nueva frontera de exclusión.
 
-Los empleos que más crecen son los tecnológicos (especialistas en big data, ingenieros fintech, especialistas en IA y machine learning) y los de la transición verde (vehículos eléctricos, ingeniería ambiental, energías renovables). Los que más se contraen son los administrativos y de oficina: cajeros, asistentes administrativos, empleados postales, cajeros de banco, capturistas de datos.[^9] El patrón es claro, las tareas rutinarias y predecibles, sean manuales o cognitivas, son las más vulnerables. Pero la IA no está eliminando profesiones enteras; está cambiando *qué tareas* hace cada profesión. Un abogado no desaparece, pero las tareas de revisión de contratos que hacía un junior ahora las puede hacer un modelo. Un analista no desaparece, pero el análisis exploratorio de datos que antes tomaba días ahora toma minutos. La pregunta es: ¿qué pasa con las personas que antes hacían esas tareas específicas?
+Los empleos que más crecen son los tecnológicos (especialistas en big data, ingenieros fintech, especialistas en IA y machine learning) y los de la transición verde (vehículos eléctricos, ingeniería ambiental, energías renovables). Los que más se contraen son los administrativos y de oficina: cajeros, asistentes administrativos, empleados postales, cajeros de banco, capturistas de datos.[^9] El patrón es claro, **las tareas rutinarias y predecibles, sean manuales o cognitivas, son las más vulnerables.** Pero la IA no está eliminando profesiones enteras; está cambiando *qué tareas* hace cada profesión. Un abogado no desaparece, pero las tareas de revisión de contratos que hacía un junior ahora las puede hacer un modelo. Un analista no desaparece, pero el análisis exploratorio de datos que antes tomaba días ahora toma minutos. La pregunta es: ¿qué pasa con las personas que antes hacían esas tareas específicas?
 
-### Automatización vs. aumentación
+## Automatización vs. aumentación
 
 Existen dos formas en que la IA transforma el trabajo:
 
@@ -26,21 +25,28 @@ Existen dos formas en que la IA transforma el trabajo:
 
 El Anthropic Economic Index (2026) midió cuál de las dos está ocurriendo:[^26]
 
-| Métrica | Usuarios individuales | Empresas (API) |
-|---------|----------------------|----------------|
-| Aumentación (IA complementa) | **52%** | 25% |
-| Automatización (IA ejecuta) | **45%** | **75%** |
+| Métrica                      | Usuarios individuales | Empresas (API) |
+| ---------------------------- | --------------------- | -------------- |
+| Aumentación (IA complementa) | **52%**               | 25%            |
+| Automatización (IA ejecuta)  | **45%**               | **75%**        |
 
-Los usuarios individuales tienden a **colaborar** con la IA; las empresas tienden a **delegar** tareas completas.[^26] Esto es clave: el futuro del trabajo depende en gran parte de **cómo las empresas deciden implementar la IA**, no solo de lo que la tecnología puede hacer. Y esas decisiones las toman personas, que pueden presionarse con política, regulación y organización colectiva.
+Los usuarios individuales tienden a **colaborar** con la IA; las empresas tienden a **delegar** tareas completas.[^26] El futuro del trabajo depende en gran parte de **cómo las empresas deciden implementar la IA**, no solo de lo que la tecnología puede hacer. Y esas decisiones las toman personas, a través de la acción colectiva, políticas públicas y regulación.
 
-### Quiénes son los más expuestos
+![Automatización vs. Aumentación](14_AutomatizacionAumentacion.png)
+
+<!-- 🖼️ IMAGEN: Automatización vs. Aumentación
+     Archivo: images/14_AutomatizacionAumentacion.png
+     Flow prompt: "Diagrama educativo para una wiki de alfabetización en IA. Estilo ilustración a mano, cálido y accesible. Dos columnas comparativas. Izquierda: 'Automatización' — un robot reemplazando a una persona en un escritorio, con flecha '75% empresas,' en tono rosa (#E0B4B7). Derecha: 'Aumentación' — una persona y un robot trabajando juntos en el mismo escritorio, con flecha '52% usuarios individuales,' en tono verde salvia (#B5CCBA). Al centro una balanza visual. Texto al pie: 'Tú colaboras con la IA. Tu empleador podría usarla para reemplazarte.' Fondo cálido off-white (#FAF8F5), texto en tinta oscura (#2C2825). Formato 1200x900 px (4:3, landscape), resolución para web. Informativo, sin fotorrealismo."
+-->
+
+## Quiénes enfrentan mayor riesgo
 
 La transición hacia una economía impulsada por IA generativa va a traer cambio y oportunidad, pero no para todos por igual. La mayoría de los empleos van a evolucionar en lugar de desaparecer. Sin embargo, hay grupos que enfrentan mayor exposición y necesitarán más apoyo para adaptarse: **mujeres, trabajadores jóvenes y personas con título universitario.**[^29]
 
 !!! danger "Quienes están empezando son los más expuestos"
     La tasa de contratación de **jóvenes de 22 a 25 años** en ocupaciones expuestas a la IA cayó un **14%** desde el lanzamiento de ChatGPT. Este efecto **no se observa en trabajadores mayores de 25 años.**[^27]
 
-Las generaciones más jóvenes están sobrerrepresentadas en roles con habilidades que la IA puede replicar (redacción, análisis de datos, tareas administrativas) y aún están en etapas tempranas de desarrollar las habilidades interpersonales (liderazgo, negociación, gestión de stakeholders) que complementan a la tecnología.[^29] Muchos trabajos de entrada, como asistentes de investigación, analistas junior, programadores principiantes, y atención al cliente,  eran históricamente la puerta de entrada al mercado laboral, donde se aprendía haciendo, se construían redes y se ganaba experiencia de dominio. Sin embargo, las posiciones de entrada son las más expuestas.
+Las generaciones más jóvenes están sobrerrepresentadas en roles con habilidades que la IA puede replicar (redacción, análisis de datos, tareas administrativas) y aún están en etapas tempranas de desarrollar las habilidades interpersonales (liderazgo, negociación, gestión de stakeholders) que complementan a la tecnología.[^29] Muchos trabajos de entrada, como asistentes de investigación, analistas junior, programadores principiantes, y atención al cliente,  eran históricamente la puerta de entrada al mercado laboral, donde se aprendía haciendo, se construían redes y se ganaba experiencia de dominio. UNICEF advierte que la erosión de estos trabajos puede crear un ciclo de exclusión: sin experiencia laboral temprana, los jóvenes no desarrollan las habilidades interpersonales ni las redes que necesitan para avanzar.[^33] En América Latina, los empleos más afectados por IA generativa están concentrados precisamente entre **jóvenes urbanos, educados y de mayores ingresos**, no entre los trabajadores informales.[^33]
 
 Además, las **mujeres** están sobrerrepresentadas en los empleos más expuestos a la IA en más del **90% de los países** analizados: asistentes médicas, representantes de servicio al cliente, asistentes de ventas. Y las **personas con licenciatura** son más vulnerables que quienes tienen maestría.[^29] Esto invierte la lógica de revoluciones tecnológicas anteriores, que afectaban primero a los trabajadores menos calificados.
 
@@ -48,8 +54,7 @@ Pero exposición no necesariamente significa desplazamiento. El **83% de lídere
 
 Con la combinación correcta de habilidades técnicas, habilidades interpersonales y acceso a programas de reconversión, es posible navegar la transición.[^29] Para quienes ya están trabajando, el reto es adaptarse a herramientas que transforman las tareas que dominaban. En ambos casos, entender cómo funciona la IA (no solo usarla) es lo que marca la diferencia.
 
-!!! info "La brecha entre lo posible y lo real"
-    La *"exposición observada"* (que combina capacidad teórica con uso real) muestra que **la IA está lejos de alcanzar su potencial teórico.** En computación y matemáticas, la capacidad teórica es del 94%, pero la cobertura real es apenas del 33%.[^27] El 30% de los trabajadores tiene exposición cero (cocineros, mecánicos, salvavidas).[^27] Lo que ves en Twitter no es lo que está pasando en la economía real.
+## Las brechas: geografía, género y economía
 
 ### La brecha geográfica: quién usa la IA y quién no
 
@@ -76,7 +81,7 @@ En América Latina, la situación es peor:
 - México es el **4to país con menor participación económica femenina** en la región[^6]
 - **51% de las madres** en México han pausado sus carreras vs. **20% de los padres**[^6]
 - **4.7% de empleos de mujeres** están en máxima exposición a IA generativa vs. **2.4% de hombres**[^10]
- 
+
  La inclusión de mujeres y minorías en el desarrollo de IA es una condición necesaria para que los sistemas funcionen mejor para todos.
 
 ### Brecha económica: cómo se distribuye el valor
@@ -85,14 +90,18 @@ La IA está generando ganancias de productividad enormes, pero ¿quién se queda
 
 La concentración es global. El **79%** de la inversión mundial en IA ($159,000 millones) la captura Estados Unidos.[^17] Más de la mitad de la fuerza laboral global de IA está en dos países: EE.UU. e India.[^17] El **88%** del uso empresarial de modelos de lenguaje se concentra en tres empresas.[^18] Y apenas el **~1%** de las computadoras de alto rendimiento están en el Sur Global.[^9]
 
+## El trabajo que no ves: ghost workers
+
 Si en el [Módulo 3: Impactos ambientales](03-impactos-ambientales.md) vimos que el costo material de la IA se externaliza al medio ambiente, aquí vemos que el costo laboral se externaliza a los trabajadores más vulnerables. Detrás de cada modelo de IA hay miles de personas invisibles: etiquetadores de datos, moderadores de contenido, verificadores. Mary Gray y Siddharth Suri los llaman **"trabajadores fantasma"** (*ghost workers*).[^1]
 
 > "El trabajo no está desapareciendo en la era de la IA; está siendo ocultado." — Mary Gray, *Ghost Work* (2019)[^1]
 
-OpenAI vale $150 mil millones de dólares. Sus etiquetadores en Kenya ganan **~$2 la hora.**[^14] Moderadores de contenido de Facebook en Kenya revisan **150-250 fragmentos de material explícito** por turno de 9 horas, con jornadas de hasta 20 horas.[^21][^22] Las empresas tecnológicas subcontratan a través de terceros precisamente para evitar responsabilidad laboral directa. Y el fenómeno no es exclusivo de África: trabajadores **colombianos** sufren daño psicológico por moderación de contenido,[^22] y estudiantes **venezolanos** realizan anotación de imágenes médicas por menos de $2/hora.[^8]
+<!-- 🖼️ IMAGEN: Ghost workers — la cadena de valor invisible
+     Archivo: images/15_GhostWorkers.png
+     Flow prompt: "Diagrama educativo para una wiki de alfabetización en IA. Estilo ilustración a mano, cálido y accesible. Una cadena vertical de valor: arriba, un logo corporativo brillante con '$150 mil millones' en durazno (#F2C4A0). En medio, una interfaz de chat elegante. Abajo, siluetas de trabajadores en Kenya, Colombia y Venezuela con la etiqueta '$2/hora' en rosa (#E0B4B7). Flechas conectan los tres niveles mostrando el flujo de valor hacia arriba y el trabajo hacia abajo. Texto al pie: 'El trabajo no está desapareciendo — está siendo ocultado.' Fondo cálido off-white (#FAF8F5), texto en tinta oscura (#2C2825). Formato 1200x900 px (4:3, landscape), resolución para web. Informativo, sin fotorrealismo."
+-->
 
-!!! danger "El patrón se repite"
-    Las ganancias se concentran arriba, los costos se distribuyen abajo. El **41% de empleadores** planea reducir su fuerza laboral en los próximos 5 años.[^9] Las ganancias de productividad no se reparten solas.
+OpenAI vale $150 mil millones de dólares. Sus etiquetadores en Kenya ganan **~$2 la hora.**[^14] Moderadores de contenido de Facebook en Kenya revisan **150-250 fragmentos de material explícito** por turno de 9 horas, con jornadas de hasta 20 horas.[^21][^22] Las empresas tecnológicas subcontratan a través de terceros precisamente para evitar responsabilidad laboral directa. Y el fenómeno no es exclusivo de África: trabajadores **colombianos** sufren daño psicológico por moderación de contenido,[^22] y estudiantes **venezolanos** realizan anotación de imágenes médicas por menos de $2/hora.[^8]
 
 ## ¿Qué hacer con todo esto?
 
@@ -100,7 +109,7 @@ El panorama puede parecer desalentador. Pero hay una lectura distinta de los mis
 
 ### Lo que la IA no puede hacer
 
-Alguien tiene que detectar cuando un modelo de IA discrimina en un proceso de selección. Alguien tiene que verificar que un diagnóstico automatizado no tiene sesgo racial. Alguien tiene que decidir cuándo *no* usar IA. Ese "alguien" necesita entender cómo funciona la tecnología *y* el contexto social donde se aplica.
+Alguien tiene que detectar cuando un modelo de IA discrimina en un proceso de selección. Alguien tiene que verificar que un diagnóstico automatizado no tiene sesgo racial. **Alguien tiene que decidir cuándo *no* usar IA.** Ese "alguien" necesita entender cómo funciona la tecnología *y* el contexto social donde se aplica.
 
 Esta supervisión humana (*oversight*) es una de las habilidades más importantes y menos automatizables. Como vimos en el [Módulo 2: Sesgos algorítmicos](02-sesgos-algoritmicos.md), los modelos heredan y amplifican los sesgos de sus datos de entrenamiento. Si solo personas de un perfil demográfico supervisan estos sistemas, los sesgos pasan desapercibidos. **La diversidad en quienes trabajan con IA no es solo justicia, es calidad técnica.**
 
@@ -118,19 +127,29 @@ El verdadero diferenciador no es saber escribir prompts ni programar en Python, 
 
 **Las habilidades técnicas más demandadas (Stanford HAI, 2025):**[^28]
 
-| Habilidad | Crecimiento en demanda |
-|-----------|----------------------|
-| Python | +527% |
-| Data Analysis | +208% |
-| Computer Science | +131% |
+| Habilidad                  | Crecimiento en demanda |
+| -------------------------- | ---------------------- |
+| Python                     | +527%                  |
+| Análisis de datos          | +208%                  |
+| Ciencias de la computación | +131%                  |
 
-Pero la habilidad más valorada no es técnica: el **pensamiento analítico** sigue siendo la más buscada, con **7 de cada 10 empresas** considerándola esencial.[^9] La importancia de las habilidades humanas (comunicación, liderazgo, trabajo en equipo) creció un **10%** desde 2018, y un **20%** en ocupaciones que históricamente no las valoraban.[^31]
+Pero la habilidad más valorada no es técnica: el **pensamiento analítico** sigue siendo la más buscada, con **7 de cada 10 empresas** considerándola esencial.[^9]
+
+!!! warning "La brecha de preparación"
+    Dos tercios de los jóvenes del mundo carecen de las habilidades básicas sobre las cuales se construyen las competencias digitales y de IA.[^33] Sin reformas a los planes de estudio, los sistemas educativos actuales producirán egresados desalineados con lo que el mercado necesita.
+
+La importancia de las habilidades humanas (comunicación, liderazgo, trabajo en equipo) creció un **10%** desde 2018, y un **20%** en ocupaciones que históricamente no las valoraban.[^31]
 
 La **alfabetización en IA** se está volviendo transversal. En el ranking Skills on the Rise 2025 de LinkedIn, AI literacy aparece en el top 5 de habilidades de mayor crecimiento en la mayoría de las economías analizadas, desde Estados Unidos y Australia hasta Brasil, la única economía latinoamericana en la lista.[^32] Ya no es una habilidad de nicho para ingenieros; es transversal, como lo fue el inglés o Excel en décadas anteriores.
 
 Y no solo se trata de tecnología. La **mitigación del cambio climático** es la tercera tendencia más transformadora según el WEF, con el **47% de los empleadores** esperando que transforme su negocio en los próximos cinco años.[^9] Roles en energías renovables, ingeniería ambiental y vehículos eléctricos están entre los **15 empleos de más rápido crecimiento** a nivel global, y por primera vez, gestión ambiental entró al top 10 de habilidades de mayor crecimiento.[^9] Los sectores donde se necesitan personas que entiendan *tanto* la herramienta *como* el dominio son precisamente donde la IA no puede operar sola.
 
-<!-- TODO: Add 04_HabilidadesFuturo.png -->
+![Habilidades del futuro](16_HabilidadesFuturo.png)
+
+<!-- 🖼️ IMAGEN: Habilidades del futuro
+     Archivo: images/16_HabilidadesFuturo.png
+     Flow prompt: "Diagrama educativo para una wiki de alfabetización en IA. Estilo ilustración a mano, cálido y accesible. Un diagrama en forma de T (perfil T-shaped): la barra horizontal muestra habilidades transversales (IA, datos, comunicación, pensamiento crítico) en azul cielo (#A8C8DD). La barra vertical muestra expertise profundo de dominio (economía, derecho, salud, medio ambiente) en lavanda (#C7BFE0). En la intersección, un círculo brillante en durazno (#F2C4A0) con el texto 'Tu ventaja competitiva.' Alrededor, íconos pequeños: Python (+527%), pensamiento analítico (7/10 empresas), AI literacy (top 5 global). Fondo cálido off-white (#FAF8F5), texto en tinta oscura (#2C2825). Formato 1200x900 px (4:3, landscape), resolución para web. Informativo, sin fotorrealismo."
+-->
 
 ## El futuro no está decidido
 
@@ -211,3 +230,4 @@ Estos tres ejes (adaptabilidad, humanidad, propósito) son exactamente lo que ex
 [^30]: Microsoft / LinkedIn (2025). "2025 Work Trend Index Annual Report: The Year the Frontier Firm Is Born." Reporte.
 [^31]: LinkedIn Economic Graph (2025). "Work Change Report." Reporte. <https://economicgraph.linkedin.com/work-change-report>
 [^32]: LinkedIn Talent Blog (2025). "Skills on the Rise 2025." Blog. <https://www.linkedin.com/business/talent/blog/learning-and-development/skills-on-the-rise>
+[^33]: Alam, A. (2026). "Reshaping Work: Navigating the AI-Driven Labour Market." UNICEF Innocenti, Prospects for Children in 2026. <https://www.unicef.org/innocenti/stories/2026-global-outlook-reshaping-work-ai-driven-labour-market>
