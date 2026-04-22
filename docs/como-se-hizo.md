@@ -23,8 +23,8 @@ Para producir el proyecto se utilizaron las siguientes herramientas:
 | --------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
 | **Claude** (Anthropic)      | Modelo de lenguaje (LLM) que funciona como motor de búsqueda, recolección de información y redacción asistida            |
 | **Claude Code** (Anthropic) | Interfaz de línea de comandos (CLI) que permite a Claude interactuar con archivos, terminal y herramientas externas      |
-| **NotebookLM** (Google)     | Herramienta de IA que genera imágenes a partir de prompts de texto, usada para crear las ilustraciones base del proyecto |
-| **Canva **                  | Plataforma de diseño donde se editan manualmente las imágenes generadas y se arman las diapositivas del taller           |
+| **NotebookLM** (Google)     | Herramienta de IA que genera presentaciones borrador a partir del contenido investigado, usada como base de las diapositivas del taller y las ilustraciones de la wiki |
+| **Canva**                   | Plataforma de diseño donde se editan manualmente las presentaciones generadas, se extraen las ilustraciones de la wiki y se arman las diapositivas finales del taller  |
 | **MkDocs Material**         | Generador de sitios estáticos que convierte archivos Markdown en las páginas web que estás leyendo                       |
 | **GitHub Pages**            | Servicio de hosting donde se publica la wiki                                                                             |
 
@@ -35,7 +35,7 @@ Para producir el proyecto se utilizaron las siguientes herramientas:
 
 ## El sistema de orquestación
 
-Para este proyecto se desarrolló un **sistema modular** compuesto por 1 agente orquestador y 6 habilidades (*skills*) especializadas que coordinan un pipeline de producción de contenido.
+Para este proyecto se desarrolló un **sistema modular** compuesto por 1 agente orquestador y 5 habilidades (*skills*) especializadas que coordinan un pipeline de producción de contenido.
 
 ### ¿Qué es un skill? ¿Qué es un agente?
 
@@ -112,7 +112,7 @@ Antes de publicar, la IA revisa el contenido con criterios específicos:
 
 La IA señala problemas y propone correcciones, pero no aplica cambios directamente.
 
-### 6. Revisión final humana
+### 6. Revisión final del equipo
 
 Las hijas de Internet revisamos todo el contenido antes de cada publicación. Verificamos los datos, ajustamos el tono editorial y la narrativa, redactamos secciones nuevas, decidimos qué correcciones de la IA acepta y cuáles descarta, y retiramos información interna (notas de producción, comentarios de proceso) que no debe llegar a la versión pública. Ningún contenido se publica sin esta revisión.
 
@@ -124,18 +124,18 @@ El sitio se genera con MkDocs y se publica en GitHub Pages.
 
 El contenido visual sigue un proceso aparte:
 
-1. **Generación del prompt**. Claude Code genera un prompt descriptivo para cada imagen, basado en el contenido del módulo y los lineamientos de marca del proyecto (paleta de colores, estilo visual, tono).
-2. **Generación de imagen**. El prompt se introduce en **NotebookLM** (Google), que genera una imagen base.
-3. **Edición manual en Canva**. El equipo toma la imagen generada y la edita manualmente en Canva: ajusta composición, tipografía, colores y coherencia con la identidad visual del proyecto. Las diapositivas del taller también se arman manualmente en Canva.
-4. **Integración**. Las imágenes finales se exportan como PNG y se integran a la wiki y las presentaciones del taller.
+1. **Brief de contenido**. Claude Code genera un resumen del módulo con sus puntos clave y los lineamientos de marca del proyecto (paleta de colores, estilo visual, tono), listo para alimentar a la herramienta de presentaciones.
+2. **Generación de presentación borrador**. El brief se carga en **NotebookLM** (Google), que genera una presentación estructurada con el contenido del módulo.
+3. **Edición manual en Canva**. El equipo adapta la presentación en Canva: ajusta composición, tipografía, colores, reemplaza o crea las ilustraciones, y asegura coherencia con la identidad visual del proyecto.
+4. **Integración**. De la presentación editada se extraen las imágenes que ilustran la wiki (exportadas como PNG) y se arman las diapositivas finales que se usan en los talleres.
 
 ---
 
-## Dónde decide la humana
+## Dónde intervenimos nosotras
 
 Este es el punto más importante. En **cada paso** del pipeline hay un punto de decisión humana:
 
-| Paso               | ¿Qué hace la IA?                          | ¿Qué decide la humana?                                  |
+| Paso               | ¿Qué hace la IA?                          | ¿Qué decidimos nosotras?                                  |
 | ------------------ | ----------------------------------------- | ------------------------------------------------------- |
 | Ingesta de fuentes | Extrae, estructura y clasifica hallazgos  | Aprueba la clasificación, selecciona qué hallazgos usar |
 | Redacción          | Genera borrador de texto con citas        | Aprueba, edita, redacta de nuevo o rechaza el texto     |
@@ -203,4 +203,4 @@ Esperamos que esta guía te sirva de inspiración para crear y seguir aprendiend
 
 ---
 
-*Esta página se actualizó por última vez en marzo 2026.*
+*Esta página se actualizó por última vez en abril 2026.*
