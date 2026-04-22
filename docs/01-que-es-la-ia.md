@@ -1,5 +1,7 @@
 # Descifrando la Inteligencia Artificial: conceptos básicos
 
+**¿Qué es la IA? La Inteligencia Artificial (IA) es el desarrollo de sistemas informáticos capaces de realizar tareas asociadas a funciones cognitivas humanas — como interpretar el habla, identificar patrones, hacer predicciones y resolver problemas. Se compone de varias tecnologías: el aprendizaje automático (Machine Learning), el aprendizaje profundo (Deep Learning) y el procesamiento de lenguaje natural (Natural Language Processing o NLP), entre otras. No es magia: es un conjunto de tecnologías que funcionan con matemáticas y modelos estadísticos que todas y todos tenemos la capacidad de entender.**
+
 Hoy, usamos tecnologías de Inteligencia Artificial (IA) todos los días. Las redes sociales (TikTok, Instagram, Facebook) usan algoritmos de IA para decidir qué contenido mostrar. Netflix y Spotify aprenden de las series y películas que vemos.[^2] Google Maps predice tráfico con datos de millones de teléfonos.[^3] Los filtros de Snapchat e Instagram usan visión por computadora para identificar los rasgos faciales en tiempo real, lo que les permite aplicar máscaras y efectos digitales en tu rostro. [^3] 
 
 ![La IA no es magia](images/00_Magia.png)
@@ -94,9 +96,9 @@ Los **modelos *generativos***, en lugar de aprender solo las fronteras entre cat
 <div class="quiz-feedback"></div>
 </div>
 
-## Modelos de Lenguaje de Gran Tamaño (Large Language Models, LLMs)
+## ¿Qué es un LLM? Modelos de Lenguaje de Gran Tamaño (Large Language Models)
 
-Los **modelos de lenguaje de gran tamaño** **son modelos de inteligencia artificial generativa** entrenados con enormes cantidades de texto, lo que les permite procesar y generar lenguaje natural[^24]. Al recibir un mensaje, estos modelos **calculan la distribución de probabilidad para el siguiente token** (que puede ser una palabra o parte de ella) basándose en todo el contexto previo. **No "entienden" lo que dicen**, predicen palabras basándose en patrones estadísticos.
+**¿Qué es un LLM?** Un LLM (Large Language Model o modelo de lenguaje de gran tamaño) es un tipo de inteligencia artificial generativa entrenado con enormes cantidades de texto, lo que le permite procesar y generar lenguaje natural[^24]. ChatGPT, Claude y Gemini son ejemplos de LLMs. Al recibir un mensaje, estos modelos **calculan la distribución de probabilidad para el siguiente token** (que puede ser una palabra o parte de ella) basándose en todo el contexto previo. **No "entienden" lo que dicen**, predicen palabras basándose en patrones estadísticos.
 
 ??? info "La arquitectura Transformer"
     En 2017, un equipo de Google publicó "Attention Is All You Need", el paper que introdujo la arquitectura Transformer.[^22] Los modelos anteriores (llamados redes recurrentes) procesaban texto palabra por palabra, en secuencia. El Transformer cambió esto con un mecanismo de "atención" que permite al modelo enfocarse en las partes más relevantes de todo el texto de entrada simultáneamente, procesando secuencias completas en paralelo.[^31] 0Esto hizo que los modelos fueran mucho más rápidos de entrenar y permitió que los modelos crecieran exponencialmente.[^22]

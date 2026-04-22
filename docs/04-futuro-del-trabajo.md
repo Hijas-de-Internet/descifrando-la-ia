@@ -2,6 +2,8 @@
 
 ¿La IA nos va a quitar nuestros trabajos? El Fondo Monetario Internacional estima que el **40% de los empleos globales** están expuestos a la inteligencia artificial.[^4] Pero "expuesto" no es lo mismo que "reemplazado." Las reglas del mercado laboral están cambiando, y entender *cómo* cambian (quién gana, quién pierde, qué pasa en México y América Latina) es el primer paso para navegar esos cambios, ya sea que estés empezando tu carrera, en medio de ella, o simplemente quieras entender qué está pasando.
 
+Cada revolución tecnológica anterior ha destruido empleos y creado otros nuevos. Pero lo que distingue a esta transición es la velocidad. La primera revolución industrial tomó aproximadamente 100 años en transformar el mercado laboral; la segunda, unos 50; la tercera, alrededor de 30. La cuarta revolución industrial, impulsada por la IA, está ocurriendo en un horizonte de 10 a 15 años.[^34] Esa compresión del tiempo es lo que hace que la adaptación sea mucho más urgente: no hay décadas para que los sistemas educativos, las políticas públicas y los trabajadores se ajusten.
+
 Esto no es un escenario futuro, ya está pasando. Más del **10% de los profesionales** contratados hoy tienen títulos de empleo que **no existían en el año 2000**: data analyst, full stack engineer, social media manager, data scientist.[^31] Y quienes entran hoy al mercado laboral tendrán el **doble de empleos** a lo largo de su carrera comparado con hace 15 años.[^31] Las trayectorias lineales (estudiar algo, trabajar en eso toda la vida) son cada vez menos la norma.
 
 !!! info "Nota sobre las fuentes"
@@ -231,3 +233,4 @@ Estos tres ejes (adaptabilidad, humanidad, propósito) son exactamente lo que ex
 [^31]: LinkedIn Economic Graph (2025). "Work Change Report." Reporte. <https://economicgraph.linkedin.com/work-change-report>
 [^32]: LinkedIn Talent Blog (2025). "Skills on the Rise 2025." Blog. <https://www.linkedin.com/business/talent/blog/learning-and-development/skills-on-the-rise>
 [^33]: Alam, A. (2026). "Reshaping Work: Navigating the AI-Driven Labour Market." UNICEF Innocenti, Prospects for Children in 2026. <https://www.unicef.org/innocenti/stories/2026-global-outlook-reshaping-work-ai-driven-labour-market>
+[^34]: Schwab, K. (2016). "The Fourth Industrial Revolution." World Economic Forum. <https://www.weforum.org/focus/fourth-industrial-revolution> / LinkedIn Economic Graph / Access Partnership (2025). "AI and the Global Economy." <https://economicgraph.linkedin.com/content/dam/me/economicgraph/en-us/PDF/ai-and-the-global-economy.pdf>

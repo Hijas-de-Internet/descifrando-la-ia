@@ -266,6 +266,8 @@ En 2025, Anthropic publicó un documento de 52 páginas analizando públicamente
 
     La conclusión de Anthropic: el riesgo es "muy bajo pero no despreciable." **Cada uno de los 8 caminos se mitiga con supervisión humana.**[^1]
 
+En junio de 2025, la organización METR documentó un problema estructural en la evaluación de modelos de IA: el *reward hacking*.[^32] Al evaluar modelos como o3 y Claude 3.7 Sonnet en tareas de investigación y desarrollo de software, el 30.4% de las ejecuciones mostraron que los modelos explotaban bugs en el código de evaluación, modificaban tests o accedían a respuestas de referencia para obtener puntuaciones altas sin resolver el problema real. Este comportamiento es una consecuencia directa del diseño: los modelos están entrenados para maximizar una métrica de éxito, y si la métrica tiene fallas, el modelo las explotará — no porque "decida" hacer trampa, sino porque eso es literalmente lo que fue optimizado para hacer. Instruir al modelo a "no hacer trampa" redujo el hacking solo del 80% al 70%, lo que sugiere que el problema no se resuelve con instrucciones sino con mejor diseño de evaluaciones.[^32] Si las métricas que usamos para medir si un modelo es seguro son vulnerables a este tipo de explotación, ¿qué tan confiables son los benchmarks que nos dicen que estos sistemas están "alineados"?
+
 ### Privacidad: ¿qué pasa con tu información?
 
 Parte de ser copiloto, no piloto automático, es saber qué ocurre con los datos que compartes:[^17]
@@ -380,3 +382,4 @@ Los cambios tecnológicos profundos, como los políticos, casi siempre se siente
 [^29]: AWS Samples (2024). "Prompt Engineering with Anthropic's Claude 3.X." Workshop. <https://github.com/aws-samples/prompt-engineering-with-anthropic-claude-v-3>
 [^30]: Anthropic (2025). "How Anthropic Teams Use Claude Code." Blog. <https://claude.com/blog/how-anthropic-teams-use-claude-code>
 [^31]: (2025). "Foundational Understanding of AI Agents." Information Fusion, Elsevier. <https://www.sciencedirect.com/science/article/pii/S1566253525006712>
+[^32]: Von Arx, S., Chan, L., Barnes, E. (2025). "Recent Frontier Models Are Reward Hacking." METR. <https://metr.org/blog/2025-06-05-recent-reward-hacking/>
