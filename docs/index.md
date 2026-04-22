@@ -2,12 +2,11 @@
 
 **Una guía para entender y cuestionar a la inteligencia artificial**
 
----
-La inteligencia artificial está en muchos ámbitos de nuestras vidas: en los chat bots como ChatGPT, Gemini o Claude, las redes sociales, traductores automáticos, en las recomendaciones de música y video. Pero, ¿entendemos realmente cómo funcionan? ¿quién las diseña? ¿a quién benefician y a quién puede perjudicar?
+![SeñoritaIA](images/19_sritaIA.png)
 
-**Descifrando la IA** es un proyecto de [Hijas de Internet](https://instagram.com/hijasdeinternet) que busca acercar el conocimiento sobre cómo funcionan los modelos de inteligencia artificial que usamos todos los días y conocer sus alcances y sus limitaciones, para poder hacer un uso responsable y crítico de estas tecnologías. 
+**Descifrando la IA** es un proyecto de [Hijas de Internet](https://instagram.com/hijasdeinternet) que busca acercar el conocimiento sobre qué son y cómo funcionan los modelos de inteligencia artificial que usamos todos los días, conocer sus alcances y sus limitaciones, y sus impactos socioambientales. Con esto, buscamos contribuir a la discusión sobre cómo pasar de ser usuarias pasivas a usuarias activas de herramientas de IA, siempre de una forma crítica y responsable que ponga al centro nuestras necesidades. 
 
-A lo largo de esta wiki, podrás encontrar de forma general conceptos básicos sobre inteligencia artificial, herramientas para cuestionar sus sesgos e impactos ambientales, su papel en el futuro de trabajo y tips para usarlas de forma responsable. Pero si te gustaría seguir explorando estos temas, te compartimos referencias de distintas fuentes para que puedas consultar y seguir aprendiendo. 
+A lo largo de esta wiki, podrás encontrar de forma general conceptos básicos sobre inteligencia artificial, herramientas para cuestionar sus sesgos e impactos ambientales, su papel en el futuro de trabajo y tips para usarlas de forma responsable. Además, si te gustaría seguir explorando estos temas, te compartimos referencias de distintas fuentes para que puedas consultar y seguir aprendiendo. 
 
 ## Módulos
 
@@ -33,23 +32,23 @@ Para cualquier persona curiosa sobre inteligencia artificial, especialmente:
 !!! tip "No necesitas saber programar"
     Esta guía está diseñada para ser accesible sin conocimientos previos de programación ni matemáticas avanzadas. Incluimos recursos para todos los niveles.
 
-## Perspectiva
 
-Todo el contenido se desarrolla con una perspectiva crítica: no solo explicamos *cómo* funciona la IA, sino *quién* la diseña, *con qué datos* se entrena, *a quién beneficia* y *a quién puede perjudicar*. Priorizamos datos, casos y ejemplos de **América Latina y México**.
-
-!!! quote "Pregunta guía"
-    ¿Quién se beneficia? ¿Quién sale perjudicado/a? ¿Quién tiene acceso y quién no?
-
-<!--
 ## Escucha el podcast
 
 Este contenido acompaña la serie **Descifrando la IA** del podcast Hijas de Internet, disponible en todas las plataformas.
 
-<div class="spotify-embed">
-<iframe src="https://open.spotify.com/embed/show/hijasdeinternet" width="100%" height="152" frameBorder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+<div class="video-embed-vertical">
+<iframe src="https://www.youtube.com/embed/rUiVXEvoIcw" frameBorder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 </div>
-TODO: Add 05_HerramientasIA.png
--->
+
+
+
+## Equipo
+
+**Hijas de Internet:** Luisa Alfaro, Monserrat López, Aranxa Bello Brindis, María Alfaro, Paloma Vázquez y Aranxa Márquez.
+
+**Colaboradoras en el desarrollo de la wiki:** Monserrat López y Aranxa Márquez.
+
 ---
 
-*Proyecto desarrollado en 2026 como parte del proyecto Descifrando la IA, de hijas de Internet (ultima actualización marzo 2026).*
+*Proyecto desarrollado en 2026 como parte del proyecto Descifrando la IA, de Hijas de Internet (última actualización abril 2026).*

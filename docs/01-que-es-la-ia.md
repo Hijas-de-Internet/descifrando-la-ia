@@ -1,12 +1,14 @@
 # Descifrando la Inteligencia Artificial: conceptos básicos
 
-**¿Qué es la IA? La Inteligencia Artificial (IA) es el desarrollo de sistemas informáticos capaces de realizar tareas asociadas a funciones cognitivas humanas — como interpretar el habla, identificar patrones, hacer predicciones y resolver problemas. Se compone de varias tecnologías: el aprendizaje automático (Machine Learning), el aprendizaje profundo (Deep Learning) y el procesamiento de lenguaje natural (Natural Language Processing o NLP), entre otras. No es magia: es un conjunto de tecnologías que funcionan con matemáticas y modelos estadísticos que todas y todos tenemos la capacidad de entender.**
+!!! abstract "¿Qué es la IA?"
+    La Inteligencia Artificial (IA) es el desarrollo de sistemas informáticos capaces de realizar tareas asociadas a funciones cognitivas humanas, como interpretar el habla, identificar patrones, hacer predicciones y resolver problemas. Se compone de varias tecnologías: el aprendizaje automático (Machine Learning), el aprendizaje profundo (Deep Learning) y el procesamiento de lenguaje natural (Natural Language Processing o NLP), entre otras. **No es magia**: es un conjunto de tecnologías que funcionan con matemáticas y modelos estadísticos que todas y todos tenemos la capacidad de entender.
 
 Hoy, usamos tecnologías de Inteligencia Artificial (IA) todos los días. Las redes sociales (TikTok, Instagram, Facebook) usan algoritmos de IA para decidir qué contenido mostrar. Netflix y Spotify aprenden de las series y películas que vemos.[^2] Google Maps predice tráfico con datos de millones de teléfonos.[^3] Los filtros de Snapchat e Instagram usan visión por computadora para identificar los rasgos faciales en tiempo real, lo que les permite aplicar máscaras y efectos digitales en tu rostro. [^3] 
 
+En este módulo, podrás entender qué es la Inteligencia Artificial, cómo funcionan las tecnologías detrás de ellas y profundizar sobre los modelos de lenguaje y otros conceptos clave que es necesario entender cuando usamos herramientas de IA. **El principal objetivo es entender que la IA no es magia**, es un conjunto de tecnologías que funcionan con matemáticas y modelos estadísticos que todas y todos tenemos la capacidad de entender.
+
 ![La IA no es magia](images/00_Magia.png)
 
-En este módulo, podrás entender qué es la Inteligencia Artificial, cómo funcionan las tecnologías detrás de ellas y profundizar sobre los modelos de lenguaje y otros conceptos clave que es necesario entender cuando usamos herramientas de IA. **El principal objetivo es entender que la IA no es magia**, es un conjunto de tecnologías que funcionan con matemáticas y modelos estadísticos que todas y todos tenemos la capacidad de entender.
 
 ## ¿Qué es la Inteligencia Artificial?
 
@@ -14,21 +16,21 @@ La inteligencia artificial es el desarrollo de sistemas informáticos capaces de
 
 ![La jerarquía de la Inteligencia Artificial: diagrama de círculos concéntricos mostrando IA, Machine Learning, Deep Learning e IA generativa](images/01_JerarquiaIA.png)
 
-## Aprendizaje automático *(Machine Learning)*
+## ¿Qué es el aprendizaje automático (Machine Learning)?
 
-El **aprendizaje automático (*Machine Learning*)** es la principal tecnología detrás de lo que conocemos como Inteligencia Artificial. En realidad es una rama de las ciencias de la computación que **busca** **desarrollar algoritmos que aprenden de datos sin programación explícita** [^5]. Para que este proceso ocurra, necesitamos combinar varios elementos clave:
-#### Datos (la materia prima)
-Un modelo de aprendizaje automático **necesita miles o millones de ejemplos para aprender.** [^6] Para entrenar un modelo que aprenda a reconocer gatos, se necesitan miles de fotos de gatos. Aquí es importante preguntarnos, ¿quién genera estos datos? ¿quién los sistematiza? ¿qué historias se cuentan a partir de ellos? 
+El **aprendizaje automático (*Machine Learning*)** es la principal tecnología detrás de lo que conocemos como Inteligencia Artificial. En realidad es una rama de las ciencias de la computación que **busca desarrollar algoritmos que aprenden de datos sin programación explícita**[^5]. Para que este proceso ocurra, necesitamos combinar varios elementos principales:
+### Datos (la materia prima)
+Un modelo de aprendizaje automático necesita miles o millones de ejemplos para aprender. [^6] Para entrenar un modelo que aprenda a reconocer gatos, se necesitan miles de fotos de gatos. Aquí es importante preguntarnos, ¿quién genera estos datos? ¿quién los sistematiza? ¿qué historias se cuentan a partir de ellos? 
 
 ???+ tip "Escucha: Datos y políticas públicas"
     Si quieres saber más sobre la importancia de los datos y su impacto en la toma de decisiones, escucha el episodio de Hijas de Internet con @tacosdedatos sobre la datos y políticas públicas.
 
     <iframe src="https://creators.spotify.com/pod/profile/hijas-de-internet/embed/episodes/T3-EP-6--Datos-y-polticas-pblicas-e1alhpe/a-a6uv6rb" height="102px" width="400px" frameborder="0" scrolling="no"></iframe>
 
-#### Algoritmos (la receta)
+### Algoritmos (la receta)
 Un algoritmo es un conjunto de reglas matemáticas que le dice al modelo cómo procesar datos y encontrar patrones [^7]. En la programación tradicional, los humanos escribimos instrucciones explícitas (si pasa A, haz B). El aprendizaje automático cambia esto: en lugar de darle las reglas a la computadora, le damos datos y dejamos que los algoritmos descubran los patrones por sí mismos para realizar predicciones o tomar decisiones sin ser programados para cada escenario específico.[^8]
 
-#### Entrenamiento (la práctica)
+### Entrenamiento (la práctica)
 Así como una persona aprende con la práctica, un modelo prueba una y otra vez con los datos, ajustándose cuando se equivoca. [^12]  Durante el entrenamiento, el modelo ajusta millones de parámetros internos (llamados "pesos") hasta minimizar sus errores. El tipo de entrenamiento depende del algoritmo: 
 
 - **Supervisado:** El modelo aprende de datos etiquetados de ejemplos donde ya conocemos la respuesta correcta.[^9] Por ejemplo, miles de fotos ya clasificadas como "gato" o "perro". El modelo aprende a asociar las características de la imagen con la etiqueta correcta.
@@ -40,25 +42,25 @@ Así como una persona aprende con la práctica, un modelo prueba una y otra vez 
 
     > Pídele a un LLM que te explique la diferencia entre aprendizaje supervisado y no supervisado con un ejemplo de tu carrera o área de estudio.
 
-    **¿Qué observar?** ¿El ejemplo es relevante a tu contexto o es genérico? ¿Puedes identificar qué serían los "datos etiquetados" en tu campo?
+    ¿El ejemplo es relevante a tu contexto o es genérico? ¿Puedes identificar qué serían los "datos etiquetados" en tu campo?
 
-#### Validación (el examen)
+### Validación (el examen)
 Una vez entrenado, el modelo **se prueba con datos que nunca ha visto antes** para verificar si realmente aprendió patrones generalizables o solo memorizó los ejemplos de entrenamiento. [^13] Un modelo que solo memoriza (lo que se llama [sobreajuste](https://es.wikipedia.org/wiki/Sobreajuste) u *overfitting*) puede tener un rendimiento perfecto con sus datos de entrenamiento pero fallar con datos nuevos. La validación funciona como un examen sorpresa, si el modelo realmente aprendió, puede responder preguntas que nunca ha visto antes.
-#### Ajuste o refinamiento (la especialización)
+### Ajuste o refinamiento (la especialización)
 Un modelo pre-entrenado tiene conocimiento general, pero no necesariamente hace bien una tarea específica. El refinamiento (o *fine-tuning*) consiste en tomar ese modelo general y volver a ajustar sus pesos internos (el mismo mecanismo del entrenamiento original) pero con un conjunto de datos más pequeño y enfocado en una tarea concreta.[^14] 
 
 Pero refinar un modelo para que sea bueno en una tarea no garantiza que se *comporte bien*. Si le preguntas a un chatbot cómo fabricar un arma, ¿te da instrucciones o se niega? Eso no depende de qué tan bueno sea el modelo en generar texto, depende de cómo fue alineado. La **alineación** es el proceso de codificar valores y objetivos humanos en los modelos de IA para que sean útiles, seguros y fiables.[^32] Este proceso toma más relevancia si somos conscientes de los **múltiples sesgos que tienen los datos de entrenamiento** (tema que exploraremos en el próximo módulo de esta wiki).
 
 ??? info "Técnicas de alineación: SFT, RLHF y Constitutional AI"
-    **Fine-tuning supervisado (SFT):** Se re-entrena el modelo con ejemplos etiquetados de cómo *debería* responder en distintas situaciones — básicamente, se le dan ejemplos del comportamiento deseado.[^27]
+    **Fine-tuning supervisado (SFT):** Se re-entrena el modelo con ejemplos etiquetados de cómo *debería* responder en distintas situaciones.[^27]
 
     **RLHF (Reinforcement Learning from Human Feedback):** Evaluadores humanos comparan pares de respuestas y eligen cuál es mejor. Con esas comparaciones se entrena un "modelo de recompensa" que aprende a predecir qué respuestas prefieren los humanos. El modelo se optimiza para maximizar esas recompensas.[^28]
 
     **Constitutional AI (Anthropic, 2022):** En lugar de depender exclusivamente de evaluadores humanos, el modelo se entrena con un conjunto de principios escritos (una "constitución"). Genera respuestas, se autocritica según esos principios, y se revisa a sí mismo.[^29]
-#### Inferencia (la aplicación)
-Es la etapa cuando el modelo ya entrenado aplica lo aprendido a datos nuevos. Cada vez que un modelo de IA clasifica una imagen, traduce un texto o genera una respuesta, está haciendo *inferencia*. No está aprendiendo nada nuevo, está usando lo que ya aprendió [^15].  
+### Inferencia (la aplicación)
+Es la etapa cuando el modelo ya entrenado aplica lo aprendido a datos nuevos. Cada vez que un modelo de IA clasifica una imagen, traduce un texto o genera una respuesta, está haciendo *inferencia*. No está aprendiendo nada nuevo, está usando lo que ya aprendió.[^15]  
 
-## Aprendizaje Profundo *(Deep Learning)*
+## ¿Qué es el aprendizaje profundo (Deep Learning)?
 
 El aprendizaje profundo es un **subconjunto del aprendizaje automático** que se basa en **redes neuronales artificiales.**[^16] Estas redes están inspiradas en cómo funcionan las neuronas del cerebro humano, representadas por nodos y conexiones entre ellos. [^18]
 
@@ -81,11 +83,11 @@ Cada conexión entre neuronas tiene un peso, un número que indica qué tan impo
 
     Este ciclo se repite millones de veces. Con cada repetición la red minimiza sus errores, hasta que es capaz de hacer predicciones precisas con datos que nunca ha visto.
 
-## Inteligencia Artificial Generativa *(Generative AI)*
+## ¿Qué es la IA generativa (Generative AI)?
 
-Durante la mayor parte de la década pasada, el enfoque del aprendizaje profundo estuvo en la clasificación y predicción. Estas tareas requieren que los modelos aprendan la frontera de decisión entre categorías (ej. "esto es un perro" vs. "esto es un gato") basándose en características de los datos de entrenamiento. Se les llama **modelos *discriminativos* porque su tarea es distinguir entre los datos**. Son los que están detrás de aplicaciones como detección de fraudes bancarios, diagnóstico médico por imagen y análisis de sentimientos en redes sociales [^21].
+La **inteligencia artificial generativa** es un tipo de IA que **aprende la distribución estadística completa de sus datos de entrenamiento** —las reglas de cómo se estructura la información— para **crear contenido nuevo** que se asemeja a lo que vio durante el entrenamiento: texto, imágenes, audio, video[^21]. ChatGPT, Claude, DALL·E y Midjourney son ejemplos de modelos generativos.
 
-Los **modelos *generativos***, en lugar de aprender solo las fronteras entre categorías, **aprenden la distribución completa de los datos**, es decir, las reglas estadísticas de cómo se estructura la información [^21]. Esto les permite crear contenido nuevo que se asemeja a lo que vieron durante el entrenamiento: texto, imágenes, audio, video.
+Esto distingue a los **modelos generativos** de los **modelos discriminativos**, que durante la mayor parte de la década pasada dominaron el aprendizaje profundo. Los modelos discriminativos aprenden la frontera de decisión entre categorías (ej. "esto es un perro" vs. "esto es un gato") basándose en características de los datos de entrenamiento. Su tarea es distinguir entre datos existentes, no crear nuevos. Son los que están detrás de aplicaciones como detección de fraudes bancarios, diagnóstico médico por imagen y análisis de sentimientos en redes sociales[^21].
 
 <div class="quiz" data-correct="b" data-explanation="Discriminativa. El filtro de spam no genera contenido nuevo, solo clasifica entre dos categorías existentes (spam o no spam). Los modelos generativos crean contenido nuevo.">
 <p class="quiz-title">Ponte a prueba: Un filtro de spam decide si un correo es spam o no. ¿Qué tipo de IA es?</p>
@@ -101,14 +103,14 @@ Los **modelos *generativos***, en lugar de aprender solo las fronteras entre cat
 **¿Qué es un LLM?** Un LLM (Large Language Model o modelo de lenguaje de gran tamaño) es un tipo de inteligencia artificial generativa entrenado con enormes cantidades de texto, lo que le permite procesar y generar lenguaje natural[^24]. ChatGPT, Claude y Gemini son ejemplos de LLMs. Al recibir un mensaje, estos modelos **calculan la distribución de probabilidad para el siguiente token** (que puede ser una palabra o parte de ella) basándose en todo el contexto previo. **No "entienden" lo que dicen**, predicen palabras basándose en patrones estadísticos.
 
 ??? info "La arquitectura Transformer"
-    En 2017, un equipo de Google publicó "Attention Is All You Need", el paper que introdujo la arquitectura Transformer.[^22] Los modelos anteriores (llamados redes recurrentes) procesaban texto palabra por palabra, en secuencia. El Transformer cambió esto con un mecanismo de "atención" que permite al modelo enfocarse en las partes más relevantes de todo el texto de entrada simultáneamente, procesando secuencias completas en paralelo.[^31] 0Esto hizo que los modelos fueran mucho más rápidos de entrenar y permitió que los modelos crecieran exponencialmente.[^22]
+    En 2017, un equipo de Google publicó "Attention Is All You Need", el paper que introdujo la arquitectura Transformer.[^22] Los modelos anteriores (llamados redes recurrentes) procesaban texto palabra por palabra, en secuencia. El Transformer cambió esto con un mecanismo de "atención" que permite al modelo enfocarse en las partes más relevantes de todo el texto de entrada simultáneamente, procesando secuencias completas en paralelo.[^31] Esto hizo que los modelos fueran mucho más rápidos de entrenar y permitió que los modelos crecieran exponencialmente.[^22]
 
 ???+ warning "El éxito de ChatGPT"
-    En noviembre de 2022, OpenAI lanzó ChatGPT, un modelo basado en Transformers, al público y alcanzó 100 millones de usuarios en solo dos meses, un récord histórico de adopción tecnológica.[^23]
+    En noviembre de 2022, OpenAI lanzó ChatGPT, un modelo de lenguaje basado en la arquitectura Transformer, y alcanzó 100 millones de usuarios en solo dos meses, un récord histórico de adopción tecnológica.[^23]
 
 ### Loros estocásticos (Stochastic Parrots)
 
-El término de **loros estocásticos** fue acuñado por las investigadoras Emily Bender y Timnit Gebru (2021) [^25]. La metáfora sugiere que estos modelos **son como loros sofisticados que combinan patrones de lenguaje sin comprender su significado.** Repiten y combinan patrones que han visto antes, produciendo textos que suenan coherentes, pero sin entender el significado del mensaje, la intención o la verdad.
+El término de **loros estocásticos** fue acuñado por las investigadoras Emily Bender y Timnit Gebru (2021).[^25] La metáfora sugiere que estos modelos **son como loros probabilísticos que generan resultados a través de patrones de lenguaje sin comprender su significado.** Repiten y combinan patrones que han visto antes, produciendo textos que suenan coherentes, pero sin entender el significado del mensaje, la intención o la verdad.
 
 ![Ilustración de un loro estocástico representando los modelos de lenguaje](images/03_cotorros.png)
 
@@ -120,14 +122,14 @@ El término de **loros estocásticos** fue acuñado por las investigadoras Emily
 ??? example "Conoce más sobre Timnit Gebru"
     Investigadora eritreo-etíope-estadounidense en ética de la IA. En diciembre de 2020, su empleo en Google terminó por el paper "On the Dangers of Stochastic Parrots". Aproximadamente 2,700 empleados firmaron una carta de protesta. Es cofundadora de Black in AI y fundadora del [Distributed Artificial Intelligence Research Institute (DAIR)](https://www.dair-institute.org/). Su caso es emblemático sobre el poder de las grandes empresas tecnológicas sobre la investigación crítica.[^26]
 
-## IA Agéntica *(Agentic AI)*
+## ¿Qué es la IA agéntica (Agentic AI)?
 
-La IA agéntica se refiere a **sistemas de IA que actúan de manera autónoma** para lograr objetivos específicos, realizando múltiples acciones en secuencia **sin intervención humana constante**. [^30] La principal diferencia con ChatGPT y otros chatbots es que estas aplicaciones responden a prompts individuales, mientras que un agente de IA puede planear, ejecutar tareas complejas y adaptarse según los resultados.
+La IA agéntica se refiere a **sistemas de IA que actúan de manera autónoma** para lograr objetivos específicos, realizando múltiples acciones en secuencia **sin intervención humana constante**.[^30] Ejemplos recientes incluyen Claude Code, GitHub Copilot Workspace y Operator de OpenAI. La principal diferencia con ChatGPT y otros chatbots es que estas aplicaciones responden a prompts individuales, mientras que un agente de IA usa modelos de lenguaje pero además puede planear, ejecutar tareas complejas y adaptarse según los resultados.
 
 ![Diagrama de cómo funciona un agente de IA: planear, ejecutar, adaptarse](images/04_AgenticAI.png)
 
 !!! danger "Advertencia"
-    Los agentes de IA requieren supervisión humana. No son todavía lo suficientemente confiables para tareas críticas sin supervisión. **Nunca compartas contraseñas, información bancaria o datos sensibles con estos sistemas.**
+    Los agentes de IA requieren supervisión humana. No son todavía lo suficientemente confiables para tareas críticas sin supervisión. **Nunca compartas contraseñas, credenciales, información bancaria o datos sensibles con estos sistemas.**
 
 ## De entender la IA a cuestionar sus impactos
 
