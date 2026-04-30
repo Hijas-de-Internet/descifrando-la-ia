@@ -13,7 +13,7 @@ La wiki se libera **módulo por módulo, alineada con los episodios del podcast*
 | Módulo | Tema | Estado |
 |---|---|---|
 | 1 | [Qué es la IA](docs/01-que-es-la-ia.md) — definiciones, cómo funcionan los modelos, conceptos clave | Disponible |
-| 2 | Sesgos algorítmicos — cómo datos y algoritmos reproducen desigualdades | Próximamente |
+| 2 | [Sesgos algorítmicos](docs/02-sesgos-algoritmicos.md) — cómo datos y algoritmos reproducen desigualdades | Disponible |
 | 3 | Impactos ambientales — costo material de entrenar modelos | Próximamente |
 | 4 | Futuro del trabajo — automatización, nuevos perfiles, rol humano | Próximamente |
 | 5 | Herramientas y uso responsable — cómo usar IA de forma crítica | Próximamente |
