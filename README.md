@@ -25,7 +25,7 @@ Cualquier persona curiosa sobre IA: estudiantes, profesionales de cualquier disc
 
 ## Perspectiva
 
-Priorizamos datos, casos y ejemplos de **América Latina y México**. Todo el contenido se desarrolla con una perspectiva crítica: no sólo explicamos *cómo* funciona la IA, sino *quién* la diseña, *con qué datos* se entrena, *a quién beneficia* y *a quién puede perjudicar*.
+Priorizamos datos, casos y ejemplos de **América Latina y México**. Todo el contenido se desarrolla con una perspectiva crítica: *cómo* funciona la IA, *quién* la diseña, *con qué datos* se entrena, *a quién beneficia* y *a quién puede perjudicar*.
 
 ## Licencia
 
