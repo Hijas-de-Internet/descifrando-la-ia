@@ -33,7 +33,7 @@ Si tu contribución requiere cambios mayores al proceso editorial, menciónalo e
 - **Español neutro** (no vosotros), accesible, sin jerga innecesaria.
 - **Perspectiva crítica**: no antropomorfizamos la IA, cuestionamos quién gana y quién pierde.
 - **Referencias**: toda afirmación con dato necesita fuente verificable. Usamos formato de notas al pie (`[^N]`) con URL completa al final del módulo.
-- **Latin American context primero**: cuando exista dato regional, úsalo antes que el global.
+- **Contexto centrado en Latinoamérica**: cuando exista dato regional, úsalo antes que el global.
 
 ## Código de conducta
 
