@@ -49,7 +49,7 @@ Una vez entrenado, el modelo **se prueba con datos que nunca ha visto antes** pa
 ### Ajuste o refinamiento (la especialización)
 Un modelo pre-entrenado tiene conocimiento general, pero no necesariamente hace bien una tarea específica. El refinamiento (o *fine-tuning*) consiste en tomar ese modelo general y volver a ajustar sus pesos internos (el mismo mecanismo del entrenamiento original) pero con un conjunto de datos más pequeño y enfocado en una tarea concreta.[^14] 
 
-Pero refinar un modelo para que sea bueno en una tarea no garantiza que se *comporte bien*. Si le preguntas a un chatbot cómo fabricar un arma, ¿te da instrucciones o se niega? Eso no depende de qué tan bueno sea el modelo en generar texto, depende de cómo fue alineado. La **alineación** es el proceso de codificar valores y objetivos humanos en los modelos de IA para que sean útiles, seguros y fiables.[^32] Este proceso toma más relevancia si somos conscientes de los **múltiples sesgos que tienen los datos de entrenamiento** (tema que exploraremos en el próximo módulo de esta wiki).
+Pero refinar un modelo para que sea bueno en una tarea no garantiza que se *comporte bien*. Si le preguntas a un chatbot cómo fabricar un arma, ¿te da instrucciones o se niega? Eso no depende de qué tan bueno sea el modelo en generar texto, depende de cómo fue alineado. La **alineación** es el proceso de codificar valores y objetivos humanos en los modelos de IA para que sean útiles, seguros y fiables.[^32] Este proceso toma más relevancia si somos conscientes de los [múltiples sesgos que tienen los datos de entrenamiento](02-sesgos-algoritmicos.md).
 
 ??? info "Técnicas de alineación: SFT, RLHF y Constitutional AI"
     **Fine-tuning supervisado (SFT):** Se re-entrena el modelo con ejemplos etiquetados de cómo *debería* responder en distintas situaciones.[^27]
@@ -152,7 +152,7 @@ Los modelos de IA aprenden de datos que reflejan las desigualdades del mundo rea
 <p class="checklist-progress">Progreso: <span class="checklist-count">0</span>/4</p>
 </div>
 
-??? abstract "Glosario de conceptos clave"
+??? abstract "Glosario de conceptos"
     | Concepto                     | Definición breve                                                                                                                                                                       |
     | ---------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
     | Inteligencia Artificial (IA) | Sistemas informáticos que realizan tareas cognitivas: interpretar habla, identificar patrones, hacer predicciones                                                                      |
@@ -194,6 +194,12 @@ Los modelos de IA aprenden de datos que reflejan las desigualdades del mundo rea
     - **Fast.ai:** https://www.fast.ai/ — Deep learning práctico, de lo aplicado a lo teórico
     - **Anthropic Courses:** https://anthropic.skilljar.com/ — Prompt engineering y evaluación de modelos
     - **Google Cloud Tech (YouTube):** https://www.youtube.com/@googlecloudtech — Videos explicativos sobre IA y cloud
+
+¿Prefieres formato podcast? En este episodio de Hijas de Internet de la Serie "Descifrando la IA" conversamos con Sergio Sánchez de @tacosdedatos sobre qué es la inteligencia artificial, cómo funciona el aprendizaje automático y profundo, y por qué los modelos de lenguaje no piensan, predicen.
+
+<div class="video-embed">
+<iframe src="https://www.youtube.com/embed/A8Ong91a0dQ" title="Descifrando la IA — Qué es la IA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 
 ---
 

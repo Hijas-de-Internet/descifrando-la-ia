@@ -40,6 +40,7 @@ theme:
 nav:
   - Inicio: index.md
   - "1. Qué es la IA": 01-que-es-la-ia.md
+  - "2. Sesgos algorítmicos": 02-sesgos-algoritmicos.md
   - "Cómo hicimos esta wiki": como-se-hizo.md
 
 markdown_extensions:
