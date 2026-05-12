@@ -175,6 +175,12 @@ Reconocer los sesgos algorítmicos no significa rechazar la IA, sino exigir que 
     - **“Algorithms of Oppression” — Safiya Umoja Noble (2018)** — Sesgo racial en motores de búsqueda
     - **Anthropic Courses — Prompt Evaluations:** <https://github.com/anthropics/courses/tree/master/prompt_evaluations> — Curso gratuito (9 lecciones) para aprender a evaluar sistemáticamente los resultados de modelos de IA[^28]
 
+¿Prefieres formato podcast? En este episodio de Hijas de Internet de la serie “Descifrando la IA” profundizamos sobre los sesgos algorítmicos, el benchmark SESGO para español y cómo cada modelo arrastra prejuicios distintos en nuestro idioma.
+
+<div class="video-embed">
+<iframe src="https://www.youtube.com/embed/Vr-7RHSRYMU" title="Descifrando la IA — Sesgos algorítmicos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
 ---
 
 ## Referencias

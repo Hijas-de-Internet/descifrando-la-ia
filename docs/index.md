@@ -16,7 +16,7 @@ La wiki se libera **módulo por módulo, junto con los episodios del podcast**. 
 | --- | ---------------------------------------------------- | --------------- | ---------------------------------------------------------------------- |
 | 1   | **[Qué es la IA](01-que-es-la-ia.md)**               | Disponible      | Definiciones, cómo funcionan los modelos y conceptos clave             |
 | 2   | **[Sesgos algorítmicos](02-sesgos-algoritmicos.md)** | Disponible      | Cómo los datos y algoritmos reproducen sesgos presentes en la sociedad |
-| 3   | Impactos ambientales                            | Próximamente    | El costo material de entrenar modelos de IA                            |
+| 3   | **[Impactos ambientales](03-impactos-ambientales.md)** | Disponible | El costo material de entrenar modelos de IA |
 | 4   | Futuro del trabajo                              | Próximamente    | Automatización, nuevos perfiles y el rol humano                        |
 | 5   | Herramientas y uso responsable                  | Próximamente    | Cómo usar IA de forma crítica e informada                              |
 |     | **[Cómo hicimos esta wiki](como-se-hizo.md)**   | Disponible      | Transparencia sobre el uso de IA en la producción de este proyecto     |
