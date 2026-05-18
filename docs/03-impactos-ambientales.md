@@ -226,6 +226,12 @@ La transparencia es el primer paso. Sin datos confiables sobre consumo de energ�
     - **“Atlas of AI” — Kate Crawford (2021)** — Mapea la cadena de suministro material de la IA
     - DataCenterBoom — Base de datos sobre impactos de centros de datos en América Latina (Brasil, Chile, México): <https://datacenterboom.net/>
 
+¿Prefieres formato podcast? En este episodio de Hijas de Internet de la serie “Descifrando la IA” conversamos con Paz Peña, del Instituto Latinoamericano de Terraformación y Data Center Boom, sobre la huella material de la IA en América Latina: agua, energía y los conflictos que están surgiendo en nuestros territorios.
+
+<div class="video-embed">
+<iframe src="https://www.youtube.com/embed/KvxNQKdkXUw" title="Descifrando la IA — Impactos ambientales" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
 ---
 
 ## Referencias

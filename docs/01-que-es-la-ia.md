@@ -142,7 +142,7 @@ Los modelos de IA aprenden de datos que reflejan las desigualdades del mundo rea
 !!! info "Lo que viene"
     **Módulo 2: Sesgos algorítmicos**. ¿Qué pasa cuando la IA discrimina? Casos reales, desde reconocimiento facial hasta sistemas de justicia, y herramientas para identificar y cuestionar estos sesgos.
     
-<div class="checklist" markdown="1">
+<div class="checklist">
 <p class="checklist-title">Checklist de comprensión</p>
 <p class="checklist-subtitle">Antes de pasar al siguiente módulo, verifica que puedes:</p>
 <label class="checklist-item"><input type="checkbox"> Explicar la diferencia entre IA, machine learning y deep learning</label>
