@@ -12,12 +12,12 @@ La wiki se libera **módulo por módulo, alineada con los episodios del podcast*
 
 | Módulo | Tema | Estado |
 |---|---|---|
-| 1 | [Qué es la IA](docs/01-que-es-la-ia.md) — definiciones, cómo funcionan los modelos, conceptos clave | Disponible |
-| 2 | [Sesgos algorítmicos](docs/02-sesgos-algoritmicos.md) — cómo datos y algoritmos reproducen desigualdades | Disponible |
-| 3 | [Impactos ambientales](docs/03-impactos-ambientales.md) — costo material de entrenar modelos | Disponible |
-| 4 | [Futuro del trabajo](docs/04-futuro-del-trabajo.md) — cómo la IA transforma el trabajo, quiénes están más expuestos, qué habilidades importan | Disponible |
-| 5 | Herramientas y uso responsable — cómo usar IA de forma crítica | Próximamente |
-| — | [Cómo hicimos esta wiki](docs/como-se-hizo.md) — transparencia sobre el uso de IA en la producción | Disponible |
+| 1 | [Qué es la IA](docs/01-que-es-la-ia.md) — aprendizaje automático, profundo y modelos de lenguaje; por qué los LLMs son *loros estocásticos* que predicen, no piensan | Disponible |
+| 2 | [Sesgos algorítmicos](docs/02-sesgos-algoritmicos.md) — sesgos en los datos, el algoritmo y la sociedad; casos de discriminación racial, de género y lingüística (incluido el sesgo contra el español) y el benchmark SESGO | Disponible |
+| 3 | [Impactos ambientales](docs/03-impactos-ambientales.md) — energía, agua, minerales críticos y basura electrónica; extractivismo en Atacama y el Congo, despojo hídrico en México y justicia ambiental en América Latina | Disponible |
+| 4 | [Futuro del trabajo](docs/04-futuro-del-trabajo.md) — 40% de los empleos globales *expuestos* (no reemplazados), grupos más vulnerables, el trabajo invisible de los *ghost workers* y las habilidades que son ancla en la transición | Disponible |
+| 5 | [Herramientas y uso responsable](docs/05-herramientas-uso-responsable.md) — marco de las **4D** (Delegación, Descripción, Discernimiento, Diligencia) para un uso crítico, software libre y soberanía digital, AymurAI y la Red Feminista de IA como ejemplos de IA situada en LatAm | Disponible |
+| — | [Cómo hicimos esta wiki](docs/como-se-hizo.md) — transparencia sobre las herramientas (Claude, Claude Code, NotebookLM, Canva, MkDocs) y el sistema de agentes y *skills* que orquestamos para producir el proyecto | Disponible |
 
 ## Audiencia
 
