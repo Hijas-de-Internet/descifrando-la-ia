@@ -3,6 +3,8 @@
 !!! abstract "¿La IA va a reemplazar nuestros empleos?"
     El 40% de los empleos globales está *expuesto* a la IA, pero eso no es lo mismo que *reemplazado*. La IA no está eliminando profesiones; está cambiando qué tareas hace cada profesión, y a una velocidad sin precedentes: la Cuarta Revolución Industrial ocurre en 10-15 años, no en 100. Este módulo desempaca qué grupos están más expuestos, qué trabajo invisible sostiene a estos sistemas, y qué habilidades son la ancla en la transición.
 
+![IA y el futuro del trabajo](images/20_FuturoTrabajo.png)
+
 El Fondo Monetario Internacional estima que el **40% de los empleos globales** están expuestos a la inteligencia artificial.[^1] Pero “expuesto” no es lo mismo que “reemplazado.” Las reglas del mercado laboral están cambiando, y entender *cómo* cambian (quién gana, quién pierde, qué pasa en México y América Latina) es el primer paso para navegar esos cambios, ya sea que estés empezando tu carrera, en medio de ella, o simplemente quieras entender qué está pasando.
 
 Cada revolución tecnológica anterior ha destruido empleos y creado otros nuevos. Pero lo que distingue a esta transición es la velocidad. La primera revolución industrial tomó aproximadamente 100 años en transformar el mercado laboral; la segunda, unos 50; la tercera, alrededor de 30. La cuarta revolución industrial, impulsada por la IA, está ocurriendo en un horizonte de 10 a 15 años.[^2] Esa compresión del tiempo es lo que hace que la adaptación sea mucho más urgente: no hay décadas para que los sistemas educativos, las políticas públicas y los trabajadores se ajusten.

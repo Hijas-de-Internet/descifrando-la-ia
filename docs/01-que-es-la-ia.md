@@ -64,8 +64,6 @@ Es la etapa cuando el modelo ya entrenado aplica lo aprendido a datos nuevos. Ca
 
 El aprendizaje profundo es un **subconjunto del aprendizaje automático** que se basa en **redes neuronales artificiales.**[^16] Estas redes están inspiradas en cómo funcionan las neuronas del cerebro humano, representadas por nodos y conexiones entre ellos. [^18]
 
-![Diagrama de una red neuronal artificial mostrando capas de entrada, ocultas y de salida](images/02_RedesNeuronales.png)
-
 La palabra "profundo" significa que **tiene muchas capas ocultas** (decenas, cientos o miles). Cada capa transforma los datos un poco más, descubriendo patrones cada vez más complejos.[^18] En la práctica, una red neuronal está organizada en tres tipos de capas:
 
 1. **Capa de entrada:** Recibe los datos crudos (una imagen, un texto convertido en números, una tabla de datos)
@@ -112,8 +110,6 @@ Esto distingue a los **modelos generativos** de los **modelos discriminativos**,
 
 El término de **loros estocásticos** fue acuñado por las investigadoras Emily Bender y Timnit Gebru (2021).[^25] La metáfora sugiere que estos modelos **son como loros probabilísticos que generan resultados a través de patrones de lenguaje sin comprender su significado.** Repiten y combinan patrones que han visto antes, produciendo textos que suenan coherentes, pero sin entender el significado del mensaje, la intención o la verdad.
 
-![Ilustración de un loro estocástico representando los modelos de lenguaje](images/03_cotorros.png)
-
 !!! warning "Implicaciones"
     - Pueden generar texto convincente pero completamente falso (**alucinaciones**)
     - Pueden reproducir los sesgos de sus datos de entrenamiento
@@ -125,8 +121,6 @@ El término de **loros estocásticos** fue acuñado por las investigadoras Emily
 ## ¿Qué es la IA agéntica (Agentic AI)?
 
 La IA agéntica se refiere a **sistemas de IA que actúan de manera autónoma** para lograr objetivos específicos, realizando múltiples acciones en secuencia **sin intervención humana constante**.[^30] Ejemplos recientes incluyen Claude Code, GitHub Copilot Workspace y Operator de OpenAI. La principal diferencia con ChatGPT y otros chatbots es que estas aplicaciones responden a prompts individuales, mientras que un agente de IA usa modelos de lenguaje pero además puede planear, ejecutar tareas complejas y adaptarse según los resultados.
-
-![Diagrama de cómo funciona un agente de IA: planear, ejecutar, adaptarse](images/04_AgenticAI.png)
 
 !!! danger "Advertencia"
     Los agentes de IA requieren supervisión humana. No son todavía lo suficientemente confiables para tareas críticas sin supervisión. **Nunca compartas contraseñas, credenciales, información bancaria o datos sensibles con estos sistemas.**
@@ -176,24 +170,24 @@ Los modelos de IA aprenden de datos que reflejan las desigualdades del mundo rea
 ??? tip "Recursos para seguir aprendiendo"
     **Experimenta con IA (sin código):**
 
-    - **Teachable Machine (Google):** https://teachablemachine.withgoogle.com/ — Entrena tu primer modelo de IA sin código
-    - **Google Quick, Draw!:** https://quickdraw.withgoogle.com/ — Dibuja y ve cómo una IA adivina qué es
-    - **Embedding Visualization:** https://helboukkouri.github.io/embedding-visualization/ — Ve cómo la IA representa palabras como números
-    - **NotebookLM (Google):** https://notebooklm.google.com/ — Asistente de IA para analizar documentos y tomar notas
+    - [Teachable Machine (Google)](https://teachablemachine.withgoogle.com/) — Entrena tu primer modelo de IA sin código
+    - [Google Quick, Draw!](https://quickdraw.withgoogle.com/) — Dibuja y ve cómo una IA adivina qué es
+    - [Embedding Visualization](https://helboukkouri.github.io/embedding-visualization/) — Ve cómo la IA representa palabras como números
+    - [NotebookLM (Google)](https://notebooklm.google.com/) — Asistente de IA para analizar documentos y tomar notas
 
     **Cursos gratuitos (conceptos fundamentales):**
 
-    - **Generative AI for Everyone (DeepLearning.AI):** https://www.coursera.org/learn/generative-ai-for-everyone — Curso introductorio de Andrew Ng sobre cómo funciona la IA generativa, sus aplicaciones y su impacto. Sin requisitos previos, ~3 horas
-    - **Elements of AI (en español):** https://course.elementsofai.com/es/ — Fundamentos conceptuales de IA (Universidad de Helsinki)
-    - **Recursos Educativos Abiertos en IA (Tec de Monterrey):** https://observatorio.tec.mx/recursos-educativos-abiertos-en-inteligencia-artificial/ — Colección de recursos abiertos sobre inteligencia artificial
-    - **Google AI - Intro al ML (español):** https://cloud.google.com/learn/training/machinelearning-ai?hl=es — Introducción al aprendizaje automático
-    - **Google Skills:** https://www.skills.google/ — Cursos gratuitos de Google sobre IA y tecnología
+    - [Generative AI for Everyone (DeepLearning.AI)](https://www.coursera.org/learn/generative-ai-for-everyone) — Curso introductorio de Andrew Ng sobre cómo funciona la IA generativa, sus aplicaciones y su impacto. Sin requisitos previos, ~3 horas
+    - [Elements of AI (en español)](https://course.elementsofai.com/es/) — Fundamentos conceptuales de IA (Universidad de Helsinki)
+    - [Recursos Educativos Abiertos en IA (Tec de Monterrey)](https://observatorio.tec.mx/recursos-educativos-abiertos-en-inteligencia-artificial/) — Colección de recursos abiertos sobre inteligencia artificial
+    - [Google AI - Intro al ML (español)](https://cloud.google.com/learn/training/machinelearning-ai?hl=es) — Introducción al aprendizaje automático
+    - [Google Skills](https://www.skills.google/) — Cursos gratuitos de Google sobre IA y tecnología
 
     **Cursos gratuitos (técnicos):**
 
-    - **Fast.ai:** https://www.fast.ai/ — Deep learning práctico, de lo aplicado a lo teórico
-    - **Anthropic Courses:** https://anthropic.skilljar.com/ — Prompt engineering y evaluación de modelos
-    - **Google Cloud Tech (YouTube):** https://www.youtube.com/@googlecloudtech — Videos explicativos sobre IA y cloud
+    - [Fast.ai](https://www.fast.ai/) — Deep learning práctico, de lo aplicado a lo teórico
+    - [Anthropic Courses](https://anthropic.skilljar.com/) — Prompt engineering y evaluación de modelos
+    - [Google Cloud Tech (YouTube)](https://www.youtube.com/@googlecloudtech) — Videos explicativos sobre IA y cloud
 
 ¿Prefieres formato podcast? En este episodio de Hijas de Internet de la Serie "Descifrando la IA" conversamos con Sergio Sánchez de @tacosdedatos sobre qué es la inteligencia artificial, cómo funciona el aprendizaje automático y profundo, y por qué los modelos de lenguaje no piensan, predicen.
 
@@ -208,7 +202,6 @@ Los modelos de IA aprenden de datos que reflejan las desigualdades del mundo rea
 [^1]: Google Cloud. Artificial intelligence (AI): a simple-to-understand guide. <https://cloud.google.com/learn/what-is-artificial-intelligence?hl=en>
 [^2]: Boston Institute of Analytics. How Machine Learning Powers Recommendation Systems (Netflix, Amazon, Spotify). <https://bostoninstituteofanalytics.org/blog/how-machine-learning-powers-recommendation-systems-netflix-amazon-spotify/#:~:text=Machine%20Learning%20provides%20recommendation%20systems,provides%20the%20most%20tailored%20recommendations>.
 [^3]: Google. Google Maps 101: How AI helps predict traffic and determine routes. <https://blog.google/products-and-platforms/products/maps/google-maps-101-how-ai-helps-predict-traffic-and-determine-routes/#:~:text=To%20predict%20what%20traffic%20will,Sydney%2C%20Tokyo%2C%20and%20Washington%20D.C.>
-[^4]: ScienceABC. How Do Snapchat And Instagram Filters Work?. <https://www.scienceabc.com/innovation/how-do-snapchat-and-instagram-filters-work.html#:~:text=The%20computer%20converts%20the%20image,your%20face%20to%20one%20side.>
 [^5]: IBM. ¿Qué es el aprendizaje automático?. <https://www.ibm.com/mx-es/think/topics/machine-learning>
 [^6]: DataRobot. The importance of machine learning data. <https://www.datarobot.com/blog/the-importance-of-machine-learning-data/#:~:text=What%20type%20of%20data%20does,series%20data%2C%20and%20text%20data.>
 [^7]: DataCamp. *What Is an Algorithm?*. <https://www.datacamp.com/blog/what-is-an-algorithm>

@@ -199,32 +199,32 @@ La transparencia es el primer paso. Sin datos confiables sobre consumo de energ�
 ??? tip "Recursos para seguir aprendiendo"
     **Investigación periodística:**
 
-    - Context/Thomson Reuters — “Thirsty Data Centres in Mexico”: <https://www.context.news/ai/thirsty-data-centres-spring-up-in-water-poor-mexican-town>
-    - Context — “Resistance Blooms in Mexico’s Data Centre Valley”: <https://www.context.news/ai/long-read/resistance-blooms-in-mexicos-data-centre-valley>
-    - NPR — “AI Brings Soaring Emissions” (2024): <https://www.npr.org/2024/07/12/g-s1-9545/ai-brings-soaring-emissions-for-google-and-microsoft-a-major-contributor-to-climate-change>
+    - [Context/Thomson Reuters — “Thirsty Data Centres in Mexico”](https://www.context.news/ai/thirsty-data-centres-spring-up-in-water-poor-mexican-town)
+    - [Context — “Resistance Blooms in Mexico’s Data Centre Valley”](https://www.context.news/ai/long-read/resistance-blooms-in-mexicos-data-centre-valley)
+    - [NPR — “AI Brings Soaring Emissions” (2024)](https://www.npr.org/2024/07/12/g-s1-9545/ai-brings-soaring-emissions-for-google-and-microsoft-a-major-contributor-to-climate-change)
 
     **Reportes institucionales:**
 
-    - IEA — “Energy and AI” (2025): <https://www.iea.org/reports/energy-and-ai/executive-summary>
-    - UNEP — “AI Has an Environmental Problem”: <https://www.unep.org/news-and-stories/story/ai-has-environmental-problem-heres-what-world-can-do-about>
-    - Global E-waste Monitor (2024): <https://www.unep.org/resources/global-e-waste-monitor-2024>
+    - [IEA — “Energy and AI” (2025)](https://www.iea.org/reports/energy-and-ai/executive-summary)
+    - [UNEP — “AI Has an Environmental Problem”](https://www.unep.org/news-and-stories/story/ai-has-environmental-problem-heres-what-world-can-do-about)
+    - [Global E-waste Monitor (2024)](https://www.unep.org/resources/global-e-waste-monitor-2024)
 
     **Análisis sobre la Paradoja de Jevons y IA:**
 
-    - MIT Technology Review — “DeepSeek and Energy” (2025): <https://www.technologyreview.com/2025/01/31/1110776/deepseek-might-not-be-such-good-news-for-energy-after-all/>
-    - NPR — “AI, DeepSeek, and Jevons Paradox” (2025): <https://www.npr.org/sections/planet-money/2025/02/04/g-s1-46018/ai-deepseek-economics-jevons-paradox>
+    - [MIT Technology Review — “DeepSeek and Energy” (2025)](https://www.technologyreview.com/2025/01/31/1110776/deepseek-might-not-be-such-good-news-for-energy-after-all/)
+    - [NPR — “AI, DeepSeek, and Jevons Paradox” (2025)](https://www.npr.org/sections/planet-money/2025/02/04/g-s1-46018/ai-deepseek-economics-jevons-paradox)
 
     **Minerales y derechos humanos:**
 
-    - Amnistía Internacional — “This Is What We Die For”: <https://www.amnestyusa.org/reports/this-is-what-we-die-for-human-rights-abuses-in-the-democratic-republic-of-the-congo-power-the-global-trade-in-cobalt/>
-    - Mongabay — “Lithium Mining in Atacama” (2024): <https://news.mongabay.com/2024/12/as-lithium-mining-bleeds-atacama-salt-flat-dry-indigenous-communities-hit-back/>
-    - CSIS — “From Mine to Microchip” (2024): <https://www.csis.org/analysis/mine-microchip>
+    - [Amnistía Internacional — “This Is What We Die For”](https://www.amnestyusa.org/reports/this-is-what-we-die-for-human-rights-abuses-in-the-democratic-republic-of-the-congo-power-the-global-trade-in-cobalt/)
+    - [Mongabay — “Lithium Mining in Atacama” (2024)](https://news.mongabay.com/2024/12/as-lithium-mining-bleeds-atacama-salt-flat-dry-indigenous-communities-hit-back/)
+    - [CSIS — “From Mine to Microchip” (2024)](https://www.csis.org/analysis/mine-microchip)
 
     **Justicia ambiental en LatAm:**
 
-    - Heinrich Böll Stiftung — “COP30, AI, Climate Justice”: <https://br.boell.org/en/2025/10/14/cop30-ai-climate-justice-ally-or-new-face-extractivist-model>
+    - [Heinrich Böll Stiftung — “COP30, AI, Climate Justice”](https://br.boell.org/en/2025/10/14/cop30-ai-climate-justice-ally-or-new-face-extractivist-model)
     - **“Atlas of AI” — Kate Crawford (2021)** — Mapea la cadena de suministro material de la IA
-    - DataCenterBoom — Base de datos sobre impactos de centros de datos en América Latina (Brasil, Chile, México): <https://datacenterboom.net/>
+    - [DataCenterBoom](https://datacenterboom.net/) — Base de datos sobre impactos de centros de datos en América Latina (Brasil, Chile, México)
 
 ¿Prefieres formato podcast? En este episodio de Hijas de Internet de la serie “Descifrando la IA” conversamos con Paz Peña, del Instituto Latinoamericano de Terraformación y Data Center Boom, sobre la huella material de la IA en América Latina: agua, energía y los conflictos que están surgiendo en nuestros territorios.
 
@@ -236,15 +236,12 @@ La transparencia es el primer paso. Sin datos confiables sobre consumo de energ�
 
 ## Referencias
 
-[^1]: Amnistía Internacional (2016). “This Is What We Die For: Human Rights Abuses in the DRC Power the Global Trade in Cobalt.” <https://www.amnestyusa.org/reports/this-is-what-we-die-for-human-rights-abuses-in-the-democratic-republic-of-the-congo-power-the-global-trade-in-cobalt/>
 [^2]: IPCC (2018). “Global Warming of 1.5°C — Summary for Policymakers.” <https://www.ipcc.ch/sr15/chapter/spm/>
 [^3]: The New York Times. (2019). “How the Internet Travels Across Oceans”.  https://www.nytimes.com/interactive/2019/03/10/technology/internet-cables-oceans.html
 [^4]: Strubell, E., Ganesh, A. & McCallum, A. (2019). “Energy and Policy Considerations for Deep Learning in NLP.” *Proceedings of the 57th Annual Meeting of the ACL*, pp. 3645–3650. <https://aclanthology.org/P19-1355/>
 [^5]: Kaack, L.H., Donti, P.L., Strubell, E., Kamiya, G., Creutzig, F. & Rolnick, D. (2021). “Aligning artificial intelligence with climate change mitigation.” Preprint. <https://hal.science/hal-03368037>
 [^6]: Luccioni, A.S., Viguier, S. & Ligozat, A.-L. (2022). “Estimating the Carbon Footprint of BLOOM, a 176B Parameter Language Model.” *arXiv preprint arXiv:2211.02001*. <https://arxiv.org/abs/2211.02001>
 [^7]: Climate Impact Partners (2024). “Carbon Footprint of AI.” <https://www.climateimpact.com/news-insights/insights/carbon-footprint-of-ai/>
-[^8]: Epoch AI (2024). Energy consumption of AI model training.
-[^9]: Dgtl Infra (2024). Data center water consumption statistics.
 [^10]: Mongabay (2024). “As Lithium Mining Bleeds Atacama Salt Flat Dry, Indigenous Communities Hit Back.” <https://news.mongabay.com/2024/12/as-lithium-mining-bleeds-atacama-salt-flat-dry-indigenous-communities-hit-back/>
 [^11]: UNEP / Global E-waste Monitor (2024). <https://www.unep.org/resources/global-e-waste-monitor-2024>
 [^12]: NPR (2024). “AI Brings Soaring Emissions for Google and Microsoft.” <https://www.npr.org/2024/07/12/g-s1-9545/ai-brings-soaring-emissions-for-google-and-microsoft-a-major-contributor-to-climate-change>
@@ -256,9 +253,6 @@ La transparencia es el primer paso. Sin datos confiables sobre consumo de energ�
 [^18]: MEXDC / Prodensa (2025). “Data Centers in Mexico.” <https://www.prodensa.com/insights/blog/data-centers-in-mexico>
 [^19]: IEA (2025). “Energy and AI.” <https://www.iea.org/reports/energy-and-ai/ai-and-climate-change>
 [^20]: ArXiv (2025). GPT-4o inference emissions and GPU deployment data. <https://arxiv.org/abs/2501.16548>
-[^21]: Sam Altman. The Gentle Singularity. <https://blog.samaltman.com/the-gentle-singularity>
-[^22]: Digital Information World (2025) / Fast Company (2025) / The Invading Sea (2025). Big Tech water consumption reports.
-[^23]: Context (2025). “Thirsty Data Centres Spring Up in Water-Poor Mexican Town.” <https://www.context.news/ai/thirsty-data-centres-spring-up-in-water-poor-mexican-town>
 [^24]: Context (2025). “Resistance Blooms in Mexico’s Data Centre Valley.” <https://www.context.news/ai/long-read/resistance-blooms-in-mexicos-data-centre-valley>
 [^25]: Heinrich Böll Stiftung (2025). “COP30, AI and Climate Justice.” <https://br.boell.org/en/2025/10/14/cop30-ai-climate-justice-ally-or-new-face-extractivist-model>
 [^26]: MIT Technology Review (2025). “DeepSeek Might Not Be Such Good News for Energy After All.” <https://www.technologyreview.com/2025/01/31/1110776/deepseek-might-not-be-such-good-news-for-energy-after-all/>
@@ -268,8 +262,6 @@ La transparencia es el primer paso. Sin datos confiables sobre consumo de energ�
 [^30]: IEA (2025). “Electricity 2025 — Emissions.” <https://www.iea.org/reports/electricity-2025/emissions>
 [^31]: Gorey, J. (2025). “Data Drain: The Land and Water Impacts of the AI Boom.” *Lincoln Institute of Land Policy, Land Lines Magazine*. <https://www.lincolninst.edu/publications/land-lines-magazine/articles/land-water-impacts-data-centers/>
 [^32]: Vallejos, R. (2025). “Los data centers llegan a tribunales en América Latina: Análisis de los fallos de la justicia sobre los data centers de Google en Chile y Uruguay.” *DataCenterBoom / Instituto Latinoamericano de Terraformación*. <https://datacenterboom.net/wp-content/uploads/2025/11/Los-data-centers-llegan-a-tribunales-en-America-Latina-1.pdf>
-[^33]: DataCenterBoom (2025). “¿Cómo se calculan las emisiones de gases invernadero de un centro de datos?” Basado en Uptime Institute Global Survey of IT and Data Center Managers (2024). <https://datacenterboom.net/>
-[^34]: CSIS (2024). “From Mine to Microchip: Building a Critical Mineral Strategy for Semiconductors.” Análisis. <https://www.csis.org/analysis/mine-microchip>
 [^35]: IBM. “¿Qué es un data center?”. <https://www.ibm.com/mx-es/think/topics/data-centers>
 [^36]: Federation of American Scientists (2025). “Measuring AI’s Energy/Environmental Footprint to Access Impacts.” <https://fas.org/publication/measuring-and-standardizing-ais-energy-footprint/>
 [^37]: Emberson, L. & Rahman, R. (2024). “The power required to train frontier AI models is doubling annually.” Epoch AI. <https://epoch.ai/data-insights/power-usage-trend>

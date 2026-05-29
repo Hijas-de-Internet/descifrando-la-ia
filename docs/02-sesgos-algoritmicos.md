@@ -163,17 +163,17 @@ Reconocer los sesgos algorítmicos no significa rechazar la IA, sino exigir que 
     | Transparencia | Compartir datos de entrenamiento, decisiones de diseño y reglas del sistema (decisión política y empresarial) |
 
 ??? tip "Recursos para seguir aprendiendo"
-    - **Algorithmic Justice League:** <https://www.ajl.org/> — Organización fundada por Joy Buolamwini
-    - **AI Now Institute:** <https://ainowinstitute.org/> — Investigación sobre impactos sociales de la IA
-    - **Data & Society:** <https://datasociety.net/> — Perspectivas feministas y decoloniales sobre IA
-    - **Derechos Digitales:** <https://derechosdigitales.org/> — Organización latinoamericana sobre vigilancia y sesgo algorítmico
-    - **Al Sur — “Facial Recognition and Surveillance” (2025):** <https://www.alsur.lat/sites/default/files/2025-11/Facial%20recognition%20and%20surveillance-1.pdf> — Reporte regional de la coalición latinoamericana de derechos digitales sobre reconocimiento facial y vigilancia en América Latina
-    - **SESGO (dataset y código):** <https://github.com/mvrobles/SESGO>[^20]
+    - [Algorithmic Justice League](https://www.ajl.org/) — Organización fundada por Joy Buolamwini
+    - [AI Now Institute](https://ainowinstitute.org/) — Investigación sobre impactos sociales de la IA
+    - [Data & Society](https://datasociety.net/) — Perspectivas feministas y decoloniales sobre IA
+    - [Derechos Digitales](https://derechosdigitales.org/) — Organización latinoamericana sobre vigilancia y sesgo algorítmico
+    - [Al Sur — “Facial Recognition and Surveillance” (2025)](https://www.alsur.lat/sites/default/files/2025-11/Facial%20recognition%20and%20surveillance-1.pdf) — Reporte regional de la coalición latinoamericana de derechos digitales sobre reconocimiento facial y vigilancia en América Latina
+    - [SESGO (dataset y código)](https://github.com/mvrobles/SESGO)[^20]
     - **Coded Bias (Netflix, 2020)** — Documental sobre sesgo en reconocimiento facial
     - **“Weapons of Math Destruction” — Cathy O'Neil (2016)** — Cómo los algoritmos amplían la desigualdad
     - **“Automating Inequality” — Virginia Eubanks (2018)** — Sistemas automatizados y su impacto en los pobres
     - **“Algorithms of Oppression” — Safiya Umoja Noble (2018)** — Sesgo racial en motores de búsqueda
-    - **Anthropic Courses — Prompt Evaluations:** <https://github.com/anthropics/courses/tree/master/prompt_evaluations> — Curso gratuito (9 lecciones) para aprender a evaluar sistemáticamente los resultados de modelos de IA[^28]
+    - [Anthropic Courses — Prompt Evaluations](https://github.com/anthropics/courses/tree/master/prompt_evaluations) — Curso gratuito (9 lecciones) para aprender a evaluar sistemáticamente los resultados de modelos de IA[^28]
 
 ¿Prefieres formato podcast? En este episodio de Hijas de Internet de la serie “Descifrando la IA” profundizamos sobre los sesgos algorítmicos, el benchmark SESGO para español y cómo cada modelo arrastra prejuicios distintos en nuestro idioma.
 

@@ -2,24 +2,22 @@
 
 **Una guía para entender y cuestionar a la inteligencia artificial**
 
-![SeñoritaIA](images/19_sritaIA.png)
-
-**Descifrando la IA** es un proyecto de [Hijas de Internet](https://instagram.com/hijasdeinternet) que busca acercar el conocimiento sobre qué son y cómo funcionan los modelos de inteligencia artificial que usamos todos los días, conocer sus alcances y sus limitaciones, y sus impactos socioambientales. Con esto, buscamos contribuir a la discusión sobre cómo pasar de ser usuarias pasivas a usuarias activas de herramientas de IA, siempre de una forma crítica y responsable que ponga al centro nuestras necesidades. 
+**Descifrando la IA** es un proyecto de [Hijas de Internet](https://instagram.com/hijasdeinternet) que busca acercar el conocimiento sobre qué son y cómo funcionan los modelos de inteligencia artificial que usamos todos los días, conocer sus alcances y sus limitaciones, y sus impactos socioambientales. Con esto, buscamos contribuir a la discusión sobre cómo pasar de ser usuarias pasivas de herramientas de IA a creadoras de tecnología, siempre de una forma crítica y responsable, que ponga al centro nuestras necesidades y los derechos humanos. 
 
 A lo largo de esta wiki, podrás encontrar de forma general conceptos básicos sobre inteligencia artificial, herramientas para cuestionar sus sesgos e impactos ambientales, su papel en el futuro de trabajo y tips para usarlas de forma responsable. Además, si te gustaría seguir explorando estos temas, te compartimos referencias de distintas fuentes para que puedas consultar y seguir aprendiendo. 
 
+![SeñoritaIA](images/19_sritaIA.png)
+
 ## Módulos
 
-La wiki se libera **módulo por módulo, junto con los episodios del podcast**. Los Módulos 1, 2, 3 y 4 ya están disponibles; el siguiente se publica conforme avanza la serie.
-
-| #   | Tema                                                 | Estado          | Descripción                                                            |
-| --- | ---------------------------------------------------- | --------------- | ---------------------------------------------------------------------- |
-| 1   | **[Qué es la IA](01-que-es-la-ia.md)**               | Disponible      | Definiciones, cómo funcionan los modelos y conceptos clave             |
-| 2   | **[Sesgos algorítmicos](02-sesgos-algoritmicos.md)** | Disponible      | Cómo los datos y algoritmos reproducen sesgos presentes en la sociedad |
-| 3   | **[Impactos ambientales](03-impactos-ambientales.md)** | Disponible | El costo material de entrenar modelos de IA |
-| 4   | **[Futuro del trabajo](04-futuro-del-trabajo.md)** | Disponible | Cómo la IA transforma el trabajo, qué grupos están más expuestos y qué habilidades importan |
-| 5   | Herramientas y uso responsable                  | Próximamente    | Cómo usar IA de forma crítica e informada                              |
-|     | **[Cómo hicimos esta wiki](como-se-hizo.md)**   | Disponible      | Transparencia sobre el uso de IA en la producción de este proyecto     |
+| # | Tema | Descripción |
+| --- | --- | --- |
+| 1 | **[Qué es la IA](01-que-es-la-ia.md)** | Qué es la inteligencia artificial y cómo funciona: aprendizaje automático, profundo y modelos de lenguaje, así como la importancia de los datos para el entrenamiento y la alineación. |
+| 2 | **[Sesgos algorítmicos](02-sesgos-algoritmicos.md)** | Por qué los modelos pueden heredar y amplificar prejuicios de los datos con los que son entrenados. |
+| 3 | **[Impactos ambientales](03-impactos-ambientales.md)** | El "mito de la nube" en cifras: la huella material real de la IA en energía, agua para enfriamiento, minerales críticos y basura electrónica. |
+| 4 | **[Futuro del trabajo](04-futuro-del-trabajo.md)** | Datos sobre exposición a la IA, qué grupos enfrentan más riesgo y qué habilidades (técnicas y humanas) son indispensables para navegar la transición. |
+| 5 | **[Herramientas y uso responsable](05-herramientas-uso-responsable.md)** | El marco de las **4D** (Delegación, Descripción, Discernimiento, Diligencia) para un uso crítico de la IA (cuándo usarla, cómo pedirle, cómo verificarla, qué responsabilidad asumes), y un cierre sobre software libre, soberanía digital y construir IA situada desde el sur global. |
+|  | **[Cómo hicimos esta wiki](como-se-hizo.md)** | Transparencia radical sobre el proceso: las herramientas que usamos (Claude, Claude Code, NotebookLM, Canva, MkDocs), el sistema de agentes y *skills* que orquestamos para producir contenido en cuatro formatos, y cómo revisamos cada fuente y texto antes de publicar. |
 
 ## ¿Para quién es esta guía?
 
