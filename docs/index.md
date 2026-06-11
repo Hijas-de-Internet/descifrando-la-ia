@@ -17,7 +17,6 @@ A lo largo de esta wiki, podrás encontrar de forma general conceptos básicos s
 | 3 | **[Impactos ambientales](03-impactos-ambientales.md)** | El "mito de la nube" en cifras: la huella material real de la IA en energía, agua para enfriamiento, minerales críticos y basura electrónica. |
 | 4 | **[Futuro del trabajo](04-futuro-del-trabajo.md)** | Datos sobre exposición a la IA, qué grupos enfrentan más riesgo y qué habilidades (técnicas y humanas) son indispensables para navegar la transición. |
 | 5 | **[Herramientas y uso responsable](05-herramientas-uso-responsable.md)** | El marco de las **4D** (Delegación, Descripción, Discernimiento, Diligencia) para un uso crítico de la IA (cuándo usarla, cómo pedirle, cómo verificarla, qué responsabilidad asumes), y un cierre sobre software libre, soberanía digital y construir IA situada desde el sur global. |
-|  | **[Cómo hicimos esta wiki](como-se-hizo.md)** | Transparencia radical sobre el proceso: las herramientas que usamos (Claude, Claude Code, NotebookLM, Canva, MkDocs), el sistema de agentes y *skills* que orquestamos para producir contenido en cuatro formatos, y cómo revisamos cada fuente y texto antes de publicar. |
 
 ## ¿Para quién es esta guía?
 

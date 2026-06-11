@@ -17,7 +17,6 @@ La wiki se libera **módulo por módulo, alineada con los episodios del podcast*
 | 3 | [Impactos ambientales](docs/03-impactos-ambientales.md) — energía, agua, minerales críticos y basura electrónica; extractivismo en Atacama y el Congo, despojo hídrico en México y justicia ambiental en América Latina | Disponible |
 | 4 | [Futuro del trabajo](docs/04-futuro-del-trabajo.md) — 40% de los empleos globales *expuestos* (no reemplazados), grupos más vulnerables, el trabajo invisible de los *ghost workers* y las habilidades que son ancla en la transición | Disponible |
 | 5 | [Herramientas y uso responsable](docs/05-herramientas-uso-responsable.md) — marco de las **4D** (Delegación, Descripción, Discernimiento, Diligencia) para un uso crítico, software libre y soberanía digital, AymurAI y la Red Feminista de IA como ejemplos de IA situada en LatAm | Disponible |
-| — | [Cómo hicimos esta wiki](docs/como-se-hizo.md) — transparencia sobre las herramientas (Claude, Claude Code, NotebookLM, Canva, MkDocs) y el sistema de agentes y *skills* que orquestamos para producir el proyecto | Disponible |
 
 ## Audiencia
 
